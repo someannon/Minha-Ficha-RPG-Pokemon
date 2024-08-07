@@ -6167,7 +6167,7 @@ inputimgfun.addEventListener("change", function () {
             const data = {};
             
             // Itera sobre os inputs do formulário
-            Array.from(form.elements).forEach(element => {
+            Array.from(body.elements).forEach(element => {
                 if (element.tagName === 'INPUT' && !element.hasAttribute('readonly')) {
                     if (element.type === 'checkbox' || element.type === 'radio') {
                         data[element.name] = element.checked;
