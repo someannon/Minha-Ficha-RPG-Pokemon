@@ -5,12 +5,13 @@
   body {
   transform: scale(0.4);
     transform-origin: top left;
-     max-width: 250%;
+     max-width: 300%;
     }
   }
  
   body {
     background-color: white;
+    background-blend-mode: lighten;
   }
   
   table[id="perfracorfinal"] {
@@ -95,7 +96,9 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
 
 @media (prefers-color-scheme: dark) {
     body {
-    background-color: #242424; color: #e6e6e6;
+    background-color: #242424;
+      color: #e6e6e6;
+      background-blend-mode: overlay;
 }
 input, button, select, input[type="text"], input[type="number"], textarea {
     background-color: #242424; color: #e6e6e6; border-color: #9850d0;
