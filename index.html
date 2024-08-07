@@ -988,6 +988,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
     <a id="nomefinal">Nome</a><a>,</a> <a id="pokemonfinal">Pokemon</a><a>, </a><a id="sexofinal">Sexo</a><a>,</a>
 </nobr>
     <br>
+<br>
     <a id="naturefinal">nature</a><a>, </a></nobr><nobr><a id="type1final">tipo 1</a><a>, </a><a id="type2final">tipo 2</a></nobr>
 </td>
 <td id="imgperfinal" style="width: 300px; height: 400px; background-repeat: no; background-position-x: center; background-attachment: fixed; background-size: cover">
@@ -2913,7 +2914,7 @@ window.addEventListener("load", function() {
   }
   function carregarImgCorp() {
     document.getElementById("imgcorp").src = document.getElementById("linkimgcorp").value;
-    document.getElementById("imgcorpfinal").src = document.getElementById("imgcorp").src
+    document.getElementById("imgcorpfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgcorp").value + '")';
   }
   function carregarImgFun() {
     document.getElementById("imgfun").src = document.getElementById("linkimgfun").value;
@@ -6026,7 +6027,7 @@ inputimgcorp.addEventListener("change", function () {
   readerimgcorp.onload = function () {
     const base64Stringimgcorp = btoa(readerimgcorp.result); // Converte os dados binários em Base64
     document.getElementById("imgcorp").src = "data:image/png;base64," + base64Stringimgcorp;
-     document.getElementById("imgcorpfinal").src = "data:image/png;base64," + base64Stringimgcorp;
+     document.getElementById("imgcorpfinal").style.backgroundImage = 'url("' + "data:image/png;base64," + base64Stringimgcorp + '")';
      document.getElementById("imgcorpfinal").src = "data:image/png;base64," + base64Stringimgcorp;
 
      // Aqui está a representação Base64 do arquivo
