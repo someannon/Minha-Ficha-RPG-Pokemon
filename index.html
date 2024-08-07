@@ -7,9 +7,6 @@
     transform-origin: top left;
      max-width: 250%;
     }
-    img[id="imgfunfinal"] {
-      
-    }
   }
  
   body {
@@ -118,7 +115,6 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
  
 </style>
 </head>
-  <img style="z-index:-20; opacity:30%; position: fixed; object-fill: contain" id="imgfunfinal" src="">
   <body id="container" style="overflow-x: hidden">
     <center>
   <div id="DadosPessoais" onload="popularSelectPokemon()" style="display: none; position: fixed;">
@@ -2908,7 +2904,7 @@ window.addEventListener("load", function() {
   }
   function carregarImgFun() {
     document.getElementById("imgfun").src = document.getElementById("linkimgfun").value;
-    document.getElementById("imgfunfinal").src = document.getElementById("imgfun").src
+    document.getElementById("container").style.backgroundImage = 'url("' + document.getElementById("imgfun").src + '")';
   }
 </script>
 <script type="text/javascript" id="scpt5">
@@ -6037,8 +6033,7 @@ inputimgfun.addEventListener("change", function () {
   readerimgfun.onload = function () {
     const base64Stringimgfun = btoa(readerimgfun.result); // Converte os dados binários em Base64
     document.getElementById("imgfun").src = "data:image/png;base64," + base64Stringimgfun;
-     document.getElementById("imgfunfinal").src = "data:image/png;base64," + base64Stringimgfun;
-     document.getElementById("imgfunfinal").src = "data:image/png;base64," + base64Stringimgfun;
+     document.getElementById("container").style.backgroundImage = 'url("' + "data:image/png;base64," + base64Stringimgfun + '")';
      // Aqui está a representação Base64 do arquivo
   };
 
