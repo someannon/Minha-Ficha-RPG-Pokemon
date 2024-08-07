@@ -2910,7 +2910,7 @@ window.addEventListener("load", function() {
 <script type="text/javascript" id="scpt4">
   function CarregarImgPer() {
     document.getElementById("imgper").src = document.getElementById("linkimgper").value;
-    document.getElementById("imgperfinal").src = document.getElementById("imgper").src
+    document.getElementById("imgperfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgper").value + '")';
   }
   function carregarImgCorp() {
     document.getElementById("imgcorp").src = document.getElementById("linkimgcorp").value;
