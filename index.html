@@ -6162,4 +6162,39 @@ inputimgfun.addEventListener("change", function () {
       document.getElementById("Aba2").style.filter = "none";
       };
       </script>
+<script>
+        function saveToJson() {
+            const form = document.getElementById('myForm');
+            const data = {};
+            
+            // Itera sobre os inputs do formulário
+            Array.from(form.elements).forEach(element => {
+                if (element.tagName === 'INPUT' && !element.hasAttribute('readonly')) {
+                    if (element.type === 'checkbox' || element.type === 'radio') {
+                        data[element.name] = element.checked;
+                    } else {
+                        data[element.name] = element.value;
+                    }
+                }
+            });
+            
+            // Converte o objeto de dados para JSON
+            const json = JSON.stringify(data, null, 2);
+            
+            // Cria um blob com o JSON
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            // Cria um link temporário e simula um clique para download
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'form-data.json';
+            document.body.appendChild(a);
+            a.click();
+            
+            // Limpa o link temporário e o URL
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
 </div></center></body></html>
