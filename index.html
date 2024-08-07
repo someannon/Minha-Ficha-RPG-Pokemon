@@ -6,17 +6,11 @@
   transform: scale(0.4);
     transform-origin: top left;
      max-width: 250%;
+    display: inline-flex;
+    justify-content: center;
     }
   }
-
-@media all and (min-resolution: 264dpi) and (orientation: landscape) { 
-  body {
-  transform: scale(0.25);
-    transform-origin: top left;
-     max-width: 400%;
-    }
-  }
-  
+ 
   body {
     background-color: white;
   }
@@ -124,7 +118,7 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
 </style>
 </head>
   
-  <body id="container" style="overflow-x: hidden; display: inline-flex; justify-content: center;">
+  <body id="container" style="overflow-x: hidden;">
     <img style="z-index:-20; opacity:30%; object-fit: cover; position: fixed; height: 100%;" id="imgfunfinal" src="">
 <center>
   <div id="DadosPessoais" onload="popularSelectPokemon()" style="display: none; position: fixed;">
