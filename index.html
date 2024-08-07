@@ -6002,8 +6002,11 @@ inputimgper.addEventListener("change", function () {
   readerimgper.onload = function () {
     const base64Stringimgper = btoa(readerimgper.result); // Converte os dados binários em Base64
     document.getElementById("imgper").src = "data:image/png;base64," + base64Stringimgper;
-     document.getElementById("imgperfinal").src = "data:image/png;base64," + base64Stringimgper;
-     document.getElementById("imgperfinal").src = "data:image/png;base64," + base64Stringimgper;
+     
+
+document.getElementById("imgperfinal").style.backgroundImage = 'url("' + "data:image/png;base64," + base64Stringimgper + '")';
+     
+document.getElementById("imgperfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgper").value + '")'; 
      // Aqui está a representação Base64 do arquivo
   };
 
