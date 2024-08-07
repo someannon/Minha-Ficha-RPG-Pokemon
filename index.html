@@ -925,7 +925,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgper" type="file" accept=".png">
   <br>
-  <img id="imgper" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img style="max-width: 100%"  id="imgper" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <a>
   Imagem de corpo inteiro
@@ -942,7 +942,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgcorp" type="file" accept=".png">
   <br>
-  <img id="imgcorp" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img style="max-width: 100%" id="imgcorp" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <a>
   Imagem de fundo
@@ -959,7 +959,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgfun" type="file" accept=".png">
   <br>
-  <img id="imgfun" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img style="max-width: 100%" id="imgfun" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <br>
   <button onclick="fecharPersonalizacao()">Fechar</button>
@@ -973,17 +973,25 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
       <br>
       <button onclick="loadFormData()">Carregar personagem</button>
   </nobr></p><h1><nobr>Meu RPG de Pokemon</nobr></h1><nobr>
+
+
  <p id="dadosfinais">
   </p><h2>Dados Pessoais</h2>
   </nobr><p><nobr> <button onclick="exibirIDadosPessoaos()">Clique para editar</button>
     <br>
     <br>
-    <img id="imgperfinal" style="max-width:300px; float:right; vertical-align:" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
-    <a id="nomefinal">Nome</a><a>,</a>
-    <br><a id="pokemonfinal">Pokemon</a><a>, </a><a id="sexofinal">Sexo</a><a>,</a>
+    
+
+<tr>
+<td style="width: min-content: padding: 20px">
+<nobr>
+    <a id="nomefinal">Nome</a><a>,</a> <a id="pokemonfinal">Pokemon</a><a>, </a><a id="sexofinal">Sexo</a><a>,</a>
+</nobr>
     <br>
     <a id="naturefinal">nature</a><a>, </a></nobr><nobr><a id="type1final">tipo 1</a><a>, </a><a id="type2final">tipo 2</a></nobr>
-    
+</td>
+<td id="imgperfinal" style="height: 400px: background-repeat: no; background-position-x: center; background-attachment: fixed; background-size: cover">
+</tr>
     
     </p>
     <nobr>
