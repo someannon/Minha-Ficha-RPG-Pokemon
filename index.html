@@ -6162,38 +6162,52 @@ inputimgfun.addEventListener("change", function () {
       };
       </script>
 <script>
-        function saveToJson() {
-            const form = document.getElementById('container');
-            const data = {};
-            
-            // Itera sobre os inputs do formulário
-            Array.from(body.elements).forEach(element => {
-                if (element.tagName === 'INPUT' && !element.hasAttribute('readonly')) {
-                    if (element.type === 'checkbox' || element.type === 'radio') {
-                        data[element.name] = element.checked;
-                    } else {
-                        data[element.name] = element.value;
-                    }
-                }
-            });
-            
-            // Converte o objeto de dados para JSON
-            const json = JSON.stringify(data, null, 2);
-            
-            // Cria um blob com o JSON
-            const blob = new Blob([json], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            
-            // Cria um link temporário e simula um clique para download
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'form-data.json';
-            document.body.appendChild(a);
-            a.click();
-            
-            // Limpa o link temporário e o URL
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiração em dias
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
+
+        // Função para obter o valor de um cookie pelo nome
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Função para salvar os dados do formulário em cookies
+        function saveFormData() {
+            const NomePer = document.getElementById('NomePer').value;
+            const Jogador = document.getElementById('Jogador').value;
+            const SeletorPokemon = document.getElementById('SeletorPokemon').value;
+            
+            // Define cookies com expiração de 3650 dias (~10 anos)
+            setCookie('NomePer', NomePer, 3650);
+            setCookie('Jogador', Jogador, 3650);
+            setCookie('SeletorPokemon', SeletorPokemon, 3650);
+        }
+
+        // Função para carregar os dados do formulário a partir dos cookies
+        function loadFormData() {
+            const NomePer = getCookie('NomePer');
+            const Jogador = getCookie('Jogador');
+            const SeletorPokemon = getCookie('SeletorPokemon');
+            
+            if (NomePer) document.getElementById('NomePer').value = NomePer;
+            if (Jogador) document.getElementById('Jogador').value = Jogador;
+            if (SeletorPokemon) document.getElementById('SeletorPokemon').value = SeletorPokemon;
+        }
+        
+        // Carregar dados ao carregar a página
+        window.onload = loadFormData;
     </script>
 </div></center></body></html>
