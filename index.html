@@ -6026,9 +6026,7 @@ inputimgcorp.addEventListener("change", function () {
   // Configura o evento de carga para ser acionado quando o arquivo for lido
   readerimgcorp.onload = function () {
     const base64Stringimgcorp = btoa(readerimgcorp.result); // Converte os dados binários em Base64
-    document.getElementById("imgcorp").src = "data:image/png;base64," + base64Stringimgcorp;
-     document.getElementById("imgcorpfinal").style.backgroundImage = 'url("' + "data:image/png;base64," + base64Stringimgcorp + '")';
-     document.getElementById("imgcorpfinal").src = "data:image/png;base64," + base64Stringimgcorp;
+    document.getElementById("imgcorp").src = "data:image/png;base64," + base64Stringimgcorp
 
      // Aqui está a representação Base64 do arquivo
   };
