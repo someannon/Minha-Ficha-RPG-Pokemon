@@ -6347,72 +6347,7 @@ inputimgfun.addEventListener("change", function () {
                 document.getElementById('NomePer').value = character.NomePer || '';
                 document.getElementById('Jogador').value = character.Jogador || '';
                 document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
-              setTimeout(() => {
-    calcularFraquezas();
-    SomarTotaisAtributos();
-    colorirPorTipo();
-  }, 10);
-  setTimeout(CalcularPVTotal, 20);
-  setTimeout(DarAtributosParaPericias, 30);
-  setTimeout(AtualizarTreinamentoPericias, 40);
-  setTimeout(PuxarPericiasParaCorpo, 50)
-  setTimeout(calcularAlturaFinal, 60);
-  setTimeout(somasCorpo, 70);
-  setTimeout(() => {
-    classificarOmbros();
-    ClassificarPeitoSeio();
-    classificarBraco();
-    classificarCintura();
-    classificarAbdomen();
-    classificarQuadril();
-    classificarBunda();
-    classificarCoxas();
-  }, 80);
-  setTimeout(PassarParaFinal, 90);
-});
-  AtualizarNature();
-  setTimeout(() => {
-    
-    SomarTotaisAtributos();
-  }, 10);
-  setTimeout(CalcularPVTotal, 20);
-  setTimeout(DarAtributosParaPericias, 30);
-  setTimeout(AtualizarTreinamentoPericias, 40);
-  setTimeout(PuxarPericiasParaCorpo, 50);
-  setTimeout(somasCorpo, 60);
-  setTimeout(() => {
-    classificarOmbros();
-    ClassificarPeitoSeio();
-    classificarBraco();
-    classificarCintura();
-    classificarAbdomen();
-    classificarQuadril();
-    classificarBunda();
-    classificarCoxas();
-  }, 70);
-  setTimeout(PassarParaFinal, 90);
-});
-  setTimeout(() => {
-    SomarTotaisAtributos();
-  }, 10);
-  setTimeout(DarAtributosParaPericias, 20);
-  setTimeout(AtualizarTreinamentoPericias, 30);
-  setTimeout(PuxarPericiasParaCorpo, 40);
-  setTimeout(somasCorpo, 50);
-  setTimeout(() => {
-    classificarOmbros();
-    ClassificarPeitoSeio();
-    classificarBraco();
-    classificarCintura();
-    classificarAbdomen();
-    classificarQuadril();
-    classificarBunda();
-    classificarCoxas();
-  }, 60);
-  setTimeout(PassarParaFinal, 90);
-});
-  PassarMovimentosParaFinal();
-  AtualizaMovimentoFinais();
+              
             }
         }
 
