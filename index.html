@@ -6207,6 +6207,7 @@ inputimgfun.addEventListener("change", function () {
             const Jogador = document.getElementById('Jogador').value;
             const SeletorPokemon = document.getElementById('SeletorPokemon').value;
           const Level = document.getElementById('Level').value;
+          const Sexo = document.getElementById('Sexo').value;
 
             
             let characters = JSON.parse(getCookie('characters') || "[]");
@@ -6215,7 +6216,8 @@ inputimgfun.addEventListener("change", function () {
                 NomePer,
                 Jogador,
                 SeletorPokemon,
-              Level
+              Level,
+              Sexo
               
             };
 
@@ -6237,7 +6239,8 @@ inputimgfun.addEventListener("change", function () {
                 document.getElementById('NomePer').value = character.NomePer;
                 document.getElementById('Jogador').value = character.Jogador;
                 document.getElementById('SeletorPokemon').value = character.SeletorPokemon;
-              document.getElementById('Level').value = character.Level
+              document.getElementById('Level').value = character.Level;
+              document.getElementById('Sexo').value = character.Sexo;
               
             }
         }
