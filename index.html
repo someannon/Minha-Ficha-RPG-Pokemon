@@ -6208,6 +6208,7 @@ inputimgfun.addEventListener("change", function () {
             const SeletorPokemon = document.getElementById('SeletorPokemon').value;
           const Level = document.getElementById('Level').value;
           const Sexo = document.getElementById('Sexo').value;
+          const Nature = document.getElementById('Nature').value;
 
             
             let characters = JSON.parse(getCookie('characters') || "[]");
@@ -6217,7 +6218,8 @@ inputimgfun.addEventListener("change", function () {
                 Jogador,
                 SeletorPokemon,
               Level,
-              Sexo
+              Sexo,
+              Nature
               
             };
 
@@ -6241,6 +6243,7 @@ inputimgfun.addEventListener("change", function () {
                 document.getElementById('SeletorPokemon').value = character.SeletorPokemon;
               document.getElementById('Level').value = character.Level;
               document.getElementById('Sexo').value = character.Sexo;
+              document.getElementById('Nature').value = character.Nature;
               
             }
         }
