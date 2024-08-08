@@ -6206,13 +6206,123 @@ inputimgfun.addEventListener("change", function () {
             const NomePer = document.getElementById('NomePer').value;
             const Jogador = document.getElementById('Jogador').value;
             const SeletorPokemon = document.getElementById('SeletorPokemon').value;
+          const Level = document.getElementById('Level').value;
+          const HPIV = document.getElementById('HPIV').value;
+          const HPRacial = document.getElementById('HPRacial').value;
+          const NHP = document.getElementById('NHP').value;
+          const AttackIV = document.getElementById('AttackIV').value;
+          const AttackRacial = document.getElementById('AttackRacial').value;
+          const NAttack = document.getElementById('NAttack').value;
+          const DefenseIV = document.getElementById('DefenseIV').value;
+          const DefenseRacial = document.getElementById('DefenseRacial').value;
+          const NDefense = document.getElementById('NDefense').value;
+          const SpAtkIV = document.getElementById('SpAtkIV').value;
+          const SpAtkRacial = document.getElementById('SpAtkRacial').value;
+          const NSpAttack = document.getElementById('NSpAttack').value;
+          const SpDefIV = document.getElementById('SpDefIV').value;
+          const SpDefRacial = document.getElementById('SpDefRacial').value;
+          const NSpDefense = document.getElementById('NSpDefense').value;
+          const SpeedIV = document.getElementById('SpeedIV').value;
+          const SpeedRacial = document.getElementById('SpeedRacial').value;
+          const NSpeed = document.getElementById('Nspeed').value;
+          const Tratkfis = document.getElementById('Tratkfis').checked;
+          const Tratkesp = document.getElementById('Tratkesp').checked;
+          const Tratksta = document.getElementById('Tratksta').checked;
+          const TraAcro = document.getElementById('TraAcro').checked;
+          const Tratkfis = document.getElementById('Tratkfis').checked;
+          const Tratl = document.getElementById('Tratl').checked;
+          const Tratu = document.getElementById('Tratu').checked;
+          const Tradpl = document.getElementById('Tradpl').checked;
+          const Trang = document.getElementById('Trang').checked;
+          const Trfur = document.getElementById('Trfur').checked;
+          const Trini = document.getElementById('Trini').checked;
+          const Tratkfis = document.getElementById('Tratkfis').checked;
+          const Trint = document.getElementById('Trint').checked;
+          const Trmed = document.getElementById('Trmed').checked;
+          const Trper = document.getElementById('Trper').checked;
+          const Trsedu = document.getElementById('Trsedu').checked;
+          const PAlt = document.getElementById('PAlt').value;
+          const POmb = document.getElementById('POmb').value;
+          const Peito = document.getElementById('Peito').checked;
+          const Seios = document.getElementById('Seios').checked;
+          const PPei = document.getElementById('PPei').value;
+          const PBra = document.getElementById('PBra').value;
+          const PCin = document.getElementById('PCin').value;
+          const PAbd = document.getElementById('PAbd').value;
+          const PQuad = document.getElementById('PQuad').value;
+          const PBun = document.getElementById('PBun').value;
+          const Penis = document.getElementById('Penis').checked;
+          const PCox = document.getElementById('PCox').value;
+          const PPen = document.getElementById('PPen').value;
+          const Vagina = document.getElementById('Vagina').checked;
+          const imgperfinal = document.getElementById('imgperfinal').style.backgroundImage;
+          const imgcorpfinal = document.getElementById('imgcorpfinal').style.backgroundImage;
+          const imgfunfinal = document.getElementById('imgfunfinal').style.backgroundImage;
+          const M1final = document.getElementById('M1final').value;
+          const M2final = document.getElementById('M2final').value;
+          const M3final = document.getElementById('M3final').value;
+          const M4final = document.getElementById('M4final').value;
+
             
             let characters = JSON.parse(getCookie('characters') || "[]");
             
             const newCharacter = {
                 NomePer,
                 Jogador,
-                SeletorPokemon
+                SeletorPokemon,
+              Level,
+           HPIV,
+           HPRacial,
+           NHP,
+           AttackIV,
+           AttackRacial,
+           NAttack,
+           DefenseIV,
+           DefenseRacial,
+           NDefense,
+           SpAtkIV,
+           SpAtkRacial,
+           NSpAttack,
+           SpDefIV,
+           SpDefRacial,
+           NSpDefense,
+           SpeedIV,
+           SpeedRacial,
+           NSpeed,
+           Tratkfis,
+           Tratkesp,
+           Tratksta,
+           TraAcro,
+           Tratkfis,
+           Tratl,
+           Tratu,
+           Tradpl,
+           Trang,
+           Trfur,
+           Trini,
+           Tratkfis,
+           Trint,
+           Trmed,
+           Trper,
+           Trsedu,
+           PAlt,
+           POmb,
+           Peito,
+           Seios,
+           PPei,
+           PBra,
+           PCin,
+           PAbd,
+           PQuad,
+           PBun,
+           Penis,
+           PCox,
+           PPen,
+           Vagina,
+           imgperfinal,
+           imgcorpfinal,
+           imgfunfinal
+
             };
 
             characters.push(newCharacter);
@@ -6233,6 +6343,72 @@ inputimgfun.addEventListener("change", function () {
                 document.getElementById('NomePer').value = character.NomePer || '';
                 document.getElementById('Jogador').value = character.Jogador || '';
                 document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
+              setTimeout(() => {
+    calcularFraquezas();
+    SomarTotaisAtributos();
+    colorirPorTipo();
+  }, 10);
+  setTimeout(CalcularPVTotal, 20);
+  setTimeout(DarAtributosParaPericias, 30);
+  setTimeout(AtualizarTreinamentoPericias, 40);
+  setTimeout(PuxarPericiasParaCorpo, 50)
+  setTimeout(calcularAlturaFinal, 60);
+  setTimeout(somasCorpo, 70);
+  setTimeout(() => {
+    classificarOmbros();
+    ClassificarPeitoSeio();
+    classificarBraco();
+    classificarCintura();
+    classificarAbdomen();
+    classificarQuadril();
+    classificarBunda();
+    classificarCoxas();
+  }, 80);
+  setTimeout(PassarParaFinal, 90);
+});
+  AtualizarNature();
+  setTimeout(() => {
+    
+    SomarTotaisAtributos();
+  }, 10);
+  setTimeout(CalcularPVTotal, 20);
+  setTimeout(DarAtributosParaPericias, 30);
+  setTimeout(AtualizarTreinamentoPericias, 40);
+  setTimeout(PuxarPericiasParaCorpo, 50);
+  setTimeout(somasCorpo, 60);
+  setTimeout(() => {
+    classificarOmbros();
+    ClassificarPeitoSeio();
+    classificarBraco();
+    classificarCintura();
+    classificarAbdomen();
+    classificarQuadril();
+    classificarBunda();
+    classificarCoxas();
+  }, 70);
+  setTimeout(PassarParaFinal, 90);
+});
+  setTimeout(() => {
+    SomarTotaisAtributos();
+  }, 10);
+  setTimeout(DarAtributosParaPericias, 20);
+  setTimeout(AtualizarTreinamentoPericias, 30);
+  setTimeout(PuxarPericiasParaCorpo, 40);
+  setTimeout(somasCorpo, 50);
+  setTimeout(() => {
+    classificarOmbros();
+    ClassificarPeitoSeio();
+    classificarBraco();
+    classificarCintura();
+    classificarAbdomen();
+    classificarQuadril();
+    classificarBunda();
+    classificarCoxas();
+  }, 60);
+  setTimeout(PassarParaFinal, 90);
+});
+  PassarMovimentosParaFinal();
+  AtualizaMovimentoFinais();
             }
         }
 
