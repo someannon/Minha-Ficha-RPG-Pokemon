@@ -6234,9 +6234,9 @@ inputimgfun.addEventListener("change", function () {
             const character = characters.find(char => char.NomePer === selectedName);
 
             if (character) {
-                document.getElementById('NomePer').value = character.NomePer || '';
-                document.getElementById('Jogador').value = character.Jogador || '';
-                document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
+                document.getElementById('NomePer').value = character.NomePer;
+                document.getElementById('Jogador').value = character.Jogador;
+                document.getElementById('SeletorPokemon').value = character.SeletorPokemon;
               document.getElementById('Level').value = character.Level
               
             }
