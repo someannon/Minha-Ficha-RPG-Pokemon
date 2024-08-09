@@ -6173,118 +6173,89 @@ inputimgfun.addEventListener("change", function () {
       document.getElementById("Aba2").style.filter = "blur(4px)";
         };
                
-        <script>
-    // Função para definir um cookie
-    function setCookie(name, value, days) {
-        let expires = "";
-        if (days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiração em dias
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
-
-    // Função para obter o valor de um cookie
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for (let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    // Função para salvar dados do formulário no cookie
-    function saveFormData() {
-        const NomePer = document.getElementById('NomePer').value;
-        const Jogador = document.getElementById('Jogador').value;
-        const SeletorPokemon = document.getElementById('SeletorPokemon').value;
-
-        let characters = JSON.parse(getCookie('characters') || "[]");
-        
-        // Verifica se o personagem já existe e substitui-o
-        const existingCharacterIndex = characters.findIndex(char => char.NomePer === NomePer);
-        if (existingCharacterIndex > -1) {
-            characters[existingCharacterIndex] = { NomePer, Jogador, SeletorPokemon };
-        } else {
-            // Adiciona novo personagem
-            const newCharacter = { NomePer, Jogador, SeletorPokemon };
-            characters.push(newCharacter);
+<script>
+        // Função para definir um cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiração em dias
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
-        setCookie('characters', JSON.stringify(characters), 3650);
-        updateCharacterSelect();
-    }
-
-    // Função para carregar os dados do personagem selecionado
-    function loadSelectedCharacter() {
-        const characters = JSON.parse(getCookie('characters') || "[]");
-        const selectedName = document.getElementById('characterSelect').value;
-
-        const character = characters.find(char => char.NomePer === selectedName);
-
-        if (character) {
-            document.getElementById('NomePer').value = character.NomePer;
-            document.getElementById('Jogador').value = character.Jogador;
-            document.getElementById('SeletorPokemon').value = character.SeletorPokemon;
-        }
-    }
-
-    // Função para atualizar a lista de seleção de personagens
-    function updateCharacterSelect() {
-        const characters = JSON.parse(getCookie('characters') || "[]");
-        const select = document.getElementById('characterSelect');
-        
-        // Limpa as opções, exceto a primeira
-        select.innerHTML = '<option value="">Selecione um personagem</option>';
-        
-        // Adiciona as opções com os nomes dos personagens
-        characters.forEach(character => {
-            const option = document.createElement('option');
-            option.value = character.NomePer;
-            option.textContent = character.NomePer;
-            select.appendChild(option);
-        });
-    }
-
-    // Função para excluir um personagem
-    function deleteCharacter() {
-        const characters = JSON.parse(getCookie('characters') || "[]");
-        const selectedName = document.getElementById('characterSelect').value;
-
-        if (!selectedName) {
-            alert("Nenhum personagem selecionado para excluir.");
-            return;
+        // Função para obter o valor de um cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
         }
 
-        if (confirm("Tem certeza que deseja excluir este personagem?")) {
-            const updatedCharacters = characters.filter(char => char.NomePer !== selectedName);
-            setCookie('characters', JSON.stringify(updatedCharacters), 3650);
-            updateCharacterSelect();
+        // Função para salvar dados do formulário no cookie
+        function saveFormData() {
+            const NomePer = document.getElementById('NomePer').value;
+            const Jogador = document.getElementById('Jogador').value;
+            const SeletorPokemon = document.getElementById('SeletorPokemon').value;
             
-            // Limpa os campos do formulário
-            document.getElementById('NomePer').value = '';
-            document.getElementById('Jogador').value = '';
-            document.getElementById('SeletorPokemon').value = '';
+            let characters = JSON.parse(getCookie('characters') || "[]");
+            
+            const newCharacter = {
+                NomePer,
+                Jogador,
+                SeletorPokemon
+            };
+
+            characters.push(newCharacter);
+
+            setCookie('characters', JSON.stringify(characters), 3650);
+
+            updateCharacterSelect();
         }
-    }
 
-// Função para limpar todos os dados dos cookies
-    function clearAllData() {
-        document.cookie = 'characters=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
-        updateCharacterSelect();
-    }
+        // Função para carregar os dados do personagem selecionado
+        function loadSelectedCharacter() {
+            const characters = JSON.parse(getCookie('characters') || "[]");
+            const selectedName = document.getElementById('characterSelect').value;
 
-    // Configurar eventos
-    document.getElementById('characterSelect').addEventListener('change', loadSelectedCharacter);
-    document.getElementById('saveButton').addEventListener('click', saveFormData);
-    document.getElementById('deleteButton').addEventListener('click', deleteCharacter);
-    document.getElementById('clearButton').addEventListener('click', clearAllData);
+            const character = characters.find(char => char.NomePer === selectedName);
 
-    // Carregar a lista de personagens ao carregar a página
-    window.onload = updateCharacterSelect;
-</script>
+            if (character) {
+                document.getElementById('NomePer').value = character.NomePer || '';
+                document.getElementById('Jogador').value = character.Jogador || '';
+                document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
+            }
+        }
+
+        // Função para atualizar a lista de seleção de personagens
+        function updateCharacterSelect() {
+            const characters = JSON.parse(getCookie('characters') || "[]");
+            const select = document.getElementById('characterSelect');
+            
+            // Limpa as opções, exceto a primeira
+            select.innerHTML = '<option value="">Selecione um personagem</option>';
+            
+            // Adiciona as opções com os nomes dos personagens
+            characters.forEach(character => {
+                const option = document.createElement('option');
+                option.value = character.NomePer;
+                option.textContent = character.NomePer;
+                select.appendChild(option);
+            });
+        }
+
+        // Função para limpar todos os dados dos cookies
+        function clearAllData() {
+            document.cookie = 'characters=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+            updateCharacterSelect();
+        }
+        
+        // Carregar a lista de personagens ao carregar a página
+        window.onload = updateCharacterSelect;
+    </script>
 </div></center></body></html>
