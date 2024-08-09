@@ -971,6 +971,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   
 <center>
 <div id="Aba2">
+  <button onclick="deleteCharacter()" style="float: left">Deletar personagem</button>
     <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="">
         <br>
         <button onclick="saveFormData()">Salvar Personagem</button>
@@ -6213,6 +6214,12 @@ inputimgfun.addEventListener("change", function () {
             
             let characters = JSON.parse(getCookie('characters') || "[]");
             
+            // Verifica se o personagem já existe e substitui-o
+        const existingCharacterIndex = characters.findIndex(char => char.NomePer === NomePer);
+        if (existingCharacterIndex > -1) {
+            characters[existingCharacterIndex] = { NomePer, Jogador, SeletorPokemon };
+        } else {
+            
             const newCharacter = {
                 NomePer,
                 Jogador,
@@ -6221,7 +6228,7 @@ inputimgfun.addEventListener("change", function () {
               Sexo,
               Nature
               
-            };
+            }};
 
             characters.push(newCharacter);
 
@@ -6264,6 +6271,31 @@ inputimgfun.addEventListener("change", function () {
                 select.appendChild(option);
             });
         }
+        
+        // Função para excluir um personagem
+    function deleteCharacter() {
+        const characters = JSON.parse(getCookie('characters') || "[]");
+        const selectedName = document.getElementById('characterSelect').value;
+
+        if (!selectedName) {
+            alert("Nenhum personagem selecionado para excluir.");
+            return;
+        }
+
+        if (confirm("Tem certeza que deseja excluir este personagem?")) {
+            const updatedCharacters = characters.filter(char => char.NomePer !== selectedName);
+            setCookie('characters', JSON.stringify(updatedCharacters), 3650);
+            updateCharacterSelect();
+            
+            // Limpa os campos do formulário
+            document.getElementById('NomePer').value = '';
+            document.getElementById('Jogador').value = '';
+            document.getElementById('SeletorPokemon').value = '';
+            document.getElementById('Level').value = '';
+              document.getElementById('Sexo').value = '';
+              document.getElementById('Nature').value = '';
+        }
+    }
 
         // Função para limpar todos os dados dos cookies
         function clearAllData() {
