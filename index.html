@@ -979,7 +979,9 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
       <button onclick="loadFormData()">Carregar personagem</button>
       <br>
       <br>
-      <label for="characterSelect">Personagens salvos:</label><select id="characterSelect" oninput="loadSelectedCharacter()"></select>
+      <label for="characterSelect">Personagens salvos:</label><select id="characterSelect" oninput="loadSelectedCharacter()">
+        <option value="">Selecione um personagem</option>
+      </select>
   </nobr></p><h1><nobr>Meu RPG de Pokemon</nobr></h1><nobr>
 
 
@@ -6172,12 +6174,7 @@ inputimgfun.addEventListener("change", function () {
         };
                
         </script>
-        <script>
-    function fecharPersonalizacao() {
-      document.getElementById("Personalizacao").style.display = "none";
-      document.getElementById("Aba2").style.filter = "none";
-      };
-      <script>
+                              <script>
         // Função para definir um cookie
         function setCookie(name, value, days) {
             let expires = "";
@@ -6212,6 +6209,12 @@ inputimgfun.addEventListener("change", function () {
 
             
             let characters = JSON.parse(getCookie('characters') || "[]");
+            
+            // Verifica se o personagem já existe e substitui-o
+        const existingCharacterIndex = characters.findIndex(char => char.NomePer === NomePer);
+        if (existingCharacterIndex > -1) {
+            characters[existingCharacterIndex] = { NomePer, Jogador, SeletorPokemon };
+        } else {
             
             const newCharacter = {
                 NomePer,
@@ -6264,6 +6267,31 @@ inputimgfun.addEventListener("change", function () {
                 select.appendChild(option);
             });
         }
+        
+        // Função para excluir um personagem
+    function deleteCharacter() {
+        const characters = JSON.parse(getCookie('characters') || "[]");
+        const selectedName = document.getElementById('characterSelect').value;
+
+        if (!selectedName) {
+            alert("Nenhum personagem selecionado para excluir.");
+            return;
+        }
+
+        if (confirm("Tem certeza que deseja excluir este personagem?")) {
+            const updatedCharacters = characters.filter(char => char.NomePer !== selectedName);
+            setCookie('characters', JSON.stringify(updatedCharacters), 3650);
+            updateCharacterSelect();
+            
+            // Limpa os campos do formulário
+            document.getElementById('NomePer').value = '';
+            document.getElementById('Jogador').value = '';
+            document.getElementById('SeletorPokemon').value = '';
+            document.getElementById('Level').value = '';
+              document.getElementById('Sexo').value = '';
+              document.getElementById('Nature').value = '';
+        }
+    }
 
         // Função para limpar todos os dados dos cookies
         function clearAllData() {
