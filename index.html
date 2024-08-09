@@ -6213,7 +6213,12 @@ inputimgfun.addEventListener("change", function () {
             // Verifica se o personagem já existe e substitui-o
         const existingCharacterIndex = characters.findIndex(char => char.NomePer === NomePer);
         if (existingCharacterIndex > -1) {
-            characters[existingCharacterIndex] = { NomePer, Jogador, SeletorPokemon };
+            characters[existingCharacterIndex] = { NomePer,
+                Jogador,
+                SeletorPokemon,
+              Level,
+              Sexo,
+              Nature };
         } else {
             
             const newCharacter = {
