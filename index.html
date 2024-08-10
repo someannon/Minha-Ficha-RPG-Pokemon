@@ -6173,88 +6173,75 @@ inputimgfun.addEventListener("change", function () {
         };
                
 <script>
-        // Função para definir um cookie
-        function setCookie(name, value, days) {
-            let expires = "";
-            if (days) {
-                const date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Expiração em dias
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+}
 
-        // Função para obter o valor de um cookie
-        function getCookie(name) {
-            const nameEQ = name + "=";
-            const ca = document.cookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
+function saveCharacter() {
+    const namePer = document.getElementById('NomePer').value;
+    const jogador = document.getElementById('Jogador').value;
+    const seletorPokemon = document.getElementById('SeletorPokemon').value;
+    const level = document.getElementById('Level').value;
+    const sexo = document.getElementById('Sexo').value;
 
-        // Função para salvar dados do formulário no cookie
-        function saveFormData() {
-            const NomePer = document.getElementById('NomePer').value;
-            const Jogador = document.getElementById('Jogador').value;
-            const SeletorPokemon = document.getElementById('SeletorPokemon').value;
-            
-            let characters = JSON.parse(getCookie('characters') || "[]");
-            
-            const newCharacter = {
-                NomePer,
-                Jogador,
-                SeletorPokemon
-            };
+    const characterData = JSON.stringify({ jogador, seletorPokemon, level, sexo });
 
-            characters.push(newCharacter);
+    // Salva ou substitui o cookie com expiração de 10 anos (3650 dias)
+    setCookie(namePer, characterData, 3650);
+    updateCharacterSelect();
+}
 
-            setCookie('characters', JSON.stringify(characters), 3650);
+function loadCharacter() {
+    const select = document.getElementById('characterSelect');
+    const namePer = select.value;
 
-            updateCharacterSelect();
-        }
+    const characterData = getCookie(namePer);
+    if (characterData) {
+        const { jogador, seletorPokemon, level, sexo } = JSON.parse(characterData);
 
-        // Função para carregar os dados do personagem selecionado
-        function loadSelectedCharacter() {
-            const characters = JSON.parse(getCookie('characters') || "[]");
-            const selectedName = document.getElementById('characterSelect').value;
+        document.getElementById('NomePer').value = namePer;
+        document.getElementById('Jogador').value = jogador;
+        document.getElementById('SeletorPokemon').value = seletorPokemon;
+        document.getElementById('Level').value = level;
+        document.getElementById('Sexo').value = sexo;
+    }
+}
 
-            const character = characters.find(char => char.NomePer === selectedName);
+function updateCharacterSelect() {
+    const select = document.getElementById('characterSelect');
+    select.innerHTML = '';
 
-            if (character) {
-                document.getElementById('NomePer').value = character.NomePer || '';
-                document.getElementById('Jogador').value = character.Jogador || '';
-                document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
-            }
-        }
+    const cookies = document.cookie.split('; ');
+    cookies.forEach(cookie => {
+        const [cookieName, ] = cookie.split('=');
+        const name = decodeURIComponent(cookieName);
+        const option = document.createElement('option');
+        option.value = name;
+        option.text = name;
+        select.add(option);
+    });
+}
 
-        // Função para atualizar a lista de seleção de personagens
-        function updateCharacterSelect() {
-            const characters = JSON.parse(getCookie('characters') || "[]");
-            const select = document.getElementById('characterSelect');
-            
-            // Limpa as opções, exceto a primeira
-            select.innerHTML = '<option value="">Selecione um personagem</option>';
-            
-            // Adiciona as opções com os nomes dos personagens
-            characters.forEach(character => {
-                const option = document.createElement('option');
-                option.value = character.NomePer;
-                option.textContent = character.NomePer;
-                select.appendChild(option);
-            });
-        }
+function deleteCharacter() {
+    const select = document.getElementById('characterSelect');
+    const namePer = select.value;
 
-        // Função para limpar todos os dados dos cookies
-        function clearAllData() {
-            document.cookie = 'characters=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
-            updateCharacterSelect();
-        }
-        
-        // Carregar a lista de personagens ao carregar a página
-        window.onload = updateCharacterSelect;
+    if (confirm('Você tem certeza que deseja deletar este personagem?')) {
+        deleteCookie(namePer);
+        updateCharacterSelect();
+        // Limpa o formulário
+        document.getElementById('NomePer').value = '';
+        document.getElementById('Jogador').value = '';
+        document.getElementById('SeletorPokemon').value = '';
+        document.getElementById('Level').value = '';
+        document.getElementById('Sexo').value = '';
+    }
+}
+
+function deleteCookie(name) {
+    setCookie(name, '', -1);
+    
+    window.onload = updateCharacterSelect;
     </script>
 </div></center></body></html>
