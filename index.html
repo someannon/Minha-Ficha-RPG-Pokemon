@@ -6171,7 +6171,13 @@ inputimgfun.addEventListener("change", function () {
       document.getElementById("Personalizacao").style.display = "inline";
       document.getElementById("Aba2").style.filter = "blur(4px)";
         };
-      </script>               
+      </script>
+<script>
+function fecharPersonalizacao() {
+document.getElementById("Personalizacao").style.display = "none";
+      document.getElementById("Aba2").style.filter = "blur(0px)";
+}
+</script>               
 <script>
         // Função para definir um cookie
         function setCookie(name, value, days) {
