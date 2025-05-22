@@ -6013,7 +6013,7 @@ inputimgper.addEventListener("change", function () {
     document.getElementById("imgper").src = "data:image/png;base64," + base64Stringimgper;
      
 
-document.getElementById("imgperfinal").style.backgroundImage = 'url("' + "data:image/png;base64," + base64Stringimgper + '")';
+document.getElementById("imgperfinal").style.backgroundImage = document.getElementById("imgper").src;
      
 document.getElementById("imgperfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgper").value + '")'; 
      // Aqui está a representação Base64 do arquivo
