@@ -1,27 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-<style id="css">
-  @media all and (min-resolution: 264dpi) { 
-  body {
-  transform: scale(0.4);
-    transform-origin: top left;
-     width: 248%;
-    }
-  }
- 
-  body {
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: overlay;
-    background-position-x: center;
-    background-repeat: no;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-td[id="imgperfinal"], td[id="imgcorpfinal"] {
-border-radius: 50px;
-}
-  
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
   table[id="perfracorfinal"] {
   width: 100%;
 }
@@ -32,118 +9,128 @@ td[name="perfracorfinal"] {
   vertical-align: top;
 }
 div[class="tab"] {width: 96%; text-align: left; }
-
-  input[type="checkbox"] { vertical-align: middle; }
-
-  div { min-width: 720px; max-width: 96%; padding-top: 25px; line-height: 350%; text-align: center; font-size: 1.13em; }
-
-  p[id="DadosPessoais"], p[id="dadosfinais"] { text-align: center; font-size: 1.7em; }
-
-  label { font-size: 1.7em; font-weight: bold; }
-
-  input[type="number"], input[type="text"], input[type="list"], button, textarea { font-size: 1.7em; border: 0.2em outset; border-radius: 20px; border-top-style: none; border-right-style: none; border-color: red; padding-left: 0.5em; padding-right: 0.5em; }
-
-  input[type="text"] { width: 6em; }
-
-  input[id="NomePer"], input[id="nomefinal"] { width: 9em; }
-
-  input[id="Jogador"], input[id="Type1"], input[id="Type2"], input[id="type1final"], input[id="type2final"] { width: 6em; }
-
-  select { font-size: 1.7em; border: 0.2em outset; border-radius: 20px; border-top-style: none; border-right-style: none; border-color: red; padding-left: 0.5em; padding-right: 0.5em; }
-
-  input[id="SeletorPokemon"], input[id="pokemonfinal"] { width: 12em; }
-
-  select[id="Sexo"], input[id="sexofinal"] { width: 6.5em; }
-
-  input[type="number"] { width: 3.2em; text-align: center; }
-
-  input[id="DM1"], input[id="DM2"], input[id="DM3"], input[id="DM4"] { width: 4em; }
-
-  td[id="LHP"], td[id="LATK"], td[id="LDEF"], td[id="LSATK"], td[id="LSDEF"], td[id="LSPD"] { text-align: right; }
-
-  td[id="Mov"], td[id="Per"] { text-align: center; }
-
-  input[id="TipoM1"], input[id="TipoM2"], input[id="TipoM3"], input[id="TipoM4"], input[id="CM1"], input[id="CM2"], input[id="CM3"], input[id="CM4"] { width: 6em; }
-
-  td[id="Mov"] { width: 40%; }
-
-  table[id="MovA"] { width: 100%; }
-
-  input[readonly="readonly"] { border-color: white; }
-
-  td[id="Fl"] { Text-align: right; }
-
-  input[name="Fraquezas"] { width: 4em; Text-align: center;}
-
-  table[id="Per e Fra"], table[id="perfracorfinal"] { width: 100%; }
-
-  table[id="TCorpo"] { width: 100%; }
-
-  td[id="Per"], td[id="Fraquezas"] { vertical-align: top; }
-
-  input[type="checkbox"] { width: 1em; height: 1em; }
-
-  input[id="Level"], input[id="levelfinal"], input[id="PDist"] { width: 4em; }
-
-  input[name="selmovimento"] {width: 10em;}
-
-  img {
+input[type="checkbox"] { vertical-align: middle; }
+div { min-width: 720px; max-width: 96%; padding-top: 25px; line-height: 350%; text-align: center; font-size: 1.13em; }
+p[id="DadosPessoais"], p[id="dadosfinais"] { text-align: center; font-size: 1.7em; }
+label { font-size: 1.7em; font-weight: bold; }
+input[type="number"], input[type="text"], input[type="list"], button, textarea { font-size: 1.7em; border: 0.2em outset; border-radius: 20px; border-top-style: none; border-right-style: none; padding-left: 0.5em; padding-right: 0.5em; }
+input[type="text"] { width: 6em; }
+input[id="NomePer"], input[id="nomefinal"] { width: 9em; }
+input[id="Jogador"], input[id="Type1"], input[id="Type2"], input[id="type1final"], input[id="type2final"] { width: 6em; }
+select { font-size: 1.7em; border: 0.2em outset; border-radius: 20px; border-top-style: none; border-right-style: none; padding-left: 0.5em; padding-right: 0.5em; }
+input[id="SeletorPokemon"], input[id="pokemonfinal"] { width: 12em; }
+select[id="Sexo"], input[id="sexofinal"] { width: 6.5em; }
+input[type="number"] { width: 3.2em; text-align: center; }
+input[id="DM1"], input[id="DM2"], input[id="DM3"], input[id="DM4"] { width: 4em; }
+td[id="LHP"], td[id="LATK"], td[id="LDEF"], td[id="LSATK"], td[id="LSDEF"], td[id="LSPD"] { text-align: right; }
+td[id="Mov"], td[id="Per"] { text-align: center; }
+input[id="TipoM1"], input[id="TipoM2"], input[id="TipoM3"], input[id="TipoM4"], input[id="CM1"], input[id="CM2"], input[id="CM3"], input[id="CM4"] { width: 6em; }
+td[id="Mov"] { width: 40%; }
+table[id="MovA"] { width: 100%; }
+td[id="Fl"] { Text-align: right; }
+input[name="Fraquezas"] { width: 4em; Text-align: center;}
+table[id="Per e Fra"], table[id="perfracorfinal"] { width: 100%; }
+table[id="TCorpo"] { width: 100%; }
+td[id="Per"], td[id="Fraquezas"] { vertical-align: top; }
+input[type="checkbox"] { width: 1em; height: 1em; }
+input[id="Level"], input[id="levelfinal"], input[id="PDist"] { width: 4em; }
+input[name="selmovimento"] {width: 10em;}
+img {
   border-radius: 100px;
 }
 a {
     font-size: 1.7em; font-weight: bold; border-radius: 20px;
   }
-
-  a[id="type1final"], a[id="type2final"] {
+a[id="type1final"], a[id="type2final"] {
   color: black; border-width: 7px; border-style: solid; padding-left: 7px; padding-right: 7px;
 }
+input[id="M1"], input[id="M2"], input[id="M3"], input[id="M4"] { width: auto; }
 
-  input[id="M1"], input[id="M2"], input[id="M3"], input[id="M4"] { width: auto; }
+div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"] {width: 90%; height: 90%; left: 5%; right: 5%; overflow-y: auto; z-index: 10;}
 
-div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"] {width: 90%; height: 90%; left: 5%; right: 5%; overflow-y: auto; background-color: rgba(255, 255, 255, 0.8); z-index: 10;}
-
-@media (prefers-color-scheme: dark) {
-    body {
-    background-color: #242424;
-      color: #e6e6e6;
-      background-blend-mode: overlay;
+@media only screen and (max-device-width: 1080px) {
+  label {
+    font-size: 1.5em;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    height: 2em; width: 2em;
+  }
+  input[type="text"], input[type="number"], button, select {
+  border-radius: 30px;
+  
 }
-input, button, select, input[type="text"], input[type="number"], textarea {
+  div {
+    font-size: 1.7em;
+  }
+  td {
+    font-size: 2em;
+  }
+  div {
+    width: 96%;
+  }
+  th {
+    font-size: 2em;
+  }
+  a {
+    font-size: 1.5em;
+  }
+  a[id="type1final"], a[id="type2final"] {
+    padding-left: 11px; padding-right: 11px; border-radius: 30px;
+}
+}
+
+  
+
+
+    body.darkTheme {
+    background-color: #242424; color: #e6e6e6;}
+    
+    .darkTheme input, .darkTheme button, .darkTheme select, .darkTheme input[type="text"], .darkTheme input[type="number"], .darkTheme textarea {
     background-color: #242424; color: #e6e6e6; border-color: #9850d0;
-}
-input[readonly="readonly"] {
+    }
+    .darkTheme input[readonly="readonly"] {
     border-color: black;
 }
-img {
+.darkTheme img {
   filter: brightness(0.8);
 }
-a[id="type1final"], a[id="type2final"] {
+.darkTheme a[id="type1final"], .darkTheme a[id="type2final"] {
   color: #e6e6e6; border-width: 50%; border-style: solid; padding-left: 7px; padding-right: 7px;
 }
-div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"] {background-color: rgba(0, 0, 0, 0.8);}
-
+.darkTheme div[id="DadosPessoais"], .darkTheme div[id="Per"], .darkTheme div[id="Corpo"], .darkTheme div[id="Personalizacao"] {background-color: rgba(0, 0, 0, 0.8);}
     
- 
-</style>
-</head>
-  <body id="container">
-    <center>
-  <div id="DadosPessoais" onload="popularSelectPokemon()" style="display: none; position: fixed;">
+    .lightTheme input, .lightTheme button, .lightTheme select, .lightTheme input[type="text"], .lightTheme input[type="number"], .lightTheme textarea {
+    border-color: red;
+}
+.lightTheme input[readonly="readonly"] {
+    border-color: white;
+}
+.lightTheme img {
+  filter: brightness(0.8);
+}
+.lightTheme a[id="type1final"], .lightTheme a[id="type2final"] {
+  color: black; border-width: 50%; border-style: solid; padding-left: 7px; padding-right: 7px;
+}
+.lightTheme div[id="DadosPessoais"], .lightTheme div[id="Per"], .lightTheme div[id="Corpo"], .lightTheme div[id="Personalizacao"] {background-color: rgba(255, 255, 255, 0.8);}
+</style></head><body id="container" class="lightTheme"><center>
+    <div style="z-index:-10; pointer-events: none; position: fixed; width: 100%; height: 100%; text-align: center; padding-top: 0px; line-height: 350%">
+  <img style="z-index:-10; opacity:30%; text-align: center; margin-left: 50%; transform: translateX(-50%); max-height: 100%; object-fit: cover;" id="imgfunfinal" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  </div>
+  </center>
+<center>
+  <div id="DadosPessoais" style="display: none; position: fixed;">
   <center>
     <h1>Inserção de Dados</h1>
     </center>
 <nobr>
-  <label for="NomePer">Personagem:</label><input oninput="PassarParaFinal()" type="text" id="NomePer">
+  <label for="NomePer">Personagem:</label><input oninput="PassarParaFinal()" type="text" id="NomePer" value="">
   </nobr>
 
 <nobr>
-  <label for="Pokemon">Pokemon:</label><input type="text" id="SeletorPokemon" list="Pokemon" onload="popularSelectPokemon()" oninput="popularAtributos; SomarTotaisAtributos(); popularTipos; AtualizarTreinamentoPericias()">
+  <label for="Pokemon">Pokemon:</label><input type="text" id="SeletorPokemon" list="Pokemon" oninput="popularSelectPokemon(); SomarTotaisAtributos(); AtualizarTreinamentoPericias()" value="bulba">
   <datalist id="Pokemon">
-
-  <option value="---">---</option><option value="Bulbasaur">Bulbasaur</option><option value="Ivysaur">Ivysaur</option><option value="Venusaur">Venusaur</option><option value="Venusaur-Gigantamax">Venusaur-Gigantamax</option><option value="Venusaur-Mega">Venusaur-Mega</option><option value="Charmander">Charmander</option><option value="Charmeleon">Charmeleon</option><option value="Charizard-Mega-X">Charizard-Mega-X</option><option value="Charizard">Charizard</option><option value="Charizard-Gigantamax">Charizard-Gigantamax</option><option value="Charizard-Mega-Y">Charizard-Mega-Y</option><option value="Squirtle">Squirtle</option><option value="Wartortle">Wartortle</option><option value="Blastoise">Blastoise</option><option value="Blastoise-Gigantamax">Blastoise-Gigantamax</option><option value="Blastoise-Mega">Blastoise-Mega</option><option value="Caterpie">Caterpie</option><option value="Metapod">Metapod</option><option value="Butterfree">Butterfree</option><option value="Butterfree-Gigantamax">Butterfree-Gigantamax</option><option value="Weedle">Weedle</option><option value="Kakuna">Kakuna</option><option value="Beedrill">Beedrill</option><option value="Beedrill-Mega">Beedrill-Mega</option><option value="Pidgey">Pidgey</option><option value="Pidgeotto">Pidgeotto</option><option value="Pidgeot">Pidgeot</option><option value="Pidgeot-Mega">Pidgeot-Mega</option><option value="Rattata">Rattata</option><option value="Rattata-Alolan">Rattata-Alolan</option><option value="Raticate">Raticate</option><option value="Raticate-Alolan">Raticate-Alolan</option><option value="Spearow">Spearow</option><option value="Fearow">Fearow</option><option value="Ekans">Ekans</option><option value="Arbok">Arbok</option><option value="Pikachu">Pikachu</option><option value="Pikachu-Lets-Go">Pikachu-Lets-Go</option><option value="Pikachu-Gigantamax">Pikachu-Gigantamax</option><option value="Raichu">Raichu</option><option value="Raichu-Alolan">Raichu-Alolan</option><option value="Sandshrew-Alolan">Sandshrew-Alolan</option><option value="Sandshrew">Sandshrew</option><option value="Sandslash-Alolan">Sandslash-Alolan</option><option value="Sandslash">Sandslash</option><option value="Nidoran-F">Nidoran-F</option><option value="Nidorina">Nidorina</option><option value="Nidoqueen">Nidoqueen</option><option value="Nidoran-M">Nidoran-M</option><option value="Nidorino">Nidorino</option><option value="Nidoking">Nidoking</option><option value="Clefairy">Clefairy</option><option value="Clefable">Clefable</option><option value="Vulpix">Vulpix</option><option value="Vulpix-Alolan">Vulpix-Alolan</option><option value="Ninetales">Ninetales</option><option value="Ninetales-Alolan">Ninetales-Alolan</option><option value="Jigglypuff">Jigglypuff</option><option value="Wigglytuff">Wigglytuff</option><option value="Zubat">Zubat</option><option value="Golbat">Golbat</option><option value="Oddish">Oddish</option><option value="Gloom">Gloom</option><option value="Vileplume">Vileplume</option><option value="Paras">Paras</option><option value="Parasect">Parasect</option><option value="Venonat">Venonat</option><option value="Venomoth">Venomoth</option><option value="Diglett">Diglett</option><option value="Diglett-Alolan">Diglett-Alolan</option><option value="Dugtrio">Dugtrio</option><option value="Dugtrio-Alolan">Dugtrio-Alolan</option><option value="Meowth-Galarian">Meowth-Galarian</option><option value="Meowth">Meowth</option><option value="Meowth-Gigantamax">Meowth-Gigantamax</option><option value="Meowth-Alolan">Meowth-Alolan</option><option value="Persian">Persian</option><option value="Persian-Alolan">Persian-Alolan</option><option value="Psyduck">Psyduck</option><option value="Golduck">Golduck</option><option value="Mankey">Mankey</option><option value="Primeape">Primeape</option><option value="Growlithe">Growlithe</option><option value="Growlithe-Hisuian">Growlithe-Hisuian</option><option value="Arcanine">Arcanine</option><option value="Arcanine-Hisuian">Arcanine-Hisuian</option><option value="Poliwag">Poliwag</option><option value="Poliwhirl">Poliwhirl</option><option value="Poliwrath">Poliwrath</option><option value="Abra">Abra</option><option value="Kadabra">Kadabra</option><option value="Alakazam">Alakazam</option><option value="Alakazam-Mega">Alakazam-Mega</option><option value="Machop">Machop</option><option value="Machoke">Machoke</option><option value="Machamp">Machamp</option><option value="Machamp-Gigantamax">Machamp-Gigantamax</option><option value="Bellsprout">Bellsprout</option><option value="Weepinbell">Weepinbell</option><option value="Victreebel">Victreebel</option><option value="Tentacool">Tentacool</option><option value="Tentacruel">Tentacruel</option><option value="Geodude-Alolan">Geodude-Alolan</option><option value="Geodude">Geodude</option><option value="Graveler-Alolan">Graveler-Alolan</option><option value="Graveler">Graveler</option><option value="Golem-Alolan">Golem-Alolan</option><option value="Golem">Golem</option><option value="Ponyta">Ponyta</option><option value="Ponyta-Galarian">Ponyta-Galarian</option><option value="Rapidash">Rapidash</option><option value="Rapidash-Galarian">Rapidash-Galarian</option><option value="Slowpoke">Slowpoke</option><option value="Slowpoke-Galarian">Slowpoke-Galarian</option><option value="Slowbro">Slowbro</option><option value="Slowbro-Mega">Slowbro-Mega</option><option value="Slowbro-Galarian">Slowbro-Galarian</option><option value="Magnemite">Magnemite</option><option value="Magneton">Magneton</option><option value="Farfetchd-Galarian">Farfetchd-Galarian</option><option value="Farfetchd">Farfetchd</option><option value="Doduo">Doduo</option><option value="Dodrio">Dodrio</option><option value="Seel">Seel</option><option value="Dewgong">Dewgong</option><option value="Grimer">Grimer</option><option value="Grimer-Alolan">Grimer-Alolan</option><option value="Muk">Muk</option><option value="Muk-Alolan">Muk-Alolan</option><option value="Shellder">Shellder</option><option value="Cloyster">Cloyster</option><option value="Gastly">Gastly</option><option value="Haunter">Haunter</option><option value="Gengar">Gengar</option><option value="Gengar-Mega">Gengar-Mega</option><option value="Gengar-Gigantamax">Gengar-Gigantamax</option><option value="Onix">Onix</option><option value="Drowzee">Drowzee</option><option value="Hypno">Hypno</option><option value="Krabby">Krabby</option><option value="Kingler">Kingler</option><option value="Kingler-Gigantamax">Kingler-Gigantamax</option><option value="Voltorb">Voltorb</option><option value="Voltorb-Hisuian">Voltorb-Hisuian</option><option value="Electrode">Electrode</option><option value="Electrode-Hisuian">Electrode-Hisuian</option><option value="Exeggcute">Exeggcute</option><option value="Exeggutor-Alolan">Exeggutor-Alolan</option><option value="Exeggutor">Exeggutor</option><option value="Cubone">Cubone</option><option value="Marowak-Alolan">Marowak-Alolan</option><option value="Marowak">Marowak</option><option value="Hitmonlee">Hitmonlee</option><option value="Hitmonchan">Hitmonchan</option><option value="Lickitung">Lickitung</option><option value="Koffing">Koffing</option><option value="Weezing">Weezing</option><option value="Weezing-Galarian">Weezing-Galarian</option><option value="Rhyhorn">Rhyhorn</option><option value="Rhydon">Rhydon</option><option value="Chansey">Chansey</option><option value="Tangela">Tangela</option><option value="Kangaskhan">Kangaskhan</option><option value="Kangaskhan-Mega">Kangaskhan-Mega</option><option value="Horsea">Horsea</option><option value="Seadra">Seadra</option><option value="Goldeen">Goldeen</option><option value="Seaking">Seaking</option><option value="Staryu">Staryu</option><option value="Starmie">Starmie</option><option value="Mr-Mime">Mr-Mime</option><option value="Mr-Mime-Galarian">Mr-Mime-Galarian</option><option value="Scyther">Scyther</option><option value="Jynx">Jynx</option><option value="Electabuzz">Electabuzz</option><option value="Magmar">Magmar</option><option value="Pinsir">Pinsir</option><option value="Pinsir-Mega">Pinsir-Mega</option><option value="Tauros">Tauros</option><option value="Magikarp">Magikarp</option><option value="Gyarados-Mega">Gyarados-Mega</option><option value="Gyarados">Gyarados</option><option value="Lapras">Lapras</option><option value="Lapras-Gigantamax">Lapras-Gigantamax</option><option value="Ditto">Ditto</option><option value="Eevee">Eevee</option><option value="Eevee-Lets-Go">Eevee-Lets-Go</option><option value="Eevee-Gigantamax">Eevee-Gigantamax</option><option value="Vaporeon">Vaporeon</option><option value="Jolteon">Jolteon</option><option value="Flareon">Flareon</option><option value="Porygon">Porygon</option><option value="Omanyte">Omanyte</option><option value="Omastar">Omastar</option><option value="Kabuto">Kabuto</option><option value="Kabutops">Kabutops</option><option value="Aerodactyl">Aerodactyl</option><option value="Aerodactyl-Mega">Aerodactyl-Mega</option><option value="Snorlax">Snorlax</option><option value="Snorlax-Gigantamax">Snorlax-Gigantamax</option><option value="Articuno">Articuno</option><option value="Articuno-Galarian">Articuno-Galarian</option><option value="Zapdos">Zapdos</option><option value="Zapdos-Galarian">Zapdos-Galarian</option><option value="Moltres">Moltres</option><option value="Moltres-Galarian">Moltres-Galarian</option><option value="Dratini">Dratini</option><option value="Dragonair">Dragonair</option><option value="Dragonite">Dragonite</option><option value="Mewtwo">Mewtwo</option><option value="Mewtwo-Mega-Y">Mewtwo-Mega-Y</option><option value="Mewtwo-Mega-X">Mewtwo-Mega-X</option><option value="Mew">Mew</option><option value="Chikorita">Chikorita</option><option value="Bayleef">Bayleef</option><option value="Meganium">Meganium</option><option value="Cyndaquil">Cyndaquil</option><option value="Quilava">Quilava</option><option value="Typhlosion">Typhlosion</option><option value="Typhlosion-Hisuian">Typhlosion-Hisuian</option><option value="Totodile">Totodile</option><option value="Croconaw">Croconaw</option><option value="Feraligatr">Feraligatr</option><option value="Sentret">Sentret</option><option value="Furret">Furret</option><option value="Hoothoot">Hoothoot</option><option value="Noctowl">Noctowl</option><option value="Ledyba">Ledyba</option><option value="Ledian">Ledian</option><option value="Spinarak">Spinarak</option><option value="Ariados">Ariados</option><option value="Crobat">Crobat</option><option value="Chinchou">Chinchou</option><option value="Lanturn">Lanturn</option><option value="Pichu">Pichu</option><option value="Cleffa">Cleffa</option><option value="Igglybuff">Igglybuff</option><option value="Togepi">Togepi</option><option value="Togetic">Togetic</option><option value="Natu">Natu</option><option value="Xatu">Xatu</option><option value="Mareep">Mareep</option><option value="Flaaffy">Flaaffy</option><option value="Ampharos">Ampharos</option><option value="Ampharos-Mega">Ampharos-Mega</option><option value="Bellossom">Bellossom</option><option value="Marill">Marill</option><option value="Azumarill">Azumarill</option><option value="Sudowoodo">Sudowoodo</option><option value="Politoed">Politoed</option><option value="Hoppip">Hoppip</option><option value="Skiploom">Skiploom</option><option value="Jumpluff">Jumpluff</option><option value="Aipom">Aipom</option><option value="Sunkern">Sunkern</option><option value="Sunflora">Sunflora</option><option value="Yanma">Yanma</option><option value="Wooper">Wooper</option><option value="Quagsire">Quagsire</option><option value="Espeon">Espeon</option><option value="Umbreon">Umbreon</option><option value="Murkrow">Murkrow</option><option value="Slowking">Slowking</option><option value="Misdreavus">Misdreavus</option><option value="Unown">Unown</option><option value="Wobbuffet">Wobbuffet</option><option value="Girafarig">Girafarig</option><option value="Pineco">Pineco</option><option value="Forretress">Forretress</option><option value="Dunsparce">Dunsparce</option><option value="Gligar">Gligar</option><option value="Steelix">Steelix</option><option value="Steelix-Mega">Steelix-Mega</option><option value="Snubbull">Snubbull</option><option value="Granbull">Granbull</option><option value="Qwilfish">Qwilfish</option><option value="Qwilfish-Hisuian">Qwilfish-Hisuian</option><option value="Scizor">Scizor</option><option value="Scizor-Mega">Scizor-Mega</option><option value="Shuckle">Shuckle</option><option value="Heracross">Heracross</option><option value="Heracross-Mega">Heracross-Mega</option><option value="Sneasel">Sneasel</option><option value="Sneasel-Hisuian">Sneasel-Hisuian</option><option value="Teddiursa">Teddiursa</option><option value="Ursaring">Ursaring</option><option value="Slugma">Slugma</option><option value="Magcargo">Magcargo</option><option value="Swinub">Swinub</option><option value="Piloswine">Piloswine</option><option value="Corsola">Corsola</option><option value="Remoraid">Remoraid</option><option value="Octillery">Octillery</option><option value="Delibird">Delibird</option><option value="Mantine">Mantine</option><option value="Skarmory">Skarmory</option><option value="Houndour">Houndour</option><option value="Houndoom">Houndoom</option><option value="Houndoom-Mega">Houndoom-Mega</option><option value="Kingdra">Kingdra</option><option value="Phanpy">Phanpy</option><option value="Donphan">Donphan</option><option value="Porygon2">Porygon2</option><option value="Stantler">Stantler</option><option value="Smeargle">Smeargle</option><option value="Tyrogue">Tyrogue</option><option value="Hitmontop">Hitmontop</option><option value="Smoochum">Smoochum</option><option value="Elekid">Elekid</option><option value="Magby">Magby</option><option value="Miltank">Miltank</option><option value="Blissey">Blissey</option><option value="Raikou">Raikou</option><option value="Entei">Entei</option><option value="Suicune">Suicune</option><option value="Larvitar">Larvitar</option><option value="Pupitar">Pupitar</option><option value="Tyranitar">Tyranitar</option><option value="Tyranitar-Mega">Tyranitar-Mega</option><option value="Lugia">Lugia</option><option value="Ho-Oh">Ho-Oh</option><option value="Celebi">Celebi</option><option value="Treecko">Treecko</option><option value="Grovyle">Grovyle</option><option value="Sceptile">Sceptile</option><option value="Sceptile-Mega">Sceptile-Mega</option><option value="Torchic">Torchic</option><option value="Combusken">Combusken</option><option value="Blaziken">Blaziken</option><option value="Blaziken-Mega">Blaziken-Mega</option><option value="Mudkip">Mudkip</option><option value="Marshtomp">Marshtomp</option><option value="Swampert">Swampert</option><option value="Swampert-Mega">Swampert-Mega</option><option value="Poochyena">Poochyena</option><option value="Mightyena">Mightyena</option><option value="Zigzagoon">Zigzagoon</option><option value="Zigzagoon-Galarian">Zigzagoon-Galarian</option><option value="Linoone">Linoone</option><option value="Linoone-Galarian">Linoone-Galarian</option><option value="Wurmple">Wurmple</option><option value="Silcoon">Silcoon</option><option value="Beautifly">Beautifly</option><option value="Cascoon">Cascoon</option><option value="Dustox">Dustox</option><option value="Lotad">Lotad</option><option value="Lombre">Lombre</option><option value="Ludicolo">Ludicolo</option><option value="Seedot">Seedot</option><option value="Nuzleaf">Nuzleaf</option><option value="Shiftry">Shiftry</option><option value="Taillow">Taillow</option><option value="Swellow">Swellow</option><option value="Wingull">Wingull</option><option value="Pelipper">Pelipper</option><option value="Ralts">Ralts</option><option value="Kirlia">Kirlia</option><option value="Gardevoir">Gardevoir</option><option value="Gardevoir-Mega">Gardevoir-Mega</option><option value="Surskit">Surskit</option><option value="Masquerain">Masquerain</option><option value="Shroomish">Shroomish</option><option value="Breloom">Breloom</option><option value="Slakoth">Slakoth</option><option value="Vigoroth">Vigoroth</option><option value="Slaking">Slaking</option><option value="Nincada">Nincada</option><option value="Ninjask">Ninjask</option><option value="Shedinja">Shedinja</option><option value="Whismur">Whismur</option><option value="Loudred">Loudred</option><option value="Exploud">Exploud</option><option value="Makuhita">Makuhita</option><option value="Hariyama">Hariyama</option><option value="Azurill">Azurill</option><option value="Nosepass">Nosepass</option><option value="Skitty">Skitty</option><option value="Delcatty">Delcatty</option><option value="Sableye">Sableye</option><option value="Sableye-Mega">Sableye-Mega</option><option value="Mawile">Mawile</option><option value="Mawile-Mega">Mawile-Mega</option><option value="Aron">Aron</option><option value="Lairon">Lairon</option><option value="Aggron-Mega">Aggron-Mega</option><option value="Aggron">Aggron</option><option value="Meditite">Meditite</option><option value="Medicham">Medicham</option><option value="Medicham-Mega">Medicham-Mega</option><option value="Electrike">Electrike</option><option value="Manectric">Manectric</option><option value="Manectric-Mega">Manectric-Mega</option><option value="Plusle">Plusle</option><option value="Minun">Minun</option><option value="Volbeat">Volbeat</option><option value="Illumise">Illumise</option><option value="Roselia">Roselia</option><option value="Gulpin">Gulpin</option><option value="Swalot">Swalot</option><option value="Carvanha">Carvanha</option><option value="Sharpedo">Sharpedo</option><option value="Sharpedo-Mega">Sharpedo-Mega</option><option value="Wailmer">Wailmer</option><option value="Wailord">Wailord</option><option value="Numel">Numel</option><option value="Camerupt">Camerupt</option><option value="Camerupt-Mega">Camerupt-Mega</option><option value="Torkoal">Torkoal</option><option value="Spoink">Spoink</option><option value="Grumpig">Grumpig</option><option value="Spinda">Spinda</option><option value="Trapinch">Trapinch</option><option value="Vibrava">Vibrava</option><option value="Flygon">Flygon</option><option value="Cacnea">Cacnea</option><option value="Cacturne">Cacturne</option><option value="Swablu">Swablu</option><option value="Altaria-Mega">Altaria-Mega</option><option value="Altaria">Altaria</option><option value="Zangoose">Zangoose</option><option value="Seviper">Seviper</option><option value="Lunatone">Lunatone</option><option value="Solrock">Solrock</option><option value="Barboach">Barboach</option><option value="Whiscash">Whiscash</option><option value="Corphish">Corphish</option><option value="Crawdaunt">Crawdaunt</option><option value="Baltoy">Baltoy</option><option value="Claydol">Claydol</option><option value="Lileep">Lileep</option><option value="Cradily">Cradily</option><option value="Anorith">Anorith</option><option value="Armaldo">Armaldo</option><option value="Feebas">Feebas</option><option value="Milotic">Milotic</option><option value="Castform">Castform</option><option value="Kecleon">Kecleon</option><option value="Shuppet">Shuppet</option><option value="Banette">Banette</option><option value="Banette-Mega">Banette-Mega</option><option value="Duskull">Duskull</option><option value="Dusclops">Dusclops</option><option value="Tropius">Tropius</option><option value="Chimecho">Chimecho</option><option value="Absol">Absol</option><option value="Absol-Mega">Absol-Mega</option><option value="Wynaut">Wynaut</option><option value="Snorunt">Snorunt</option><option value="Glalie">Glalie</option><option value="Glalie-Mega">Glalie-Mega</option><option value="Spheal">Spheal</option><option value="Sealeo">Sealeo</option><option value="Walrein">Walrein</option><option value="Clamperl">Clamperl</option><option value="Huntail">Huntail</option><option value="Gorebyss">Gorebyss</option><option value="Relicanth">Relicanth</option><option value="Luvdisc">Luvdisc</option><option value="Bagon">Bagon</option><option value="Shelgon">Shelgon</option><option value="Salamence">Salamence</option><option value="Salamence-Mega">Salamence-Mega</option><option value="Beldum">Beldum</option><option value="Metang">Metang</option><option value="Metagross">Metagross</option><option value="Metagross-Mega">Metagross-Mega</option><option value="Regirock">Regirock</option><option value="Regice">Regice</option><option value="Registeel">Registeel</option><option value="Latias">Latias</option><option value="Latias-Mega">Latias-Mega</option><option value="Latios">Latios</option><option value="Latios-Mega">Latios-Mega</option><option value="Kyogre">Kyogre</option><option value="Kyogre-Primal">Kyogre-Primal</option><option value="Groudon">Groudon</option><option value="Groudon-Primal">Groudon-Primal</option><option value="Rayquaza">Rayquaza</option><option value="Rayquaza-Mega">Rayquaza-Mega</option><option value="Jirachi">Jirachi</option><option value="Deoxys-Normal">Deoxys-Normal</option><option value="Deoxys-Attack">Deoxys-Attack</option><option value="Deoxys-Defense">Deoxys-Defense</option><option value="Deoxys-Speed">Deoxys-Speed</option><option value="Turtwig">Turtwig</option><option value="Grotle">Grotle</option><option value="Torterra">Torterra</option><option value="Chimchar">Chimchar</option><option value="Monferno">Monferno</option><option value="Infernape">Infernape</option><option value="Piplup">Piplup</option><option value="Prinplup">Prinplup</option><option value="Empoleon">Empoleon</option><option value="Starly">Starly</option><option value="Staravia">Staravia</option><option value="Staraptor">Staraptor</option><option value="Bidoof">Bidoof</option><option value="Bibarel">Bibarel</option><option value="Kricketot">Kricketot</option><option value="Kricketune">Kricketune</option><option value="Shinx">Shinx</option><option value="Luxio">Luxio</option><option value="Luxray">Luxray</option><option value="Budew">Budew</option><option value="Roserade">Roserade</option><option value="Cranidos">Cranidos</option><option value="Rampardos">Rampardos</option><option value="Shieldon">Shieldon</option><option value="Bastiodon">Bastiodon</option><option value="Burmy">Burmy</option><option value="Wormadam-Plant">Wormadam-Plant</option><option value="Wormadam-Trash">Wormadam-Trash</option><option value="Wormadam-Sandy">Wormadam-Sandy</option><option value="Mothim">Mothim</option><option value="Combee">Combee</option><option value="Vespiquen">Vespiquen</option><option value="Pachirisu">Pachirisu</option><option value="Buizel">Buizel</option><option value="Floatzel">Floatzel</option><option value="Cherubi">Cherubi</option><option value="Cherrim">Cherrim</option><option value="Shellos">Shellos</option><option value="Gastrodon">Gastrodon</option><option value="Ambipom">Ambipom</option><option value="Drifloon">Drifloon</option><option value="Drifblim">Drifblim</option><option value="Buneary">Buneary</option><option value="Lopunny">Lopunny</option><option value="Lopunny-Mega">Lopunny-Mega</option><option value="Mismagius">Mismagius</option><option value="Honchkrow">Honchkrow</option><option value="Glameow">Glameow</option><option value="Purugly">Purugly</option><option value="Chingling">Chingling</option><option value="Stunky">Stunky</option><option value="Skuntank">Skuntank</option><option value="Bronzor">Bronzor</option><option value="Bronzong">Bronzong</option><option value="Bonsly">Bonsly</option><option value="Mime-Jr">Mime-Jr</option><option value="Happiny">Happiny</option><option value="Chatot">Chatot</option><option value="Spiritomb">Spiritomb</option><option value="Gible">Gible</option><option value="Gabite">Gabite</option><option value="Garchomp">Garchomp</option><option value="Garchomp-Mega">Garchomp-Mega</option><option value="Munchlax">Munchlax</option><option value="Riolu">Riolu</option><option value="Lucario">Lucario</option><option value="Lucario-Mega">Lucario-Mega</option><option value="Hippopotas">Hippopotas</option><option value="Hippowdon">Hippowdon</option><option value="Skorupi">Skorupi</option><option value="Drapion">Drapion</option><option value="Croagunk">Croagunk</option><option value="Toxicroak">Toxicroak</option><option value="Carnivine">Carnivine</option><option value="Finneon">Finneon</option><option value="Lumineon">Lumineon</option><option value="Mantyke">Mantyke</option><option value="Snover">Snover</option><option value="Abomasnow">Abomasnow</option><option value="Abomasnow-Mega">Abomasnow-Mega</option><option value="Weavile">Weavile</option><option value="Magnezone">Magnezone</option><option value="Lickilicky">Lickilicky</option><option value="Rhyperior">Rhyperior</option><option value="Tangrowth">Tangrowth</option><option value="Electivire">Electivire</option><option value="Magmortar">Magmortar</option><option value="Togekiss">Togekiss</option><option value="Yanmega">Yanmega</option><option value="Leafeon">Leafeon</option><option value="Glaceon">Glaceon</option><option value="Gliscor">Gliscor</option><option value="Mamoswine">Mamoswine</option><option value="Porygon-Z">Porygon-Z</option><option value="Gallade">Gallade</option><option value="Gallade-Mega">Gallade-Mega</option><option value="Probopass">Probopass</option><option value="Dusknoir">Dusknoir</option><option value="Froslass">Froslass</option><option value="Rotom-Wash">Rotom-Wash</option><option value="Rotom">Rotom</option><option value="Rotom-Heat">Rotom-Heat</option><option value="Rotom-Frost">Rotom-Frost</option><option value="Rotom-Mow">Rotom-Mow</option><option value="Rotom-Fan">Rotom-Fan</option><option value="Uxie">Uxie</option><option value="Mesprit">Mesprit</option><option value="Azelf">Azelf</option><option value="Dialga">Dialga</option><option value="Palkia">Palkia</option><option value="Heatran">Heatran</option><option value="Regigigas">Regigigas</option><option value="Giratina-Altered">Giratina-Altered</option><option value="Giratina-Origin">Giratina-Origin</option><option value="Cresselia">Cresselia</option><option value="Phione">Phione</option><option value="Manaphy">Manaphy</option><option value="Darkrai">Darkrai</option><option value="Shaymin-Land">Shaymin-Land</option><option value="Shaymin-Sky">Shaymin-Sky</option><option value="Arceus">Arceus</option><option value="Victini">Victini</option><option value="Snivy">Snivy</option><option value="Servine">Servine</option><option value="Serperior">Serperior</option><option value="Tepig">Tepig</option><option value="Pignite">Pignite</option><option value="Emboar">Emboar</option><option value="Oshawott">Oshawott</option><option value="Dewott">Dewott</option><option value="Samurott">Samurott</option><option value="Samurott-Hisuian">Samurott-Hisuian</option><option value="Patrat">Patrat</option><option value="Watchog">Watchog</option><option value="Lillipup">Lillipup</option><option value="Herdier">Herdier</option><option value="Stoutland">Stoutland</option><option value="Purrloin">Purrloin</option><option value="Liepard">Liepard</option><option value="Pansage">Pansage</option><option value="Simisage">Simisage</option><option value="Pansear">Pansear</option><option value="Simisear">Simisear</option><option value="Panpour">Panpour</option><option value="Simipour">Simipour</option><option value="Munna">Munna</option><option value="Musharna">Musharna</option><option value="Pidove">Pidove</option><option value="Tranquill">Tranquill</option><option value="Unfezant">Unfezant</option><option value="Blitzle">Blitzle</option><option value="Zebstrika">Zebstrika</option><option value="Roggenrola">Roggenrola</option><option value="Boldore">Boldore</option><option value="Gigalith">Gigalith</option><option value="Woobat">Woobat</option><option value="Swoobat">Swoobat</option><option value="Drilbur">Drilbur</option><option value="Excadrill">Excadrill</option><option value="Audino">Audino</option><option value="Audino-Mega">Audino-Mega</option><option value="Timburr">Timburr</option><option value="Gurdurr">Gurdurr</option><option value="Conkeldurr">Conkeldurr</option><option value="Tympole">Tympole</option><option value="Palpitoad">Palpitoad</option><option value="Seismitoad">Seismitoad</option><option value="Throh">Throh</option><option value="Sawk">Sawk</option><option value="Sewaddle">Sewaddle</option><option value="Swadloon">Swadloon</option><option value="Leavanny">Leavanny</option><option value="Venipede">Venipede</option><option value="Whirlipede">Whirlipede</option><option value="Scolipede">Scolipede</option><option value="Cottonee">Cottonee</option><option value="Whimsicott">Whimsicott</option><option value="Petilil">Petilil</option><option value="Lilligant">Lilligant</option><option value="Lilligant-Hisuian">Lilligant-Hisuian</option><option value="Basculin-Blue-Striped">Basculin-Blue-Striped</option><option value="Basculin-Red-Striped">Basculin-Red-Striped</option><option value="Basculin-White-Striped">Basculin-White-Striped</option><option value="Sandile">Sandile</option><option value="Krokorok">Krokorok</option><option value="Krookodile">Krookodile</option><option value="Darumaka">Darumaka</option><option value="Darumaka-Galarian">Darumaka-Galarian</option><option value="Darmanitan-Standard">Darmanitan-Standard</option><option value="Darmanitan-Zen">Darmanitan-Zen</option><option value="Darmanitan-Galarian-Standard">Darmanitan-Galarian-Standard</option><option value="Darmanitan-Galarian-Zen">Darmanitan-Galarian-Zen</option><option value="Maractus">Maractus</option><option value="Dwebble">Dwebble</option><option value="Crustle">Crustle</option><option value="Scraggy">Scraggy</option><option value="Scrafty">Scrafty</option><option value="Sigilyph">Sigilyph</option><option value="Yamask">Yamask</option><option value="Yamask-Galarian">Yamask-Galarian</option><option value="Cofagrigus">Cofagrigus</option><option value="Tirtouga">Tirtouga</option><option value="Carracosta">Carracosta</option><option value="Archen">Archen</option><option value="Archeops">Archeops</option><option value="Trubbish">Trubbish</option><option value="Garbodor">Garbodor</option><option value="Garbodor-Gigantamax">Garbodor-Gigantamax</option><option value="Zorua">Zorua</option><option value="Zorua-Hisuian">Zorua-Hisuian</option><option value="Zoroark">Zoroark</option><option value="Zoroark-Hisuian">Zoroark-Hisuian</option><option value="Minccino">Minccino</option><option value="Cinccino">Cinccino</option><option value="Gothita">Gothita</option><option value="Gothorita">Gothorita</option><option value="Gothitelle">Gothitelle</option><option value="Solosis">Solosis</option><option value="Duosion">Duosion</option><option value="Reuniclus">Reuniclus</option><option value="Ducklett">Ducklett</option><option value="Swanna">Swanna</option><option value="Vanillite">Vanillite</option><option value="Vanillish">Vanillish</option><option value="Vanilluxe">Vanilluxe</option><option value="Deerling">Deerling</option><option value="Sawsbuck">Sawsbuck</option><option value="Emolga">Emolga</option><option value="Karrablast">Karrablast</option><option value="Escavalier">Escavalier</option><option value="Foongus">Foongus</option><option value="Amoonguss">Amoonguss</option><option value="Frillish">Frillish</option><option value="Jellicent">Jellicent</option><option value="Alomomola">Alomomola</option><option value="Joltik">Joltik</option><option value="Galvantula">Galvantula</option><option value="Ferroseed">Ferroseed</option><option value="Ferrothorn">Ferrothorn</option><option value="Klink">Klink</option><option value="Klang">Klang</option><option value="Klinklang">Klinklang</option><option value="Tynamo">Tynamo</option><option value="Eelektrik">Eelektrik</option><option value="Eelektross">Eelektross</option><option value="Elgyem">Elgyem</option><option value="Beheeyem">Beheeyem</option><option value="Litwick">Litwick</option><option value="Lampent">Lampent</option><option value="Chandelure">Chandelure</option><option value="Axew">Axew</option><option value="Fraxure">Fraxure</option><option value="Haxorus">Haxorus</option><option value="Cubchoo">Cubchoo</option><option value="Beartic">Beartic</option><option value="Cryogonal">Cryogonal</option><option value="Shelmet">Shelmet</option><option value="Accelgor">Accelgor</option><option value="Stunfisk">Stunfisk</option><option value="Stunfisk-Galarian">Stunfisk-Galarian</option><option value="Mienfoo">Mienfoo</option><option value="Mienshao">Mienshao</option><option value="Druddigon">Druddigon</option><option value="Golett">Golett</option><option value="Golurk">Golurk</option><option value="Pawniard">Pawniard</option><option value="Bisharp">Bisharp</option><option value="Bouffalant">Bouffalant</option><option value="Rufflet">Rufflet</option><option value="Braviary">Braviary</option><option value="Braviary-Hisuian">Braviary-Hisuian</option><option value="Vullaby">Vullaby</option><option value="Mandibuzz">Mandibuzz</option><option value="Heatmor">Heatmor</option><option value="Durant">Durant</option><option value="Deino">Deino</option><option value="Zweilous">Zweilous</option><option value="Hydreigon">Hydreigon</option><option value="Larvesta">Larvesta</option><option value="Volcarona">Volcarona</option><option value="Cobalion">Cobalion</option><option value="Terrakion">Terrakion</option><option value="Virizion">Virizion</option><option value="Tornadus-Therian">Tornadus-Therian</option><option value="Tornadus-Incarnate">Tornadus-Incarnate</option><option value="Thundurus-Therian">Thundurus-Therian</option><option value="Thundurus-Incarnate">Thundurus-Incarnate</option><option value="Reshiram">Reshiram</option><option value="Zekrom">Zekrom</option><option value="Landorus-Incarnate">Landorus-Incarnate</option><option value="Landorus-Therian">Landorus-Therian</option><option value="Kyurem-Black">Kyurem-Black</option><option value="Kyurem">Kyurem</option><option value="Kyurem-White">Kyurem-White</option><option value="Keldeo-Ordinary">Keldeo-Ordinary</option><option value="Keldeo-Resolute">Keldeo-Resolute</option><option value="Meloetta-Aria">Meloetta-Aria</option><option value="Meloetta-Pirouette">Meloetta-Pirouette</option><option value="Genesect">Genesect</option><option value="Chespin">Chespin</option><option value="Quilladin">Quilladin</option><option value="Chesnaught">Chesnaught</option><option value="Fennekin">Fennekin</option><option value="Braixen">Braixen</option><option value="Delphox">Delphox</option><option value="Froakie">Froakie</option><option value="Frogadier">Frogadier</option><option value="Greninja">Greninja</option><option value="Bunnelby">Bunnelby</option><option value="Diggersby">Diggersby</option><option value="Fletchling">Fletchling</option><option value="Fletchinder">Fletchinder</option><option value="Talonflame">Talonflame</option><option value="Scatterbug">Scatterbug</option><option value="Spewpa">Spewpa</option><option value="Vivillon">Vivillon</option><option value="Litleo">Litleo</option><option value="Pyroar">Pyroar</option><option value="Flabebe">Flabebe</option><option value="Floette">Floette</option><option value="Floette-Eternal">Floette-Eternal</option><option value="Florges">Florges</option><option value="Skiddo">Skiddo</option><option value="Gogoat">Gogoat</option><option value="Pancham">Pancham</option><option value="Pangoro">Pangoro</option><option value="Furfrou">Furfrou</option><option value="Espurr">Espurr</option><option value="Meowstic-Female">Meowstic-Female</option><option value="Meowstic-Male">Meowstic-Male</option><option value="Honedge">Honedge</option><option value="Doublade">Doublade</option><option value="Aegislash-Blade">Aegislash-Blade</option><option value="Aegislash-Shield">Aegislash-Shield</option><option value="Spritzee">Spritzee</option><option value="Aromatisse">Aromatisse</option><option value="Swirlix">Swirlix</option><option value="Slurpuff">Slurpuff</option><option value="Inkay">Inkay</option><option value="Malamar">Malamar</option><option value="Binacle">Binacle</option><option value="Barbaracle">Barbaracle</option><option value="Skrelp">Skrelp</option><option value="Dragalge">Dragalge</option><option value="Clauncher">Clauncher</option><option value="Clawitzer">Clawitzer</option><option value="Helioptile">Helioptile</option><option value="Heliolisk">Heliolisk</option><option value="Tyrunt">Tyrunt</option><option value="Tyrantrum">Tyrantrum</option><option value="Amaura">Amaura</option><option value="Aurorus">Aurorus</option><option value="Sylveon">Sylveon</option><option value="Hawlucha">Hawlucha</option><option value="Dedenne">Dedenne</option><option value="Carbink">Carbink</option><option value="Goomy">Goomy</option><option value="Sliggoo">Sliggoo</option><option value="Sliggoo-Hisuian">Sliggoo-Hisuian</option><option value="Goodra">Goodra</option><option value="Goodra-Hisuian">Goodra-Hisuian</option><option value="Klefki">Klefki</option><option value="Phantump">Phantump</option><option value="Trevenant">Trevenant</option><option value="Pumpkaboo-Large">Pumpkaboo-Large</option><option value="Pumpkaboo-Average">Pumpkaboo-Average</option><option value="Pumpkaboo-Small">Pumpkaboo-Small</option><option value="Pumpkaboo-Super">Pumpkaboo-Super</option><option value="Gourgeist-Average">Gourgeist-Average</option><option value="Gourgeist-Large">Gourgeist-Large</option><option value="Gourgeist-Small">Gourgeist-Small</option><option value="Gourgeist-Super">Gourgeist-Super</option><option value="Bergmite">Bergmite</option><option value="Avalugg">Avalugg</option><option value="Avalugg-Hisuian">Avalugg-Hisuian</option><option value="Noibat">Noibat</option><option value="Noivern">Noivern</option><option value="Xerneas">Xerneas</option><option value="Yveltal">Yveltal</option><option value="Zygarde-Complete">Zygarde-Complete</option><option value="Zygarde-50">Zygarde-50</option><option value="Zygarde-10">Zygarde-10</option><option value="Zygarde-Cell">Zygarde-Cell</option><option value="Zygarde-Core">Zygarde-Core</option><option value="Diancie">Diancie</option><option value="Diancie-Mega">Diancie-Mega</option><option value="Hoopa-Confined">Hoopa-Confined</option><option value="Hoopa-Unbound">Hoopa-Unbound</option><option value="Volcanion">Volcanion</option><option value="Rowlet">Rowlet</option><option value="Dartrix">Dartrix</option><option value="Decidueye">Decidueye</option><option value="Decidueye-Hisuian">Decidueye-Hisuian</option><option value="Litten">Litten</option><option value="Torracat">Torracat</option><option value="Incineroar">Incineroar</option><option value="Popplio">Popplio</option><option value="Brionne">Brionne</option><option value="Primarina">Primarina</option><option value="Pikipek">Pikipek</option><option value="Trumbeak">Trumbeak</option><option value="Toucannon">Toucannon</option><option value="Yungoos">Yungoos</option><option value="Gumshoos">Gumshoos</option><option value="Grubbin">Grubbin</option><option value="Charjabug">Charjabug</option><option value="Vikavolt">Vikavolt</option><option value="Crabrawler">Crabrawler</option><option value="Crabominable">Crabominable</option><option value="Oricorio-Pom-Pom">Oricorio-Pom-Pom</option><option value="Oricorio-Sensu">Oricorio-Sensu</option><option value="Oricorio-Baile">Oricorio-Baile</option><option value="Oricorio-Pau">Oricorio-Pau</option><option value="Cutiefly">Cutiefly</option><option value="Ribombee">Ribombee</option><option value="Rockruff">Rockruff</option><option value="Lycanroc-Midday">Lycanroc-Midday</option><option value="Lycanroc-Midnight">Lycanroc-Midnight</option><option value="Lycanroc-Dusk">Lycanroc-Dusk</option><option value="Wishiwashi-Solo">Wishiwashi-Solo</option><option value="Wishiwashi-School">Wishiwashi-School</option><option value="Mareanie">Mareanie</option><option value="Toxapex">Toxapex</option><option value="Mudbray">Mudbray</option><option value="Mudsdale">Mudsdale</option><option value="Dewpider">Dewpider</option><option value="Araquanid">Araquanid</option><option value="Fomantis">Fomantis</option><option value="Lurantis">Lurantis</option><option value="Morelull">Morelull</option><option value="Shiinotic">Shiinotic</option><option value="Salandit">Salandit</option><option value="Salazzle">Salazzle</option><option value="Stufful">Stufful</option><option value="Bewear">Bewear</option><option value="Bounsweet">Bounsweet</option><option value="Steenee">Steenee</option><option value="Tsareena">Tsareena</option><option value="Comfey">Comfey</option><option value="Oranguru">Oranguru</option><option value="Passimian">Passimian</option><option value="Wimpod">Wimpod</option><option value="Golisopod">Golisopod</option><option value="Sandygast">Sandygast</option><option value="Palossand">Palossand</option><option value="Pyukumuku">Pyukumuku</option><option value="Type-Null">Type-Null</option><option value="Silvally">Silvally</option><option value="Minior-Core">Minior-Core</option><option value="Minior-Meteor">Minior-Meteor</option><option value="Komala">Komala</option><option value="Turtonator">Turtonator</option><option value="Togedemaru">Togedemaru</option><option value="Mimikyu">Mimikyu</option><option value="Bruxish">Bruxish</option><option value="Drampa">Drampa</option><option value="Dhelmise">Dhelmise</option><option value="Jangmo-O">Jangmo-O</option><option value="Hakamo-O">Hakamo-O</option><option value="Kommo-O">Kommo-O</option><option value="Tapu-Koko">Tapu-Koko</option><option value="Tapu-Lele">Tapu-Lele</option><option value="Tapu-Bulu">Tapu-Bulu</option><option value="Tapu-Fini">Tapu-Fini</option><option value="Cosmog">Cosmog</option><option value="Cosmoem">Cosmoem</option><option value="Solgaleo-Radiant-Sun">Solgaleo-Radiant-Sun</option><option value="Solgaleo">Solgaleo</option><option value="Lunala-Full-Moon">Lunala-Full-Moon</option><option value="Lunala">Lunala</option><option value="Nihilego">Nihilego</option><option value="Buzzwole">Buzzwole</option><option value="Pheromosa">Pheromosa</option><option value="Xurkitree">Xurkitree</option><option value="Celesteela">Celesteela</option><option value="Kartana">Kartana</option><option value="Guzzlord">Guzzlord</option><option value="Necrozma">Necrozma</option><option value="Necrozma-Ultra">Necrozma-Ultra</option><option value="Necrozma-Dawn-Wings">Necrozma-Dawn-Wings</option><option value="Necrozma-Dusk-Mane">Necrozma-Dusk-Mane</option><option value="Magearna">Magearna</option><option value="Marshadow">Marshadow</option><option value="Poipole">Poipole</option><option value="Naganadel">Naganadel</option><option value="Stakataka">Stakataka</option><option value="Blacephalon">Blacephalon</option><option value="Zeraora">Zeraora</option><option value="Meltan">Meltan</option><option value="Melmetal">Melmetal</option><option value="Melmetal-Gigantamax">Melmetal-Gigantamax</option><option value="---">---</option></datalist>
-  </nobr>
-<nobr>
-  <label for="Sexo">Sexo:</label><input type="text" id="Sexo" list="listaSexo">
+<option value="---">---</option><option value="Bulbasaur">Bulbasaur</option><option value="Ivysaur">Ivysaur</option><option value="Venusaur">Venusaur</option><option value="Venusaur-Gigantamax">Venusaur-Gigantamax</option><option value="Venusaur-Mega">Venusaur-Mega</option><option value="Charmander">Charmander</option><option value="Charmeleon">Charmeleon</option><option value="Charizard-Mega-X">Charizard-Mega-X</option><option value="Charizard">Charizard</option><option value="Charizard-Gigantamax">Charizard-Gigantamax</option><option value="Charizard-Mega-Y">Charizard-Mega-Y</option><option value="Squirtle">Squirtle</option><option value="Wartortle">Wartortle</option><option value="Blastoise">Blastoise</option><option value="Blastoise-Gigantamax">Blastoise-Gigantamax</option><option value="Blastoise-Mega">Blastoise-Mega</option><option value="Caterpie">Caterpie</option><option value="Metapod">Metapod</option><option value="Butterfree">Butterfree</option><option value="Butterfree-Gigantamax">Butterfree-Gigantamax</option><option value="Weedle">Weedle</option><option value="Kakuna">Kakuna</option><option value="Beedrill">Beedrill</option><option value="Beedrill-Mega">Beedrill-Mega</option><option value="Pidgey">Pidgey</option><option value="Pidgeotto">Pidgeotto</option><option value="Pidgeot">Pidgeot</option><option value="Pidgeot-Mega">Pidgeot-Mega</option><option value="Rattata">Rattata</option><option value="Rattata-Alolan">Rattata-Alolan</option><option value="Raticate">Raticate</option><option value="Raticate-Alolan">Raticate-Alolan</option><option value="Spearow">Spearow</option><option value="Fearow">Fearow</option><option value="Ekans">Ekans</option><option value="Arbok">Arbok</option><option value="Pikachu">Pikachu</option><option value="Pikachu-Lets-Go">Pikachu-Lets-Go</option><option value="Pikachu-Gigantamax">Pikachu-Gigantamax</option><option value="Raichu">Raichu</option><option value="Raichu-Alolan">Raichu-Alolan</option><option value="Sandshrew-Alolan">Sandshrew-Alolan</option><option value="Sandshrew">Sandshrew</option><option value="Sandslash-Alolan">Sandslash-Alolan</option><option value="Sandslash">Sandslash</option><option value="Nidoran-F">Nidoran-F</option><option value="Nidorina">Nidorina</option><option value="Nidoqueen">Nidoqueen</option><option value="Nidoran-M">Nidoran-M</option><option value="Nidorino">Nidorino</option><option value="Nidoking">Nidoking</option><option value="Clefairy">Clefairy</option><option value="Clefable">Clefable</option><option value="Vulpix">Vulpix</option><option value="Vulpix-Alolan">Vulpix-Alolan</option><option value="Ninetales">Ninetales</option><option value="Ninetales-Alolan">Ninetales-Alolan</option><option value="Jigglypuff">Jigglypuff</option><option value="Wigglytuff">Wigglytuff</option><option value="Zubat">Zubat</option><option value="Golbat">Golbat</option><option value="Oddish">Oddish</option><option value="Gloom">Gloom</option><option value="Vileplume">Vileplume</option><option value="Paras">Paras</option><option value="Parasect">Parasect</option><option value="Venonat">Venonat</option><option value="Venomoth">Venomoth</option><option value="Diglett">Diglett</option><option value="Diglett-Alolan">Diglett-Alolan</option><option value="Dugtrio">Dugtrio</option><option value="Dugtrio-Alolan">Dugtrio-Alolan</option><option value="Meowth-Galarian">Meowth-Galarian</option><option value="Meowth">Meowth</option><option value="Meowth-Gigantamax">Meowth-Gigantamax</option><option value="Meowth-Alolan">Meowth-Alolan</option><option value="Persian">Persian</option><option value="Persian-Alolan">Persian-Alolan</option><option value="Psyduck">Psyduck</option><option value="Golduck">Golduck</option><option value="Mankey">Mankey</option><option value="Primeape">Primeape</option><option value="Growlithe">Growlithe</option><option value="Growlithe-Hisuian">Growlithe-Hisuian</option><option value="Arcanine">Arcanine</option><option value="Arcanine-Hisuian">Arcanine-Hisuian</option><option value="Poliwag">Poliwag</option><option value="Poliwhirl">Poliwhirl</option><option value="Poliwrath">Poliwrath</option><option value="Abra">Abra</option><option value="Kadabra">Kadabra</option><option value="Alakazam">Alakazam</option><option value="Alakazam-Mega">Alakazam-Mega</option><option value="Machop">Machop</option><option value="Machoke">Machoke</option><option value="Machamp">Machamp</option><option value="Machamp-Gigantamax">Machamp-Gigantamax</option><option value="Bellsprout">Bellsprout</option><option value="Weepinbell">Weepinbell</option><option value="Victreebel">Victreebel</option><option value="Tentacool">Tentacool</option><option value="Tentacruel">Tentacruel</option><option value="Geodude-Alolan">Geodude-Alolan</option><option value="Geodude">Geodude</option><option value="Graveler-Alolan">Graveler-Alolan</option><option value="Graveler">Graveler</option><option value="Golem-Alolan">Golem-Alolan</option><option value="Golem">Golem</option><option value="Ponyta">Ponyta</option><option value="Ponyta-Galarian">Ponyta-Galarian</option><option value="Rapidash">Rapidash</option><option value="Rapidash-Galarian">Rapidash-Galarian</option><option value="Slowpoke">Slowpoke</option><option value="Slowpoke-Galarian">Slowpoke-Galarian</option><option value="Slowbro">Slowbro</option><option value="Slowbro-Mega">Slowbro-Mega</option><option value="Slowbro-Galarian">Slowbro-Galarian</option><option value="Magnemite">Magnemite</option><option value="Magneton">Magneton</option><option value="Farfetchd-Galarian">Farfetchd-Galarian</option><option value="Farfetchd">Farfetchd</option><option value="Doduo">Doduo</option><option value="Dodrio">Dodrio</option><option value="Seel">Seel</option><option value="Dewgong">Dewgong</option><option value="Grimer">Grimer</option><option value="Grimer-Alolan">Grimer-Alolan</option><option value="Muk">Muk</option><option value="Muk-Alolan">Muk-Alolan</option><option value="Shellder">Shellder</option><option value="Cloyster">Cloyster</option><option value="Gastly">Gastly</option><option value="Haunter">Haunter</option><option value="Gengar">Gengar</option><option value="Gengar-Mega">Gengar-Mega</option><option value="Gengar-Gigantamax">Gengar-Gigantamax</option><option value="Onix">Onix</option><option value="Drowzee">Drowzee</option><option value="Hypno">Hypno</option><option value="Krabby">Krabby</option><option value="Kingler">Kingler</option><option value="Kingler-Gigantamax">Kingler-Gigantamax</option><option value="Voltorb">Voltorb</option><option value="Voltorb-Hisuian">Voltorb-Hisuian</option><option value="Electrode">Electrode</option><option value="Electrode-Hisuian">Electrode-Hisuian</option><option value="Exeggcute">Exeggcute</option><option value="Exeggutor-Alolan">Exeggutor-Alolan</option><option value="Exeggutor">Exeggutor</option><option value="Cubone">Cubone</option><option value="Marowak-Alolan">Marowak-Alolan</option><option value="Marowak">Marowak</option><option value="Hitmonlee">Hitmonlee</option><option value="Hitmonchan">Hitmonchan</option><option value="Lickitung">Lickitung</option><option value="Koffing">Koffing</option><option value="Weezing">Weezing</option><option value="Weezing-Galarian">Weezing-Galarian</option><option value="Rhyhorn">Rhyhorn</option><option value="Rhydon">Rhydon</option><option value="Chansey">Chansey</option><option value="Tangela">Tangela</option><option value="Kangaskhan">Kangaskhan</option><option value="Kangaskhan-Mega">Kangaskhan-Mega</option><option value="Horsea">Horsea</option><option value="Seadra">Seadra</option><option value="Goldeen">Goldeen</option><option value="Seaking">Seaking</option><option value="Staryu">Staryu</option><option value="Starmie">Starmie</option><option value="Mr-Mime">Mr-Mime</option><option value="Mr-Mime-Galarian">Mr-Mime-Galarian</option><option value="Scyther">Scyther</option><option value="Jynx">Jynx</option><option value="Electabuzz">Electabuzz</option><option value="Magmar">Magmar</option><option value="Pinsir">Pinsir</option><option value="Pinsir-Mega">Pinsir-Mega</option><option value="Tauros">Tauros</option><option value="Magikarp">Magikarp</option><option value="Gyarados-Mega">Gyarados-Mega</option><option value="Gyarados">Gyarados</option><option value="Lapras">Lapras</option><option value="Lapras-Gigantamax">Lapras-Gigantamax</option><option value="Ditto">Ditto</option><option value="Eevee">Eevee</option><option value="Eevee-Lets-Go">Eevee-Lets-Go</option><option value="Eevee-Gigantamax">Eevee-Gigantamax</option><option value="Vaporeon">Vaporeon</option><option value="Jolteon">Jolteon</option><option value="Flareon">Flareon</option><option value="Porygon">Porygon</option><option value="Omanyte">Omanyte</option><option value="Omastar">Omastar</option><option value="Kabuto">Kabuto</option><option value="Kabutops">Kabutops</option><option value="Aerodactyl">Aerodactyl</option><option value="Aerodactyl-Mega">Aerodactyl-Mega</option><option value="Snorlax">Snorlax</option><option value="Snorlax-Gigantamax">Snorlax-Gigantamax</option><option value="Articuno">Articuno</option><option value="Articuno-Galarian">Articuno-Galarian</option><option value="Zapdos">Zapdos</option><option value="Zapdos-Galarian">Zapdos-Galarian</option><option value="Moltres">Moltres</option><option value="Moltres-Galarian">Moltres-Galarian</option><option value="Dratini">Dratini</option><option value="Dragonair">Dragonair</option><option value="Dragonite">Dragonite</option><option value="Mewtwo">Mewtwo</option><option value="Mewtwo-Mega-Y">Mewtwo-Mega-Y</option><option value="Mewtwo-Mega-X">Mewtwo-Mega-X</option><option value="Mew">Mew</option><option value="Chikorita">Chikorita</option><option value="Bayleef">Bayleef</option><option value="Meganium">Meganium</option><option value="Cyndaquil">Cyndaquil</option><option value="Quilava">Quilava</option><option value="Typhlosion">Typhlosion</option><option value="Typhlosion-Hisuian">Typhlosion-Hisuian</option><option value="Totodile">Totodile</option><option value="Croconaw">Croconaw</option><option value="Feraligatr">Feraligatr</option><option value="Sentret">Sentret</option><option value="Furret">Furret</option><option value="Hoothoot">Hoothoot</option><option value="Noctowl">Noctowl</option><option value="Ledyba">Ledyba</option><option value="Ledian">Ledian</option><option value="Spinarak">Spinarak</option><option value="Ariados">Ariados</option><option value="Crobat">Crobat</option><option value="Chinchou">Chinchou</option><option value="Lanturn">Lanturn</option><option value="Pichu">Pichu</option><option value="Cleffa">Cleffa</option><option value="Igglybuff">Igglybuff</option><option value="Togepi">Togepi</option><option value="Togetic">Togetic</option><option value="Natu">Natu</option><option value="Xatu">Xatu</option><option value="Mareep">Mareep</option><option value="Flaaffy">Flaaffy</option><option value="Ampharos">Ampharos</option><option value="Ampharos-Mega">Ampharos-Mega</option><option value="Bellossom">Bellossom</option><option value="Marill">Marill</option><option value="Azumarill">Azumarill</option><option value="Sudowoodo">Sudowoodo</option><option value="Politoed">Politoed</option><option value="Hoppip">Hoppip</option><option value="Skiploom">Skiploom</option><option value="Jumpluff">Jumpluff</option><option value="Aipom">Aipom</option><option value="Sunkern">Sunkern</option><option value="Sunflora">Sunflora</option><option value="Yanma">Yanma</option><option value="Wooper">Wooper</option><option value="Quagsire">Quagsire</option><option value="Espeon">Espeon</option><option value="Umbreon">Umbreon</option><option value="Murkrow">Murkrow</option><option value="Slowking">Slowking</option><option value="Misdreavus">Misdreavus</option><option value="Unown">Unown</option><option value="Wobbuffet">Wobbuffet</option><option value="Girafarig">Girafarig</option><option value="Pineco">Pineco</option><option value="Forretress">Forretress</option><option value="Dunsparce">Dunsparce</option><option value="Gligar">Gligar</option><option value="Steelix">Steelix</option><option value="Steelix-Mega">Steelix-Mega</option><option value="Snubbull">Snubbull</option><option value="Granbull">Granbull</option><option value="Qwilfish">Qwilfish</option><option value="Qwilfish-Hisuian">Qwilfish-Hisuian</option><option value="Scizor">Scizor</option><option value="Scizor-Mega">Scizor-Mega</option><option value="Shuckle">Shuckle</option><option value="Heracross">Heracross</option><option value="Heracross-Mega">Heracross-Mega</option><option value="Sneasel">Sneasel</option><option value="Sneasel-Hisuian">Sneasel-Hisuian</option><option value="Teddiursa">Teddiursa</option><option value="Ursaring">Ursaring</option><option value="Slugma">Slugma</option><option value="Magcargo">Magcargo</option><option value="Swinub">Swinub</option><option value="Piloswine">Piloswine</option><option value="Corsola">Corsola</option><option value="Remoraid">Remoraid</option><option value="Octillery">Octillery</option><option value="Delibird">Delibird</option><option value="Mantine">Mantine</option><option value="Skarmory">Skarmory</option><option value="Houndour">Houndour</option><option value="Houndoom">Houndoom</option><option value="Houndoom-Mega">Houndoom-Mega</option><option value="Kingdra">Kingdra</option><option value="Phanpy">Phanpy</option><option value="Donphan">Donphan</option><option value="Porygon2">Porygon2</option><option value="Stantler">Stantler</option><option value="Smeargle">Smeargle</option><option value="Tyrogue">Tyrogue</option><option value="Hitmontop">Hitmontop</option><option value="Smoochum">Smoochum</option><option value="Elekid">Elekid</option><option value="Magby">Magby</option><option value="Miltank">Miltank</option><option value="Blissey">Blissey</option><option value="Raikou">Raikou</option><option value="Entei">Entei</option><option value="Suicune">Suicune</option><option value="Larvitar">Larvitar</option><option value="Pupitar">Pupitar</option><option value="Tyranitar">Tyranitar</option><option value="Tyranitar-Mega">Tyranitar-Mega</option><option value="Lugia">Lugia</option><option value="Ho-Oh">Ho-Oh</option><option value="Celebi">Celebi</option><option value="Treecko">Treecko</option><option value="Grovyle">Grovyle</option><option value="Sceptile">Sceptile</option><option value="Sceptile-Mega">Sceptile-Mega</option><option value="Torchic">Torchic</option><option value="Combusken">Combusken</option><option value="Blaziken">Blaziken</option><option value="Blaziken-Mega">Blaziken-Mega</option><option value="Mudkip">Mudkip</option><option value="Marshtomp">Marshtomp</option><option value="Swampert">Swampert</option><option value="Swampert-Mega">Swampert-Mega</option><option value="Poochyena">Poochyena</option><option value="Mightyena">Mightyena</option><option value="Zigzagoon">Zigzagoon</option><option value="Zigzagoon-Galarian">Zigzagoon-Galarian</option><option value="Linoone">Linoone</option><option value="Linoone-Galarian">Linoone-Galarian</option><option value="Wurmple">Wurmple</option><option value="Silcoon">Silcoon</option><option value="Beautifly">Beautifly</option><option value="Cascoon">Cascoon</option><option value="Dustox">Dustox</option><option value="Lotad">Lotad</option><option value="Lombre">Lombre</option><option value="Ludicolo">Ludicolo</option><option value="Seedot">Seedot</option><option value="Nuzleaf">Nuzleaf</option><option value="Shiftry">Shiftry</option><option value="Taillow">Taillow</option><option value="Swellow">Swellow</option><option value="Wingull">Wingull</option><option value="Pelipper">Pelipper</option><option value="Ralts">Ralts</option><option value="Kirlia">Kirlia</option><option value="Gardevoir">Gardevoir</option><option value="Gardevoir-Mega">Gardevoir-Mega</option><option value="Surskit">Surskit</option><option value="Masquerain">Masquerain</option><option value="Shroomish">Shroomish</option><option value="Breloom">Breloom</option><option value="Slakoth">Slakoth</option><option value="Vigoroth">Vigoroth</option><option value="Slaking">Slaking</option><option value="Nincada">Nincada</option><option value="Ninjask">Ninjask</option><option value="Shedinja">Shedinja</option><option value="Whismur">Whismur</option><option value="Loudred">Loudred</option><option value="Exploud">Exploud</option><option value="Makuhita">Makuhita</option><option value="Hariyama">Hariyama</option><option value="Azurill">Azurill</option><option value="Nosepass">Nosepass</option><option value="Skitty">Skitty</option><option value="Delcatty">Delcatty</option><option value="Sableye">Sableye</option><option value="Sableye-Mega">Sableye-Mega</option><option value="Mawile">Mawile</option><option value="Mawile-Mega">Mawile-Mega</option><option value="Aron">Aron</option><option value="Lairon">Lairon</option><option value="Aggron-Mega">Aggron-Mega</option><option value="Aggron">Aggron</option><option value="Meditite">Meditite</option><option value="Medicham">Medicham</option><option value="Medicham-Mega">Medicham-Mega</option><option value="Electrike">Electrike</option><option value="Manectric">Manectric</option><option value="Manectric-Mega">Manectric-Mega</option><option value="Plusle">Plusle</option><option value="Minun">Minun</option><option value="Volbeat">Volbeat</option><option value="Illumise">Illumise</option><option value="Roselia">Roselia</option><option value="Gulpin">Gulpin</option><option value="Swalot">Swalot</option><option value="Carvanha">Carvanha</option><option value="Sharpedo">Sharpedo</option><option value="Sharpedo-Mega">Sharpedo-Mega</option><option value="Wailmer">Wailmer</option><option value="Wailord">Wailord</option><option value="Numel">Numel</option><option value="Camerupt">Camerupt</option><option value="Camerupt-Mega">Camerupt-Mega</option><option value="Torkoal">Torkoal</option><option value="Spoink">Spoink</option><option value="Grumpig">Grumpig</option><option value="Spinda">Spinda</option><option value="Trapinch">Trapinch</option><option value="Vibrava">Vibrava</option><option value="Flygon">Flygon</option><option value="Cacnea">Cacnea</option><option value="Cacturne">Cacturne</option><option value="Swablu">Swablu</option><option value="Altaria-Mega">Altaria-Mega</option><option value="Altaria">Altaria</option><option value="Zangoose">Zangoose</option><option value="Seviper">Seviper</option><option value="Lunatone">Lunatone</option><option value="Solrock">Solrock</option><option value="Barboach">Barboach</option><option value="Whiscash">Whiscash</option><option value="Corphish">Corphish</option><option value="Crawdaunt">Crawdaunt</option><option value="Baltoy">Baltoy</option><option value="Claydol">Claydol</option><option value="Lileep">Lileep</option><option value="Cradily">Cradily</option><option value="Anorith">Anorith</option><option value="Armaldo">Armaldo</option><option value="Feebas">Feebas</option><option value="Milotic">Milotic</option><option value="Castform">Castform</option><option value="Kecleon">Kecleon</option><option value="Shuppet">Shuppet</option><option value="Banette">Banette</option><option value="Banette-Mega">Banette-Mega</option><option value="Duskull">Duskull</option><option value="Dusclops">Dusclops</option><option value="Tropius">Tropius</option><option value="Chimecho">Chimecho</option><option value="Absol">Absol</option><option value="Absol-Mega">Absol-Mega</option><option value="Wynaut">Wynaut</option><option value="Snorunt">Snorunt</option><option value="Glalie">Glalie</option><option value="Glalie-Mega">Glalie-Mega</option><option value="Spheal">Spheal</option><option value="Sealeo">Sealeo</option><option value="Walrein">Walrein</option><option value="Clamperl">Clamperl</option><option value="Huntail">Huntail</option><option value="Gorebyss">Gorebyss</option><option value="Relicanth">Relicanth</option><option value="Luvdisc">Luvdisc</option><option value="Bagon">Bagon</option><option value="Shelgon">Shelgon</option><option value="Salamence">Salamence</option><option value="Salamence-Mega">Salamence-Mega</option><option value="Beldum">Beldum</option><option value="Metang">Metang</option><option value="Metagross">Metagross</option><option value="Metagross-Mega">Metagross-Mega</option><option value="Regirock">Regirock</option><option value="Regice">Regice</option><option value="Registeel">Registeel</option><option value="Latias">Latias</option><option value="Latias-Mega">Latias-Mega</option><option value="Latios">Latios</option><option value="Latios-Mega">Latios-Mega</option><option value="Kyogre">Kyogre</option><option value="Kyogre-Primal">Kyogre-Primal</option><option value="Groudon">Groudon</option><option value="Groudon-Primal">Groudon-Primal</option><option value="Rayquaza">Rayquaza</option><option value="Rayquaza-Mega">Rayquaza-Mega</option><option value="Jirachi">Jirachi</option><option value="Deoxys-Normal">Deoxys-Normal</option><option value="Deoxys-Attack">Deoxys-Attack</option><option value="Deoxys-Defense">Deoxys-Defense</option><option value="Deoxys-Speed">Deoxys-Speed</option><option value="Turtwig">Turtwig</option><option value="Grotle">Grotle</option><option value="Torterra">Torterra</option><option value="Chimchar">Chimchar</option><option value="Monferno">Monferno</option><option value="Infernape">Infernape</option><option value="Piplup">Piplup</option><option value="Prinplup">Prinplup</option><option value="Empoleon">Empoleon</option><option value="Starly">Starly</option><option value="Staravia">Staravia</option><option value="Staraptor">Staraptor</option><option value="Bidoof">Bidoof</option><option value="Bibarel">Bibarel</option><option value="Kricketot">Kricketot</option><option value="Kricketune">Kricketune</option><option value="Shinx">Shinx</option><option value="Luxio">Luxio</option><option value="Luxray">Luxray</option><option value="Budew">Budew</option><option value="Roserade">Roserade</option><option value="Cranidos">Cranidos</option><option value="Rampardos">Rampardos</option><option value="Shieldon">Shieldon</option><option value="Bastiodon">Bastiodon</option><option value="Burmy">Burmy</option><option value="Wormadam-Plant">Wormadam-Plant</option><option value="Wormadam-Trash">Wormadam-Trash</option><option value="Wormadam-Sandy">Wormadam-Sandy</option><option value="Mothim">Mothim</option><option value="Combee">Combee</option><option value="Vespiquen">Vespiquen</option><option value="Pachirisu">Pachirisu</option><option value="Buizel">Buizel</option><option value="Floatzel">Floatzel</option><option value="Cherubi">Cherubi</option><option value="Cherrim">Cherrim</option><option value="Shellos">Shellos</option><option value="Gastrodon">Gastrodon</option><option value="Ambipom">Ambipom</option><option value="Drifloon">Drifloon</option><option value="Drifblim">Drifblim</option><option value="Buneary">Buneary</option><option value="Lopunny">Lopunny</option><option value="Lopunny-Mega">Lopunny-Mega</option><option value="Mismagius">Mismagius</option><option value="Honchkrow">Honchkrow</option><option value="Glameow">Glameow</option><option value="Purugly">Purugly</option><option value="Chingling">Chingling</option><option value="Stunky">Stunky</option><option value="Skuntank">Skuntank</option><option value="Bronzor">Bronzor</option><option value="Bronzong">Bronzong</option><option value="Bonsly">Bonsly</option><option value="Mime-Jr">Mime-Jr</option><option value="Happiny">Happiny</option><option value="Chatot">Chatot</option><option value="Spiritomb">Spiritomb</option><option value="Gible">Gible</option><option value="Gabite">Gabite</option><option value="Garchomp">Garchomp</option><option value="Garchomp-Mega">Garchomp-Mega</option><option value="Munchlax">Munchlax</option><option value="Riolu">Riolu</option><option value="Lucario">Lucario</option><option value="Lucario-Mega">Lucario-Mega</option><option value="Hippopotas">Hippopotas</option><option value="Hippowdon">Hippowdon</option><option value="Skorupi">Skorupi</option><option value="Drapion">Drapion</option><option value="Croagunk">Croagunk</option><option value="Toxicroak">Toxicroak</option><option value="Carnivine">Carnivine</option><option value="Finneon">Finneon</option><option value="Lumineon">Lumineon</option><option value="Mantyke">Mantyke</option><option value="Snover">Snover</option><option value="Abomasnow">Abomasnow</option><option value="Abomasnow-Mega">Abomasnow-Mega</option><option value="Weavile">Weavile</option><option value="Magnezone">Magnezone</option><option value="Lickilicky">Lickilicky</option><option value="Rhyperior">Rhyperior</option><option value="Tangrowth">Tangrowth</option><option value="Electivire">Electivire</option><option value="Magmortar">Magmortar</option><option value="Togekiss">Togekiss</option><option value="Yanmega">Yanmega</option><option value="Leafeon">Leafeon</option><option value="Glaceon">Glaceon</option><option value="Gliscor">Gliscor</option><option value="Mamoswine">Mamoswine</option><option value="Porygon-Z">Porygon-Z</option><option value="Gallade">Gallade</option><option value="Gallade-Mega">Gallade-Mega</option><option value="Probopass">Probopass</option><option value="Dusknoir">Dusknoir</option><option value="Froslass">Froslass</option><option value="Rotom-Wash">Rotom-Wash</option><option value="Rotom">Rotom</option><option value="Rotom-Heat">Rotom-Heat</option><option value="Rotom-Frost">Rotom-Frost</option><option value="Rotom-Mow">Rotom-Mow</option><option value="Rotom-Fan">Rotom-Fan</option><option value="Uxie">Uxie</option><option value="Mesprit">Mesprit</option><option value="Azelf">Azelf</option><option value="Dialga">Dialga</option><option value="Palkia">Palkia</option><option value="Heatran">Heatran</option><option value="Regigigas">Regigigas</option><option value="Giratina-Altered">Giratina-Altered</option><option value="Giratina-Origin">Giratina-Origin</option><option value="Cresselia">Cresselia</option><option value="Phione">Phione</option><option value="Manaphy">Manaphy</option><option value="Darkrai">Darkrai</option><option value="Shaymin-Land">Shaymin-Land</option><option value="Shaymin-Sky">Shaymin-Sky</option><option value="Arceus">Arceus</option><option value="Victini">Victini</option><option value="Snivy">Snivy</option><option value="Servine">Servine</option><option value="Serperior">Serperior</option><option value="Tepig">Tepig</option><option value="Pignite">Pignite</option><option value="Emboar">Emboar</option><option value="Oshawott">Oshawott</option><option value="Dewott">Dewott</option><option value="Samurott">Samurott</option><option value="Samurott-Hisuian">Samurott-Hisuian</option><option value="Patrat">Patrat</option><option value="Watchog">Watchog</option><option value="Lillipup">Lillipup</option><option value="Herdier">Herdier</option><option value="Stoutland">Stoutland</option><option value="Purrloin">Purrloin</option><option value="Liepard">Liepard</option><option value="Pansage">Pansage</option><option value="Simisage">Simisage</option><option value="Pansear">Pansear</option><option value="Simisear">Simisear</option><option value="Panpour">Panpour</option><option value="Simipour">Simipour</option><option value="Munna">Munna</option><option value="Musharna">Musharna</option><option value="Pidove">Pidove</option><option value="Tranquill">Tranquill</option><option value="Unfezant">Unfezant</option><option value="Blitzle">Blitzle</option><option value="Zebstrika">Zebstrika</option><option value="Roggenrola">Roggenrola</option><option value="Boldore">Boldore</option><option value="Gigalith">Gigalith</option><option value="Woobat">Woobat</option><option value="Swoobat">Swoobat</option><option value="Drilbur">Drilbur</option><option value="Excadrill">Excadrill</option><option value="Audino">Audino</option><option value="Audino-Mega">Audino-Mega</option><option value="Timburr">Timburr</option><option value="Gurdurr">Gurdurr</option><option value="Conkeldurr">Conkeldurr</option><option value="Tympole">Tympole</option><option value="Palpitoad">Palpitoad</option><option value="Seismitoad">Seismitoad</option><option value="Throh">Throh</option><option value="Sawk">Sawk</option><option value="Sewaddle">Sewaddle</option><option value="Swadloon">Swadloon</option><option value="Leavanny">Leavanny</option><option value="Venipede">Venipede</option><option value="Whirlipede">Whirlipede</option><option value="Scolipede">Scolipede</option><option value="Cottonee">Cottonee</option><option value="Whimsicott">Whimsicott</option><option value="Petilil">Petilil</option><option value="Lilligant">Lilligant</option><option value="Lilligant-Hisuian">Lilligant-Hisuian</option><option value="Basculin-Blue-Striped">Basculin-Blue-Striped</option><option value="Basculin-Red-Striped">Basculin-Red-Striped</option><option value="Basculin-White-Striped">Basculin-White-Striped</option><option value="Sandile">Sandile</option><option value="Krokorok">Krokorok</option><option value="Krookodile">Krookodile</option><option value="Darumaka">Darumaka</option><option value="Darumaka-Galarian">Darumaka-Galarian</option><option value="Darmanitan-Standard">Darmanitan-Standard</option><option value="Darmanitan-Zen">Darmanitan-Zen</option><option value="Darmanitan-Galarian-Standard">Darmanitan-Galarian-Standard</option><option value="Darmanitan-Galarian-Zen">Darmanitan-Galarian-Zen</option><option value="Maractus">Maractus</option><option value="Dwebble">Dwebble</option><option value="Crustle">Crustle</option><option value="Scraggy">Scraggy</option><option value="Scrafty">Scrafty</option><option value="Sigilyph">Sigilyph</option><option value="Yamask">Yamask</option><option value="Yamask-Galarian">Yamask-Galarian</option><option value="Cofagrigus">Cofagrigus</option><option value="Tirtouga">Tirtouga</option><option value="Carracosta">Carracosta</option><option value="Archen">Archen</option><option value="Archeops">Archeops</option><option value="Trubbish">Trubbish</option><option value="Garbodor">Garbodor</option><option value="Garbodor-Gigantamax">Garbodor-Gigantamax</option><option value="Zorua">Zorua</option><option value="Zorua-Hisuian">Zorua-Hisuian</option><option value="Zoroark">Zoroark</option><option value="Zoroark-Hisuian">Zoroark-Hisuian</option><option value="Minccino">Minccino</option><option value="Cinccino">Cinccino</option><option value="Gothita">Gothita</option><option value="Gothorita">Gothorita</option><option value="Gothitelle">Gothitelle</option><option value="Solosis">Solosis</option><option value="Duosion">Duosion</option><option value="Reuniclus">Reuniclus</option><option value="Ducklett">Ducklett</option><option value="Swanna">Swanna</option><option value="Vanillite">Vanillite</option><option value="Vanillish">Vanillish</option><option value="Vanilluxe">Vanilluxe</option><option value="Deerling">Deerling</option><option value="Sawsbuck">Sawsbuck</option><option value="Emolga">Emolga</option><option value="Karrablast">Karrablast</option><option value="Escavalier">Escavalier</option><option value="Foongus">Foongus</option><option value="Amoonguss">Amoonguss</option><option value="Frillish">Frillish</option><option value="Jellicent">Jellicent</option><option value="Alomomola">Alomomola</option><option value="Joltik">Joltik</option><option value="Galvantula">Galvantula</option><option value="Ferroseed">Ferroseed</option><option value="Ferrothorn">Ferrothorn</option><option value="Klink">Klink</option><option value="Klang">Klang</option><option value="Klinklang">Klinklang</option><option value="Tynamo">Tynamo</option><option value="Eelektrik">Eelektrik</option><option value="Eelektross">Eelektross</option><option value="Elgyem">Elgyem</option><option value="Beheeyem">Beheeyem</option><option value="Litwick">Litwick</option><option value="Lampent">Lampent</option><option value="Chandelure">Chandelure</option><option value="Axew">Axew</option><option value="Fraxure">Fraxure</option><option value="Haxorus">Haxorus</option><option value="Cubchoo">Cubchoo</option><option value="Beartic">Beartic</option><option value="Cryogonal">Cryogonal</option><option value="Shelmet">Shelmet</option><option value="Accelgor">Accelgor</option><option value="Stunfisk">Stunfisk</option><option value="Stunfisk-Galarian">Stunfisk-Galarian</option><option value="Mienfoo">Mienfoo</option><option value="Mienshao">Mienshao</option><option value="Druddigon">Druddigon</option><option value="Golett">Golett</option><option value="Golurk">Golurk</option><option value="Pawniard">Pawniard</option><option value="Bisharp">Bisharp</option><option value="Bouffalant">Bouffalant</option><option value="Rufflet">Rufflet</option><option value="Braviary">Braviary</option><option value="Braviary-Hisuian">Braviary-Hisuian</option><option value="Vullaby">Vullaby</option><option value="Mandibuzz">Mandibuzz</option><option value="Heatmor">Heatmor</option><option value="Durant">Durant</option><option value="Deino">Deino</option><option value="Zweilous">Zweilous</option><option value="Hydreigon">Hydreigon</option><option value="Larvesta">Larvesta</option><option value="Volcarona">Volcarona</option><option value="Cobalion">Cobalion</option><option value="Terrakion">Terrakion</option><option value="Virizion">Virizion</option><option value="Tornadus-Therian">Tornadus-Therian</option><option value="Tornadus-Incarnate">Tornadus-Incarnate</option><option value="Thundurus-Therian">Thundurus-Therian</option><option value="Thundurus-Incarnate">Thundurus-Incarnate</option><option value="Reshiram">Reshiram</option><option value="Zekrom">Zekrom</option><option value="Landorus-Incarnate">Landorus-Incarnate</option><option value="Landorus-Therian">Landorus-Therian</option><option value="Kyurem-Black">Kyurem-Black</option><option value="Kyurem">Kyurem</option><option value="Kyurem-White">Kyurem-White</option><option value="Keldeo-Ordinary">Keldeo-Ordinary</option><option value="Keldeo-Resolute">Keldeo-Resolute</option><option value="Meloetta-Aria">Meloetta-Aria</option><option value="Meloetta-Pirouette">Meloetta-Pirouette</option><option value="Genesect">Genesect</option><option value="Chespin">Chespin</option><option value="Quilladin">Quilladin</option><option value="Chesnaught">Chesnaught</option><option value="Fennekin">Fennekin</option><option value="Braixen">Braixen</option><option value="Delphox">Delphox</option><option value="Froakie">Froakie</option><option value="Frogadier">Frogadier</option><option value="Greninja">Greninja</option><option value="Bunnelby">Bunnelby</option><option value="Diggersby">Diggersby</option><option value="Fletchling">Fletchling</option><option value="Fletchinder">Fletchinder</option><option value="Talonflame">Talonflame</option><option value="Scatterbug">Scatterbug</option><option value="Spewpa">Spewpa</option><option value="Vivillon">Vivillon</option><option value="Litleo">Litleo</option><option value="Pyroar">Pyroar</option><option value="Flabebe">Flabebe</option><option value="Floette">Floette</option><option value="Floette-Eternal">Floette-Eternal</option><option value="Florges">Florges</option><option value="Skiddo">Skiddo</option><option value="Gogoat">Gogoat</option><option value="Pancham">Pancham</option><option value="Pangoro">Pangoro</option><option value="Furfrou">Furfrou</option><option value="Espurr">Espurr</option><option value="Meowstic-Female">Meowstic-Female</option><option value="Meowstic-Male">Meowstic-Male</option><option value="Honedge">Honedge</option><option value="Doublade">Doublade</option><option value="Aegislash-Blade">Aegislash-Blade</option><option value="Aegislash-Shield">Aegislash-Shield</option><option value="Spritzee">Spritzee</option><option value="Aromatisse">Aromatisse</option><option value="Swirlix">Swirlix</option><option value="Slurpuff">Slurpuff</option><option value="Inkay">Inkay</option><option value="Malamar">Malamar</option><option value="Binacle">Binacle</option><option value="Barbaracle">Barbaracle</option><option value="Skrelp">Skrelp</option><option value="Dragalge">Dragalge</option><option value="Clauncher">Clauncher</option><option value="Clawitzer">Clawitzer</option><option value="Helioptile">Helioptile</option><option value="Heliolisk">Heliolisk</option><option value="Tyrunt">Tyrunt</option><option value="Tyrantrum">Tyrantrum</option><option value="Amaura">Amaura</option><option value="Aurorus">Aurorus</option><option value="Sylveon">Sylveon</option><option value="Hawlucha">Hawlucha</option><option value="Dedenne">Dedenne</option><option value="Carbink">Carbink</option><option value="Goomy">Goomy</option><option value="Sliggoo">Sliggoo</option><option value="Sliggoo-Hisuian">Sliggoo-Hisuian</option><option value="Goodra">Goodra</option><option value="Goodra-Hisuian">Goodra-Hisuian</option><option value="Klefki">Klefki</option><option value="Phantump">Phantump</option><option value="Trevenant">Trevenant</option><option value="Pumpkaboo-Large">Pumpkaboo-Large</option><option value="Pumpkaboo-Average">Pumpkaboo-Average</option><option value="Pumpkaboo-Small">Pumpkaboo-Small</option><option value="Pumpkaboo-Super">Pumpkaboo-Super</option><option value="Gourgeist-Average">Gourgeist-Average</option><option value="Gourgeist-Large">Gourgeist-Large</option><option value="Gourgeist-Small">Gourgeist-Small</option><option value="Gourgeist-Super">Gourgeist-Super</option><option value="Bergmite">Bergmite</option><option value="Avalugg">Avalugg</option><option value="Avalugg-Hisuian">Avalugg-Hisuian</option><option value="Noibat">Noibat</option><option value="Noivern">Noivern</option><option value="Xerneas">Xerneas</option><option value="Yveltal">Yveltal</option><option value="Zygarde-Complete">Zygarde-Complete</option><option value="Zygarde-50">Zygarde-50</option><option value="Zygarde-10">Zygarde-10</option><option value="Zygarde-Cell">Zygarde-Cell</option><option value="Zygarde-Core">Zygarde-Core</option><option value="Diancie">Diancie</option><option value="Diancie-Mega">Diancie-Mega</option><option value="Hoopa-Confined">Hoopa-Confined</option><option value="Hoopa-Unbound">Hoopa-Unbound</option><option value="Volcanion">Volcanion</option><option value="Rowlet">Rowlet</option><option value="Dartrix">Dartrix</option><option value="Decidueye">Decidueye</option><option value="Decidueye-Hisuian">Decidueye-Hisuian</option><option value="Litten">Litten</option><option value="Torracat">Torracat</option><option value="Incineroar">Incineroar</option><option value="Popplio">Popplio</option><option value="Brionne">Brionne</option><option value="Primarina">Primarina</option><option value="Pikipek">Pikipek</option><option value="Trumbeak">Trumbeak</option><option value="Toucannon">Toucannon</option><option value="Yungoos">Yungoos</option><option value="Gumshoos">Gumshoos</option><option value="Grubbin">Grubbin</option><option value="Charjabug">Charjabug</option><option value="Vikavolt">Vikavolt</option><option value="Crabrawler">Crabrawler</option><option value="Crabominable">Crabominable</option><option value="Oricorio-Pom-Pom">Oricorio-Pom-Pom</option><option value="Oricorio-Sensu">Oricorio-Sensu</option><option value="Oricorio-Baile">Oricorio-Baile</option><option value="Oricorio-Pau">Oricorio-Pau</option><option value="Cutiefly">Cutiefly</option><option value="Ribombee">Ribombee</option><option value="Rockruff">Rockruff</option><option value="Lycanroc-Midday">Lycanroc-Midday</option><option value="Lycanroc-Midnight">Lycanroc-Midnight</option><option value="Lycanroc-Dusk">Lycanroc-Dusk</option><option value="Wishiwashi-Solo">Wishiwashi-Solo</option><option value="Wishiwashi-School">Wishiwashi-School</option><option value="Mareanie">Mareanie</option><option value="Toxapex">Toxapex</option><option value="Mudbray">Mudbray</option><option value="Mudsdale">Mudsdale</option><option value="Dewpider">Dewpider</option><option value="Araquanid">Araquanid</option><option value="Fomantis">Fomantis</option><option value="Lurantis">Lurantis</option><option value="Morelull">Morelull</option><option value="Shiinotic">Shiinotic</option><option value="Salandit">Salandit</option><option value="Salazzle">Salazzle</option><option value="Stufful">Stufful</option><option value="Bewear">Bewear</option><option value="Bounsweet">Bounsweet</option><option value="Steenee">Steenee</option><option value="Tsareena">Tsareena</option><option value="Comfey">Comfey</option><option value="Oranguru">Oranguru</option><option value="Passimian">Passimian</option><option value="Wimpod">Wimpod</option><option value="Golisopod">Golisopod</option><option value="Sandygast">Sandygast</option><option value="Palossand">Palossand</option><option value="Pyukumuku">Pyukumuku</option><option value="Type-Null">Type-Null</option><option value="Silvally">Silvally</option><option value="Minior-Core">Minior-Core</option><option value="Minior-Meteor">Minior-Meteor</option><option value="Komala">Komala</option><option value="Turtonator">Turtonator</option><option value="Togedemaru">Togedemaru</option><option value="Mimikyu">Mimikyu</option><option value="Bruxish">Bruxish</option><option value="Drampa">Drampa</option><option value="Dhelmise">Dhelmise</option><option value="Jangmo-O">Jangmo-O</option><option value="Hakamo-O">Hakamo-O</option><option value="Kommo-O">Kommo-O</option><option value="Tapu-Koko">Tapu-Koko</option><option value="Tapu-Lele">Tapu-Lele</option><option value="Tapu-Bulu">Tapu-Bulu</option><option value="Tapu-Fini">Tapu-Fini</option><option value="Cosmog">Cosmog</option><option value="Cosmoem">Cosmoem</option><option value="Solgaleo-Radiant-Sun">Solgaleo-Radiant-Sun</option><option value="Solgaleo">Solgaleo</option><option value="Lunala-Full-Moon">Lunala-Full-Moon</option><option value="Lunala">Lunala</option><option value="Nihilego">Nihilego</option><option value="Buzzwole">Buzzwole</option><option value="Pheromosa">Pheromosa</option><option value="Xurkitree">Xurkitree</option><option value="Celesteela">Celesteela</option><option value="Kartana">Kartana</option><option value="Guzzlord">Guzzlord</option><option value="Necrozma">Necrozma</option><option value="Necrozma-Ultra">Necrozma-Ultra</option><option value="Necrozma-Dawn-Wings">Necrozma-Dawn-Wings</option><option value="Necrozma-Dusk-Mane">Necrozma-Dusk-Mane</option><option value="Magearna">Magearna</option><option value="Marshadow">Marshadow</option><option value="Poipole">Poipole</option><option value="Naganadel">Naganadel</option><option value="Stakataka">Stakataka</option><option value="Blacephalon">Blacephalon</option><option value="Zeraora">Zeraora</option><option value="Meltan">Meltan</option><option value="Melmetal">Melmetal</option><option value="Melmetal-Gigantamax">Melmetal-Gigantamax</option></datalist></nobr><nobr>
+  <label for="Sexo">Sexo:</label><input type="text" id="Sexo" list="listaSexo" value="">
   <datalist id="listaSexo">  
     <option value="---">---</option>
     <option value="Masculino">Masculino</option>
@@ -151,7 +138,7 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
   </datalist>
 </nobr>
 <nobr>
-  <label for="Nature">Nature:</label><input type="text" id="Nature" list="listaNature" oninput="sumValues; SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo()">
+  <label for="Nature">Nature:</label><input type="text" id="Nature" list="listaNature" oninput="sumValues; SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo()" value="">
     <datalist id="listaNature">
     <option value="---">---</option>
     <option value="Hardy">Hardy</option>
@@ -181,14 +168,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     </datalist>
   </nobr>
 <nobr>
-  <label for="Tipo1">Tipos:</label><input type="text" id="Type1" readonly="readonly"><input type="text" id="Type2" readonly="readonly">
+  <label for="Tipo1">Tipos:</label><input type="text" id="Type1" readonly="readonly" value=""><input type="text" id="Type2" readonly="readonly" value="">
   </nobr>
 <nobr>
   <label for="Level">Level: </label>
   <input type="number" value="5" id="Level" oninput="DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarBraco(); classificarCoxas(); classificarAbdomen(); classificarBunda(); classificarQuadril(); classificarOmbros(); ClassificarPeitoSeio(); CalcularPVTotal(); PassarParaFinal()">
   </nobr>
 <br>
-<p id="Stats" onload="popularSelectPokemon(); popularAtributos; SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias()">
+<p id="Stats" onload="popularAtributos; SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias()">
 </p><center>
   <table>
     <tbody><tr>
@@ -202,7 +189,7 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <tr>
       <td>
                   <center>
-                  <input type="number" id="PVT" readonly="readonly">
+                  <input type="number" id="PVT" readonly="readonly" value="0">
                   </center>
                   </td>
     </tr>
@@ -224,19 +211,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
       <label for="HPIV">HP: </label>
       </td>
       <td>
-        <input type="number" name="IV" id="HPIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+        <input type="number" name="IV" id="HPIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" name="Racial" id="HPRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+          <input type="number" name="Racial" id="HPRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>+</td>
           <td>
-            <input type="number" readonly="readonly" id="NHP" oninput="SomarTotaisAtributos()">
+            <input type="number" readonly="readonly" id="NHP" oninput="SomarTotaisAtributos()" value="">
             </td>
             <td>=</td>
             <td>
-              <input type="number" name="Totais" id="HPTotal" readonly="readonly">
+              <input type="number" name="Totais" id="HPTotal" readonly="readonly" value="0">
               </td>
                 
                   </tr>
@@ -245,19 +232,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <label for="AttackIV">Attack: </label>
     </td>
     <td>
-      <input type="number" name="IV" id="AttackIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+      <input type="number" name="IV" id="AttackIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
       </td>
       <td>+</td>
       <td>
-        <input type="number" name="Racial" id="AttackRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+        <input type="number" name="Racial" id="AttackRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" readonly="readonly" id="NAttack" oninput="SomarTotaisAtributos()">
+          <input type="number" readonly="readonly" id="NAttack" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>=</td>
           <td>
-            <input type="number" name="Totais" id="AttackTotal" readonly="readonly">
+            <input type="number" name="Totais" id="AttackTotal" readonly="readonly" value="0">
             </td>
                 </tr>
 <tr>
@@ -265,19 +252,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <label for="DefenseIV">Defense: </label>
     </td>
     <td>
-      <input type="number" name="IV" id="DefenseIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+      <input type="number" name="IV" id="DefenseIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
       </td>
       <td>+</td>
       <td>
-        <input type="number" name="Racial" id="DefenseRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+        <input type="number" name="Racial" id="DefenseRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" readonly="readonly" id="NDefense" oninput="SomarTotaisAtributos()">
+          <input type="number" readonly="readonly" id="NDefense" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>=</td>
           <td>
-            <input type="number" name="Totais" id="DefenseTotal" readonly="readonly">
+            <input type="number" name="Totais" id="DefenseTotal" readonly="readonly" value="0">
             </td>
             </tr>
 <tr>
@@ -285,19 +272,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <label for="SpAtkIV">Sp.Atk: </label>
     </td>
     <td>
-      <input type="number" name="IV" id="SpAtkIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+      <input type="number" name="IV" id="SpAtkIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
       </td>
       <td>+</td>
       <td>
-        <input type="number" name="Racial" id="SpAtkRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+        <input type="number" name="Racial" id="SpAtkRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" readonly="readonly" id="NSpAttack" oninput="SomarTotaisAtributos()">
+          <input type="number" readonly="readonly" id="NSpAttack" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>=</td>
           <td>
-            <input type="number" name="Totais" id="SpAtkTotal" readonly="readonly">
+            <input type="number" name="Totais" id="SpAtkTotal" readonly="readonly" value="0">
             </td>
             </tr>
 <tr>
@@ -305,19 +292,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <label for="SpDefIV">Sp.Def: </label>
     </td>
     <td>
-      <input type="number" name="IV" id="SpDefIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+      <input type="number" name="IV" id="SpDefIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
       </td>
       <td>+</td>
       <td>
-        <input type="number" name="Racial" id="SpDefRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+        <input type="number" name="Racial" id="SpDefRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" readonly="readonly" id="NSpDefense" oninput="SomarTotaisAtributos()">
+          <input type="number" readonly="readonly" id="NSpDefense" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>=</td>
           <td>
-            <input type="number" name="Totais" id="SpDefTotal" readonly="readonly">
+            <input type="number" name="Totais" id="SpDefTotal" readonly="readonly" value="0">
             </td>
             </tr>
 <tr>
@@ -325,19 +312,19 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
     <label for="SpeedIV">Speed: </label>
     </td>
     <td>
-      <input type="number" name="IV" id="SpeedIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()">
+      <input type="number" name="IV" id="SpeedIV" oninput="SomarTotaisAtributos(); DarAtributosParaPericias(); AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); CalcularPVTotal(); somasCorpo(); classificarOmbros(); ClassificarPeitoSeio(); classificarBraco(); classificarCintura(); classificarAbdomen(); classificarQuadril(); classificarBunda(); classificarCoxas(); PassarParaFinal()" value="">
       </td>
       <td>+</td>
       <td>
-        <input type="number" name="Racial" id="SpeedRacial" readonly="readonly" oninput="SomarTotaisAtributos()">
+        <input type="number" name="Racial" id="SpeedRacial" readonly="readonly" oninput="SomarTotaisAtributos()" value="">
         </td>
         <td>+</td>
         <td>
-          <input type="number" readonly="readonly" id="NSpeed" oninput="SomarTotaisAtributos()">
+          <input type="number" readonly="readonly" id="NSpeed" oninput="SomarTotaisAtributos()" value="">
           </td>
           <td>=</td>
           <td>
-          <input type="number" name="Totais" id="SpeedTotal" readonly="readonly">
+          <input type="number" name="Totais" id="SpeedTotal" readonly="readonly" value="0">
           </td>
           <td></td>
           <td colspan="2">
@@ -372,14 +359,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label for="atkfis">Atk físico</label>
           </td>
           <td>
-            <input type="number" id="atkfis" readonly="readonly">
+            <input type="number" id="atkfis" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tatkfis" readonly="readonly">
+              <input type="number" id="Tatkfis" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Tratkfis" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarBraco(); PassarParaFinal()">
+                  <input type="checkbox" id="Tratkfis" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarBraco(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -393,14 +380,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Atk especial</label>
           </td>
           <td>
-            <input type="number" id="atkesp" readonly="readonly">
+            <input type="number" id="atkesp" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tatkesp" readonly="readonly">
+              <input type="number" id="Tatkesp" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Tratkesp" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                  <input type="checkbox" id="Tratkesp" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -414,14 +401,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
         <label>Atk de status</label>
         </td>
         <td>
-          <input type="number" id="atksta" readonly="readonly">
+          <input type="number" id="atksta" readonly="readonly" value="0">
           </td>
           <td>
-            <input type="number" id="Tatksta" readonly="readonly">
+            <input type="number" id="Tatksta" readonly="readonly" value="0">
             </td>
             <td>
               <center>
-                <input type="checkbox" id="Tratksta" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                <input type="checkbox" id="Tratksta" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                 </center>
                 </td>
                 </tr>
@@ -435,14 +422,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Acrobacia</label>
           </td>
           <td>
-            <input type="number" id="Acro" readonly="readonly">
+            <input type="number" id="Acro" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="TAcro" readonly="readonly">
+              <input type="number" id="TAcro" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="TrAcro" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarCoxas(); PassarParaFinal()">
+                  <input type="checkbox" id="TrAcro" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarCoxas(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -456,14 +443,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Atletismo</label>
           </td>
           <td>
-            <input type="number" id="atl" readonly="readonly">
+            <input type="number" id="atl" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tatl" readonly="readonly">
+              <input type="number" id="Tatl" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Tratl" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarAbdomen(); PassarParaFinal()">
+                  <input type="checkbox" id="Tratl" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarAbdomen(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -477,14 +464,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Atuação</label>
           </td>
           <td>
-            <input type="number" id="atu" readonly="readonly">
+            <input type="number" id="atu" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tatu" readonly="readonly">
+              <input type="number" id="Tatu" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Tratu" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarBunda(); PassarParaFinal()">
+                  <input type="checkbox" id="Tratu" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarBunda(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -498,14 +485,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Diplomacia</label>
           </td>
           <td>
-            <input type="number" id="dpl" readonly="readonly">
+            <input type="number" id="dpl" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tdpl" readonly="readonly">
+              <input type="number" id="Tdpl" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trdpl" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                  <input type="checkbox" id="Trdpl" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -518,14 +505,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
         <label>Enganação</label>
         </td>
         <td>
-          <input type="number" id="eng" readonly="readonly">
+          <input type="number" id="eng" readonly="readonly" value="0">
           </td>
           <td>
-            <input type="number" id="Teng" readonly="readonly">
+            <input type="number" id="Teng" readonly="readonly" value="0">
             </td>
             <td>
               <center>
-                <input type="checkbox" id="Treng" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                <input type="checkbox" id="Treng" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                 </center>
                 </td>
                 </tr>
@@ -538,14 +525,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Furtividade</label>
           </td>
           <td>
-            <input type="number" id="fur" readonly="readonly">
+            <input type="number" id="fur" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tfur" readonly="readonly">
+              <input type="number" id="Tfur" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trfur" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarQuadril(); PassarParaFinal()">
+                  <input type="checkbox" id="Trfur" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarQuadril(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -558,14 +545,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Iniciativa</label>
           </td>
           <td>
-            <input type="number" id="ini" readonly="readonly">
+            <input type="number" id="ini" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tini" readonly="readonly">
+              <input type="number" id="Tini" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trini" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarCintura(); PassarParaFinal()">
+                  <input type="checkbox" id="Trini" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarCintura(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -578,14 +565,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Intimidação</label>
           </td>
           <td>
-            <input type="number" id="int" readonly="readonly">
+            <input type="number" id="int" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tint" readonly="readonly">
+              <input type="number" id="Tint" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trint" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarOmbros(); PassarParaFinal()">
+                  <input type="checkbox" id="Trint" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); classificarOmbros(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -598,14 +585,14 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Meditação</label>
           </td>
           <td>
-            <input type="number" id="med" readonly="readonly">
+            <input type="number" id="med" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tmed" readonly="readonly">
+              <input type="number" id="Tmed" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trmed" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                  <input type="checkbox" id="Trmed" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -618,35 +605,35 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
           <label>Percepção</label>
           </td>
           <td>
-            <input type="number" id="per" readonly="readonly">
+            <input type="number" id="per" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tper" readonly="readonly">
+              <input type="number" id="Tper" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trper" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()">
+                  <input type="checkbox" id="Trper" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
-                  <tr style="display: none;">
+                  <tr>
                     <th></th>
                     <th>HP</th>
                     <th></th>
                   </tr>
-      <tr style="display: none;">
+      <tr>
         <td id="Fl">
           <label>Sedução</label>
           </td>
           <td>
-            <input type="number" id="sedu" readonly="readonly">
+            <input type="number" id="sedu" readonly="readonly" value="0">
             </td>
             <td>
-              <input type="number" id="Tsedu" readonly="readonly">
+              <input type="number" id="Tsedu" readonly="readonly" value="0">
               </td>
               <td>
                 <center>
-                  <input type="checkbox" id="Trsedu" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); ClassificarPeitoSeio(); PassarParaFinal()">
+                  <input type="checkbox" id="Trsedu" oninput="AtualizarTreinamentoPericias(); PuxarPericiasParaCorpo(); somasCorpo(); ClassificarPeitoSeio(); PassarParaFinal()" value="on">
                   </center>
                   </td>
                   </tr>
@@ -666,7 +653,7 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
                   <div id="Corpo" onload="PuxarPericiasParaCorpo()" style="display: none; position: fixed;">
     <h1>Corpo</h1>
 <label for="PDist">Pontos para distribuir: </label>
-<input type="number" id="PDist" readonly="readonly" onload="somarCorpoAbsoluto()">
+<input type="number" id="PDist" readonly="readonly" onload="somarCorpoAbsoluto()" value="100">
 <br>
 <a>
 Distribua todos os pontos. Permitido colocar Pontos negativos, que também contam como positivos.
@@ -688,7 +675,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PAlt" id="aumentar">↑</button>
         </nobr>
         <br>
-        <input type="text" readonly="readonly" id="altfinal">
+        <input type="text" readonly="readonly" id="altfinal" value="">
         </center>
         </td>
     <td>
@@ -700,11 +687,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="POmb" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppomb">Intimidação</label><input type="number" readonly="readonly" id="ppomb"></nobr>
+        <nobr><label for="ppomb">Intimidação</label><input type="number" readonly="readonly" id="ppomb" value="0"></nobr>
         <br>
-        <label for="ombtotal">Total</label><input type="number" readonly="readonly" id="ombtotal">
+        <label for="ombtotal">Total</label><input type="number" readonly="readonly" id="ombtotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="resomb">
+        <input type="text" readonly="readonly" id="resomb" value="Estreitos">
         </center>
         </td>
     
@@ -730,11 +717,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PPei" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="pppeito">Sedução</label><input type="number" readonly="readonly" id="pppeito"></nobr>
+        <nobr><label for="pppeito">Sedução</label><input type="number" readonly="readonly" id="pppeito" value="0"></nobr>
         <br>
-        <label for="peitotal">Total</label><input type="number" readonly="readonly" id="peitotal">
+        <label for="peitotal">Total</label><input type="number" readonly="readonly" id="peitotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="respei">
+        <input type="text" readonly="readonly" id="respei" value="">
         </center>
         </td>
     <td>
@@ -746,11 +733,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PBra" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppbra">Atk.Fisíco</label><input type="number" readonly="readonly" id="ppbra"></nobr>
+        <nobr><label for="ppbra">Atk.Fisíco</label><input type="number" readonly="readonly" id="ppbra" value="0"></nobr>
         <br>
-        <label for="bratotal">Total</label><input type="number" readonly="readonly" id="bratotal">
+        <label for="bratotal">Total</label><input type="number" readonly="readonly" id="bratotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="resbrac">
+        <input type="text" readonly="readonly" id="resbrac" value="Gordos">
         </center>
         </td>
     
@@ -779,11 +766,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PCin" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppcin">Iniciativa</label><input type="number" readonly="readonly" id="ppcin"></nobr>
+        <nobr><label for="ppcin">Iniciativa</label><input type="number" readonly="readonly" id="ppcin" value="0"></nobr>
         <br>
-        <label for="cintotal">Total</label><input type="number" readonly="readonly" id="cintotal">
+        <label for="cintotal">Total</label><input type="number" readonly="readonly" id="cintotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="rescin">
+        <input type="text" readonly="readonly" id="rescin" value="Sexo não especificado">
         </center>
         </td>
     <td>
@@ -795,11 +782,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PAbd" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppabd">Atletismo</label><input type="number" readonly="readonly" id="ppabd"></nobr>
+        <nobr><label for="ppabd">Atletismo</label><input type="number" readonly="readonly" id="ppabd" value="0"></nobr>
         <br>
-        <label for="abdtotal">Total</label><input type="number" readonly="readonly" id="abdtotal">
+        <label for="abdtotal">Total</label><input type="number" readonly="readonly" id="abdtotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="resabd">
+        <input type="text" readonly="readonly" id="resabd" value="Gordo">
         </center>
         </td>
         </tr><tr>
@@ -825,11 +812,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PQuad" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppquad">Furtividade</label><input type="number" readonly="readonly" id="ppquad"></nobr>
+        <nobr><label for="ppquad">Furtividade</label><input type="number" readonly="readonly" id="ppquad" value="0"></nobr>
         <br>
-        <label for="quadtotal">Total</label><input type="number" readonly="readonly" id="quadtotal">
+        <label for="quadtotal">Total</label><input type="number" readonly="readonly" id="quadtotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="resquad">
+        <input type="text" readonly="readonly" id="resquad" value="Sexo não especificado">
         </center>
         </td>
     <td>
@@ -840,11 +827,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PBun" id="diminuir">↓</button>
         <button for="PBun" id="aumentar">↑</button> 
         </nobr><br>
-        <nobr><label for="ppbun">Atuação</label><input type="number" readonly="readonly" id="ppbun"></nobr>
+        <nobr><label for="ppbun">Atuação</label><input type="number" readonly="readonly" id="ppbun" value="0"></nobr>
         <br>
-        <label for="buntotal">Total</label><input type="number" readonly="readonly" id="buntotal">
+        <label for="buntotal">Total</label><input type="number" readonly="readonly" id="buntotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="resbun">
+        <input type="text" readonly="readonly" id="resbun" value="Pequena">
         </center>
         </td>
     
@@ -859,7 +846,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
             Coxas
           </th>
            <th>
-      <input type="checkbox" id="Penis" oninput="executarMostrarPenis(); PassarParaFinal()">Pênis
+      <input type="checkbox" id="Penis" oninput="executarMostrarPenis(); PassarParaFinal()" value="on">Pênis
       </th>
   </tr>
   <tr>
@@ -872,11 +859,11 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PCox" id="aumentar">↑</button>
         </nobr>
         <br>
-        <nobr><label for="ppcox">Acrobacia</label><input type="number" readonly="readonly" id="ppcox"></nobr>
+        <nobr><label for="ppcox">Acrobacia</label><input type="number" readonly="readonly" id="ppcox" value="0"></nobr>
         <br>
-        <label for="coxtotal">Total</label><input type="number" readonly="readonly" id="coxtotal">
+        <label for="coxtotal">Total</label><input type="number" readonly="readonly" id="coxtotal" value="0">
         <br>
-        <input type="text" readonly="readonly" id="rescox">
+        <input type="text" readonly="readonly" id="rescox" value="Gordas">
         </center>
         </td>
     <td>
@@ -888,7 +875,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
         <button for="PPen" id="aumentar">↑</button>
         </nobr>
       <br>
-      <input type="text" readonly="readonly" id="respen">
+      <input type="text" readonly="readonly" id="respen" value="">
       </center>
       </td>
     
@@ -906,7 +893,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <tr>
     <td colspan="2">
       <center>
-        <input oninput="PassarParaFinal()" type="checkbox" id="Vagina">
+        <input oninput="PassarParaFinal()" type="checkbox" id="Vagina" value="on">
         </center>
         </td>
   </tr>
@@ -921,15 +908,15 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <a>
   Link da imagem:
   </a>
-  <input type="text" id="linkimgper" oninput="CarregarImgPer()">
+  <input type="text" id="linkimgper" oninput="CarregarImgPer()" value="">
   <br>
   <a>
   Ou escolha um imagem .PNG do seu dispositivo:
   </a>
   <br>
-  <input id="fileimgper" type="file" accept=".png">
+  <input id="fileimgper" type="file" accept=".png" value="">
   <br>
-  <img style="max-width: 100%"  id="imgper" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgper" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <a>
   Imagem de corpo inteiro
@@ -938,15 +925,15 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <a>
   Link da imagem:
   </a>
-  <input type="text" id="linkimgcorp" oninput="carregarImgCorp()">
+  <input type="text" id="linkimgcorp" oninput="carregarImgCorp()" value="">
   <br>
   <a>
   Ou escolha um imagem .PNG do seu dispositivo:
   </a>
   <br>
-  <input id="fileimgcorp" type="file" accept=".png">
+  <input id="fileimgcorp" type="file" accept=".png" value="">
   <br>
-  <img style="max-width: 100%" id="imgcorp" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgcorp" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <a>
   Imagem de fundo
@@ -955,101 +942,102 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <a>
   Link da imagem:
   </a>
-  <input type="text" id="linkimgfun" oninput="carregarImgFun()">
+  <input type="text" id="linkimgfun" oninput="carregarImgFun()" value="">
   <br>
   <a>
   Ou escolha um imagem .PNG do seu dispositivo:
   </a>
   <br>
-  <input id="fileimgfun" type="file" accept=".png">
+  <input id="fileimgfun" type="file" accept=".png" value="">
   <br>
-  <img style="max-width: 100%" id="imgfun" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgfun" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
   <br>
   <br>
   <button onclick="fecharPersonalizacao()">Fechar</button>
   </div>
   
 <center>
-<div id="Aba2">
-    <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="">
+<div id="Aba2" style="filter: none;">
+    <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="" value="">
         <br>
-        <button onclick="download()">Salvar Personagem</button>
-      <br>
-      <button onclick="updateCharacterSelect()">Carregar personagens</button>
-      <br>
-      <br>
-      <label for="characterSelect">Personagens salvos:</label><select id="characterSelect" oninput="loadCharacter()">
-        <option value="">Selecione um personagem</option>
-      </select>
-  </nobr></p><h1><nobr>Meu RPG de Pokemon</nobr></h1><nobr>
-
-
+        <button onclick="captureFormElementsAndSaveAsJson()">Salvar Personagem</button>
+    <br>
+    <br>
+    <button onclick="loadFormDataFromJson()">Carregar Personagem</button>
+    <br>
+    <br>
+    <button onclick="AlterarTema()">Alterar Tema</button>
+</nobr></p><nobr>
+  <h1>Meu RPG de Pokemon</h1>
  <p id="dadosfinais">
   </p><h2>Dados Pessoais</h2>
   </nobr><p><nobr> <button onclick="exibirIDadosPessoaos()">Clique para editar</button>
     <br>
     <br>
-    
-<table style="width: 100%; padding: 20px">
-<tr>
-<td style="padding: 20px">
-<nobr>
-    <a id="nomefinal">Nome</a><a>,</a> <a id="pokemonfinal">Pokemon</a><a>, </a><a id="sexofinal">Sexo</a><a>,</a>
-</nobr>
-    <br>
-<br>
-    <a id="naturefinal">nature</a><a>, </a></nobr><nobr><a id="type1final">tipo 1</a><a>, </a><a id="type2final">tipo 2</a></nobr>
-</td>
-<td id="imgperfinal" style="width: 300px; height: 400px; background-repeat: no; background-position-x: center; background-attachment: scroll; background-size: auto 400px">
+    <table style="width: 100%;">
+        <tr>
+            <td>
+    <a id="nomefinal"></a><a>, </a><a id="pokemonfinal"></a><a>, </a><a id="sexofinal"></a><a>, </a><a id="naturefinal"></a><a>, </a></nobr><nobr><a id="type1final"></a><a>, </a><a id="type2final"></a></nobr>
+    </td>
+    <td id="imgperfinal" style="width: 300px; height: 400px; background-repeat: no; background-position-x: center; background-attachment: scroll; background-size: auto 400px">
 </tr>
 </table>
     
     </p>
+    
     <nobr>
     <label for="levelfinal">Level:</label>
-    <input id="levelfinal" type="number">
+    <input id="levelfinal" type="number" value="5">
     </nobr>
     <br>
     <br>
     <br>
     <p></p>
     <p style="width:100%">
-<table style="width: 100%; padding: 20px">
-<tr>
-<td id="imgcorpfinal" style="width: 300px; height: 450px; background-repeat: no; background-position-x: center; background-attachment: scroll; background-size: auto 450px"></td>
-<td style="padding: 20px">
-    <label>
-Stats
+    <table style="width: 100%;">
+        <tr>
+            <td>
+      <label>
+      Stats
     </label>
     <br>
     <nobr>
     <label for="hpfinal">HP: </label>
-    <a id="hpfinal"></a><a>, </a>
+    <a id="hpfinal">0</a><a>, </a>
+    </nobr>
+    <nobr>
     <label for="atkfinal">Atk: </label>
-    <a id="atkfinal"></a><a>, </a>
+    <a id="atkfinal">0</a><a>, </a>
+    </nobr>
+    <nobr>
     <label for="deffinal">Def: </label>
-    <a id="deffinal"></a><a>, </a>
+    <a id="deffinal">0</a><a>, </a>
     </nobr>
     <nobr>
     <label for="spatkfinal">Sp.Atk: </label>
-    <a id="spatkfinal"></a><a>, </a>
-    <label for="spdeffinal">Sp.Def: </label>
-    <a id="spdeffinal"></a><a>, </a>
-    <label for="spdfinal">Speed</label>
-    <a id="spdfinal"></a><a>, </a>
+    <a id="spatkfinal">0</a><a>, </a>
     </nobr>
+    <nobr>
+    <label for="spdeffinal">Sp.Def: </label>
+    <a id="spdeffinal">0</a><a>, </a>
+    </nobr>
+    <nobr>
+    <label for="spdfinal">Speed</label>
+    <a id="spdfinal">0</a><a>, </a>
+    </nobr>
+    </td>
+    <td id="imgcorpfinal" style="width: 300px; height: 400px; background-repeat: no; background-position-x: center; background-attachment: scroll; background-size: auto 400px">
+</tr>
+</table>
     <br>
     <br>
     <label>Pontos de Vida</label>
     <br>
     <label for="pvmaxfinal">Maximo</label>
-    <input id="pvmaxfinal" readonly="readonly" type="number">
+    <input id="pvmaxfinal" readonly="readonly" type="number" value="0">
     <br>
     <label for="pvmatufinal">Atual</label>
-    <input id="pvmatufinal" type="number">
-</TD>
-</tr>
-</table>
+    <input id="pvmatufinal" type="number" value="">
     
     </p>
     <br>
@@ -1070,7 +1058,7 @@ Stats
       </tr>
   <tr>
     <td colspan="2">
-    <input type="text" list="listaGolpes" id="M1final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()">
+    <input type="text" list="listaGolpes" id="M1final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()" value="">
     <datalist id="listaGolpes">  
     <option value="---">---</option>
       <option value="Absorb">Absorb</option>
@@ -1829,12 +1817,12 @@ Stats
   <tr>
   <td>
     <center>
-      <input type="text" id="PM1final" readonly="readonly">
+      <input type="text" id="PM1final" readonly="readonly" value="">
       </center>
       </td>
       <td>
         <center>
-          <input readonly="readonly" type="text" id="DM1final">
+          <input readonly="readonly" type="text" id="DM1final" value="">
           </center>
           </td>
           </tr>
@@ -1844,12 +1832,12 @@ Stats
     </tr>
   <tr><td>
     <center>
-      <input type="text" id="TipoM1final" readonly="readonly">
+      <input type="text" id="TipoM1final" readonly="readonly" value="">
       </center>
       </td>
       <td colspan="2">
         <center>
-          <input type="text" id="CM1final" readonly="readonly">
+          <input type="text" id="CM1final" readonly="readonly" value="">
           </center>
           </td>
           </tr>
@@ -1873,7 +1861,7 @@ Stats
       </tr>
   <tr>
     <td colspan="2">
-      <input type="text" list="listaGolpes" id="M2final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()">
+      <input type="text" list="listaGolpes" id="M2final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()" value="">
 
   </td>
   </tr>
@@ -1884,12 +1872,12 @@ Stats
   <tr>
   <td>
     <center>
-      <input type="text" id="PM2final" readonly="readonly">
+      <input type="text" id="PM2final" readonly="readonly" value="">
       </center>
       </td>
       <td>
         <center>
-          <input readonly="readonly" type="text" id="DM2final">
+          <input readonly="readonly" type="text" id="DM2final" value="">
           </center>
           </td>
           </tr>
@@ -1899,10 +1887,10 @@ Stats
     </tr>
   <tr><td>
     <center>
-      <input type="text" id="TipoM2final" readonly="readonly">
+      <input type="text" id="TipoM2final" readonly="readonly" value="">
       </center>
       </td>
-      <td colspan="2"><center><input type="text" id="CM2final" readonly="readonly">
+      <td colspan="2"><center><input type="text" id="CM2final" readonly="readonly" value="">
       </center>
       </td>
       </tr>
@@ -1926,7 +1914,7 @@ Stats
       </tr>
   <tr>
     <td colspan="2">
-      <input type="text" list="listaGolpes" id="M3final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()">
+      <input type="text" list="listaGolpes" id="M3final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()" value="">
         
   </td>
   </tr>
@@ -1935,12 +1923,12 @@ Stats
       <th>Dano</th>
   </tr><tr><td>
     <center>
-      <input type="text" id="PM3final" readonly="readonly">
+      <input type="text" id="PM3final" readonly="readonly" value="">
       </center>
       </td>
       <td>
         <center>
-          <input readonly="readonly" type="text" id="DM3final">
+          <input readonly="readonly" type="text" id="DM3final" value="">
           </center>
           </td>
           </tr>
@@ -1950,12 +1938,12 @@ Stats
     </tr>
   <tr><td>
     <center>
-      <input type="text" id="TipoM3final" readonly="readonly">
+      <input type="text" id="TipoM3final" readonly="readonly" value="">
       </center>
       </td>
       <td colspan="2">
         <center>
-          <input type="text" id="CM3final" readonly="readonly">
+          <input type="text" id="CM3final" readonly="readonly" value="">
           </center>
           </td>
           </tr>
@@ -1978,7 +1966,7 @@ Stats
       </tr>
   <tr>
     <td colspan="2">
-      <input type="text" list="listaGolpes" id="M4final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()">
+      <input type="text" list="listaGolpes" id="M4final" name="selmovimento" oninput="AtualizaMovimentoFinais(); PassarMovimentosPasaInsercao(); AtualizaMovimentoInsercao()" value="">
 
   </td>
   </tr>
@@ -1989,11 +1977,11 @@ Stats
   <tr>
   <td>
     <center>
-      <input type="text" id="PM4final" readonly="readonly">
+      <input type="text" id="PM4final" readonly="readonly" value="">
       </center>
       </td>
       <td>
-        <center><input readonly="readonly" type="text" id="DM4final">
+        <center><input readonly="readonly" type="text" id="DM4final" value="">
         </center>
         </td>
         </tr>
@@ -2003,12 +1991,12 @@ Stats
     </tr>
   <tr><td>
     <center>
-      <input type="text" id="TipoM4final" readonly="readonly">
+      <input type="text" id="TipoM4final" readonly="readonly" value="">
       </center>
       </td>
       <td colspan="2">
         <center>
-          <input type="text" id="CM4final" readonly="readonly">
+          <input type="text" id="CM4final" readonly="readonly" value="">
           </center>
           </td>
           </tr>
@@ -2052,7 +2040,7 @@ Stats
             <label for="atkfisfinal">Atk Físico</label>
           </td>
           <td>
-            <a id="atkfisfinal" readonly="readonly" type="number"></a>
+            <a id="atkfisfinal" readonly="readonly" type="number">0</a>
           </td>
           </tr>
           <tr>
@@ -2060,7 +2048,7 @@ Stats
               <label for="atkespfinal">Atk Especial</label>
             </td>
             <td>
-              <a id="atkespfinal" readonly="readonly" type="number"></a>
+              <a id="atkespfinal" readonly="readonly" type="number">0</a>
             </td>
             </tr>
             <tr>
@@ -2068,7 +2056,7 @@ Stats
                 <label for="atkstafinal">Atk de Status</label>
               </td>
               <td>
-                <a id="atkstafinal" readonly="readonly" type="number"></a>
+                <a id="atkstafinal" readonly="readonly" type="number">0</a>
               </td>
               </tr>
               <tr>
@@ -2076,7 +2064,7 @@ Stats
                   <label for="acrofinal">Acrobacia</label>
                 </td>
                 <td>
-                  <a id="acrofinal" readonly="readonly" type="number"></a>
+                  <a id="acrofinal" readonly="readonly" type="number">0</a>
                 </td>
                 </tr>
                 <tr>
@@ -2084,7 +2072,7 @@ Stats
                     <label for="atlfinal">Atletismo</label>
                   </td>
                   <td>
-                    <a id="atlfinal" readonly="readonly" type="number"></a>
+                    <a id="atlfinal" readonly="readonly" type="number">0</a>
                   </td>
                   </tr>
                   <tr>
@@ -2092,7 +2080,7 @@ Stats
                       <label for="atufinal">Atuação</label>
                     </td>
                     <td>
-                      <a id="atufinal" readonly="readonly" type="number"></a>
+                      <a id="atufinal" readonly="readonly" type="number">0</a>
                     </td>
                     </tr>
                     <tr>
@@ -2100,7 +2088,7 @@ Stats
                         <label for="dplfinal">Diplomacia</label>
                       </td>
                       <td>
-                        <a id="dplfinal" readonly="readonly" type="number"></a>
+                        <a id="dplfinal" readonly="readonly" type="number">0</a>
                       </td>
                       </tr>
                       <tr>
@@ -2108,7 +2096,7 @@ Stats
                           <label for="engfinal">Enganação</label>
                         </td>
                         <td>
-                          <a id="engfinal" readonly="readonly" type="number"></a>
+                          <a id="engfinal" readonly="readonly" type="number">0</a>
                         </td>
                         </tr>
                         <tr>
@@ -2116,7 +2104,7 @@ Stats
                             <label for="furfinal">Furtividade</label>
                           </td>
                           <td>
-                            <a id="furfinal" readonly="readonly" type="number"></a>
+                            <a id="furfinal" readonly="readonly" type="number">0</a>
                           </td>
                           </tr>
                           <tr>
@@ -2124,7 +2112,7 @@ Stats
                               <label for="inifinal">Iniciativa</label>
                             </td>
                             <td>
-                              <a id="inifinal" readonly="readonly" type="number"></a>
+                              <a id="inifinal" readonly="readonly" type="number">0</a>
                             </td>
                             </tr>
                             
@@ -2133,7 +2121,7 @@ Stats
                               <label for="intfinal">Intimidação</label>
                             </td>
                             <td>
-                              <a id="intfinal" readonly="readonly" type="number"></a>
+                              <a id="intfinal" readonly="readonly" type="number">0</a>
                             </td>
                             </tr>
                             <tr>
@@ -2141,7 +2129,7 @@ Stats
                                 <label for="medfinal">Meditação</label>
                               </td>
                               <td>
-                                <a id="medfinal" readonly="readonly" type="number"></a>
+                                <a id="medfinal" readonly="readonly" type="number">0</a>
                               </td>
                               </tr>
                               <tr>
@@ -2149,15 +2137,15 @@ Stats
                                   <label for="perfinal">Percepção</label>
                                 </td>
                                 <td>
-                                  <a id="perfinal" readonly="readonly" type="number"></a>
+                                  <a id="perfinal" readonly="readonly" type="number">0</a>
                                 </td>
                                 </tr>
-                                <tr style="display: none;">
+                                <tr>
                                   <td id="Fl">
                                     <label for="sedufinal">Sedução</label>
                                   </td>
                                   <td>
-                                    <a id="sedufinal" readonly="readonly" type="number"></a>
+                                    <a id="sedufinal" readonly="readonly" type="number">0</a>
                                   </td>
                                   </tr>
                                   </tbody></table>
@@ -2171,7 +2159,7 @@ Stats
           <label for="Fbug">Bug</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fbug" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fbug" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2179,7 +2167,7 @@ Stats
           <label for="Fdark">Dark</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fdark" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fdark" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2187,7 +2175,7 @@ Stats
           <label for="Fdragon">Dragon</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fdragon" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fdragon" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2195,7 +2183,7 @@ Stats
           <label for="Felectric">Electric</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Felectric" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Felectric" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2203,7 +2191,7 @@ Stats
           <label for="Ffairy">Fairy</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Ffairy" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Ffairy" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2211,7 +2199,7 @@ Stats
           <label for="Ffighting">Fighting</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Ffighting" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Ffighting" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2219,7 +2207,7 @@ Stats
           <label for="Ffire">Fire</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Ffire" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Ffire" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2227,7 +2215,7 @@ Stats
           <label for="Fflying">Flying</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fflying" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fflying" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2235,14 +2223,14 @@ Stats
           <label for="Fghost">Ghost</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fghost" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fghost" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
         <td id="Fl"><label for="Fgrass">Grass</label>
         </td>
         <td>
-          <input type="Text" name="Fraquezas" id="Fgrass" readonly="Readonly">
+          <input type="Text" name="Fraquezas" id="Fgrass" readonly="Readonly" value="">
           </td>
           </tr>
       <tr>
@@ -2250,14 +2238,14 @@ Stats
           <label for="Fground">Ground</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fground" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fground" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
         <td id="Fl"><label for="Fice">Ice</label>
         </td>
         <td>
-          <input type="Text" name="Fraquezas" id="Fice" readonly="Readonly">
+          <input type="Text" name="Fraquezas" id="Fice" readonly="Readonly" value="">
           </td>
           </tr>
       <tr>
@@ -2265,7 +2253,7 @@ Stats
           <label for="Fnormal">Normal</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fnormal" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fnormal" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2273,7 +2261,7 @@ Stats
           <label for="Fpoison">Poison</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fpoison" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fpoison" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2281,7 +2269,7 @@ Stats
           <label for="Fpsychic">Psychic</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fpsychic" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fpsychic" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2289,7 +2277,7 @@ Stats
           <label for="Frock">Rock</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Frock" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Frock" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
@@ -2297,14 +2285,14 @@ Stats
           <label for="Fsteel">Steel</label>
           </td>
           <td>
-            <input type="Text" name="Fraquezas" id="Fsteel" readonly="Readonly">
+            <input type="Text" name="Fraquezas" id="Fsteel" readonly="Readonly" value="">
             </td>
             </tr>
       <tr>
         <td id="Fl"><label for="Fwater">Water</label>
         </td>
         <td>
-          <input type="Text" name="Fraquezas" id="Fwater" readonly="Readonly">
+          <input type="Text" name="Fraquezas" id="Fwater" readonly="Readonly" value="">
           </td>
           </tr>
 </tbody></table>
@@ -2314,7 +2302,7 @@ Stats
         <tr>
         <td colspan="2" name="perfracorfinal">
           <center>
-            <table width="100%" style="display: none;">
+            <table width="100%">
             <tbody><tr>
             <th colspan="3">
             <h1>
@@ -2337,7 +2325,7 @@ Stats
           <td>
           <label for="ombfinal">Ombros</label>
           <br>
-          <a id="ombfinal" readonly="readonly" type="text"></a>
+          <a id="ombfinal" readonly="readonly" type="text">Estreitos</a>
           <br>
           __________
           </td>
@@ -2353,21 +2341,21 @@ Stats
             <td>
           <label for="brafinal">Braços</label>
           <br>
-          <a id="brafinal" readonly="readonly" type="text"></a>
+          <a id="brafinal" readonly="readonly" type="text">Gordos</a>
           <br>
           __________
           </td>
           <td>
           <label for="cinfinal">Cintura</label>
           <br>
-          <a id="cinfinal" readonly="readonly" type="text"></a>
+          <a id="cinfinal" readonly="readonly" type="text">Sexo não especificado</a>
           <br>
           __________
           </td>
           <td>
           <label for="abdfinal">Abdômen</label>
           <br>
-          <a id="abdfinal" readonly="readonly" type="text"></a>
+          <a id="abdfinal" readonly="readonly" type="text">Gordo</a>
           <br>
           __________
           </td>
@@ -2376,21 +2364,21 @@ Stats
             <td>
           <label for="quadfinal">Quadril</label>
           <br>
-          <a id="quadfinal" readonly="readonly" type="text"></a>
+          <a id="quadfinal" readonly="readonly" type="text">Sexo não especificado</a>
           <br>
           __________
           </td>
           <td>
           <label for="bunfinal">Bunda</label>
           <br>
-          <a id="bunfinal" readonly="readonly" type="text"></a>
+          <a id="bunfinal" readonly="readonly" type="text">Pequena</a>
           <br>
           __________
           </td>
           <td>
           <label for="coxfinal">Coxas</label>
           <br>
-          <a id="coxfinal" readonly="readonly" type="text"></a>
+          <a id="coxfinal" readonly="readonly" type="text">Gordas</a>
           <br>
           __________
           </td>
@@ -2406,7 +2394,7 @@ Stats
           <td>
           <label for="vagfinal">Vagina</label>
           <br>
-          <a id="vagfinal"></a>
+          <a id="vagfinal" style="color: red;">×</a>
           <br>
           __________
           </td>
@@ -2424,6 +2412,7 @@ Stats
   </div>
 </div>
 </center>
+
 <div id="scpts">
 <script type="text/javascript" id="scpt1">
     function DarAtributosParaPericias() {
@@ -2919,15 +2908,15 @@ window.addEventListener("load", function() {
 <script type="text/javascript" id="scpt4">
   function CarregarImgPer() {
     document.getElementById("imgper").src = document.getElementById("linkimgper").value;
-    document.getElementById("imgperfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgper").value + '")';
+    document.getElementById("imgperfinal").src = document.getElementById("imgper").src
   }
   function carregarImgCorp() {
     document.getElementById("imgcorp").src = document.getElementById("linkimgcorp").value;
-    document.getElementById("imgcorpfinal").style.backgroundImage = 'url("' + document.getElementById("linkimgcorp").value + '")';
+    document.getElementById("imgcorpfinal").src = document.getElementById("imgcorp").src
   }
   function carregarImgFun() {
     document.getElementById("imgfun").src = document.getElementById("linkimgfun").value;
-    document.getElementById("container").style.backgroundImage = 'url("' + document.getElementById("imgfun").src + '")';
+    document.getElementById("imgfunfinal").src = document.getElementById("imgfun").src
   }
 </script>
 <script type="text/javascript" id="scpt5">
@@ -3913,14 +3902,7 @@ window.addEventListener("load", function() {
 
 function popularSelectPokemon() {
         var lista = document.getElementById("Pokemon");
-
-        racas.forEach(function(raca) {
-          var option = document.createElement("option");
-          option.text = raca.name;
-          option.value = raca.name;
-          lista.appendChild(option);
-        });
-
+        
         var select = document.getElementById("SeletorPokemon");
 
         select.addEventListener("input", function() {
@@ -3933,9 +3915,9 @@ function popularSelectPokemon() {
           popularTipos(pokemon);
           popularAtributos(pokemon);
         });
-      }
+    };
 
-      function popularTipos(pokemon) {
+    function popularTipos(pokemon) {
         var tipo1Input = document.getElementById("Type1");
         var tipo2Input = document.getElementById("Type2");
 
@@ -3946,7 +3928,7 @@ function popularSelectPokemon() {
           tipo1Input.value = "";
           tipo2Input.value = "";
         }
-      }
+    };
 
       function popularAtributos(pokemon) {
         var hpInput = document.getElementById("HPRacial");
@@ -3971,11 +3953,7 @@ function popularSelectPokemon() {
           spDefInput.value = "";
           speedInput.value = "";
         }
-      }
-
-      document.addEventListener("DOMContentLoaded", function() {
-        popularSelectPokemon();
-      });
+      };
 
 </script>
 <script type="text/javascript" id="scpt6">
@@ -6065,76 +6043,130 @@ inputimgfun.addEventListener("change", function () {
 });
 
 </script>
-<script id="scpt31">
-  import { postEvent } from '@telegram-apps/sdk';
+<script>
+  // Selecione o arquivo de entrada usando um input do tipo file
+const inputimgper = document.getElementById("fileimgper");
 
-  async function download() { // Use async function to await postEvent
-    try {
-      // Obtém os valores dos campos
-      var saljogador = document.getElementById("Jogador").value;
-      var salnomePersonagem = document.getElementById("NomePer").value;
-      var salpokemon = document.getElementById("SeletorPokemon").value;
-      var salnivel = document.getElementById("Level").value;
+// Adicione um evento de escuta para quando o usuário selecionar um arquivo
+inputimgper.addEventListener("change", function () {
+  const fileimgper = inputimgper.files[0]; // Obtém o primeiro arquivo selecionado (você pode lidar com vários arquivos se desejar)
 
-      // Obtém a data e hora atual
-      var dataHora = new Date();
-      var dataHoraFormatada = dataHora.toISOString().replace(/[:.]/g, "-"); // Formatação para remover caracteres inválidos em nomes de arquivos
+  const readerimgper = new FileReader();
 
-      // Atualiza os valores dos inputs e salva o estado marcado/desmarcado
-      var inputs = document.getElementsByTagName('input');
-      for (var i = 0; i < inputs.length; i++) {
-          inputs[i].setAttribute("value", inputs[i].value);
+  // Configura o evento de carga para ser acionado quando o arquivo for lido
+  readerimgper.onload = function () {
+    const base64Stringimgper = btoa(readerimgper.result); // Converte os dados binários em Base64
+    document.getElementById("imgper").src = "data:image/png;base64," + base64Stringimgper;
+     document.getElementById("imgperfinal").src = "data:image/png;base64," + base64Stringimgper;
+     document.getElementById("imgperfinal").src = "data:image/png;base64," + base64Stringimgper;
+     // Aqui está a representação Base64 do arquivo
+  };
 
-          // Salva o estado marcado/desmarcado
-          if (inputs[i].checked === true ) {
-              inputs[i].setAttribute("checked", inputs[i].checked);
-          }
-      }
+  // Lê o arquivo como dados binários
+  readerimgper.readAsBinaryString(fileimgper);
+});
 
-      // Obtém o conteúdo da tag <style> e adiciona ao HTML
-      var styles = document.getElementsByTagName('style');
-      var stylesContent = '';
-      for (var j = 0; j < styles.length; j++) {
-          stylesContent += styles[j].innerHTML;
-      }
+  // Selecione o arquivo de entrada usando um input do tipo file
+  const inputimgcorp = document.getElementById("fileimgcorp");
 
-      // Obtém o conteúdo do contêiner principal
-      var containerContent = document.getElementById("container").innerHTML;
-      // var scptsContent = document.getElementById("scpts").innerHTML; // Esta variável não está sendo usada
+// Adicione um evento de escuta para quando o usuário selecionar um arquivo
+inputimgcorp.addEventListener("change", function () {
+  const fileimgcorp = inputimgcorp.files[0]; // Obtém o primeiro arquivo selecionado (você pode lidar com vários arquivos se desejar)
 
-      // Combina o conteúdo do estilo e do contêiner principal
-      var finalContent = '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>' + stylesContent + '</style></head><body id="container">' + containerContent + '</body></html>';
+  const readerimgcorp = new FileReader();
 
-      // Cria um Blob com o conteúdo do HTML
-      var blob = new Blob([finalContent], { type: 'text/html' });
+  // Configura o evento de carga para ser acionado quando o arquivo for lido
+  readerimgcorp.onload = function () {
+    const base64Stringimgcorp = btoa(readerimgcorp.result); // Converte os dados binários em Base64
+    document.getElementById("imgcorp").src = "data:image/png;base64," + base64Stringimgcorp;
+     document.getElementById("imgcorpfinal").src = "data:image/png;base64," + base64Stringimgcorp;
+     document.getElementById("imgcorpfinal").src = "data:image/png;base64," + base64Stringimgcorp;
 
-      // Gera o nome do arquivo
-      var nomeArquivo = saljogador + '-' + salnomePersonagem + '-' + salpokemon + '-Nivel' + salnivel + '-' + dataHoraFormatada + '.html';
+     // Aqui está a representação Base64 do arquivo
+  };
 
-      // Para Mini Apps do Telegram, use web_app_request_file_download
-      // Converte o Blob para uma URL de objeto que pode ser usada com web_app_request_file_download
-      const fileUrl = URL.createObjectURL(blob);
+  // Lê o arquivo como dados binários
+  readerimgcorp.readAsBinaryString(fileimgcorp);
+});
 
-      // Invoca o método web_app_request_file_download
-      await postEvent('web_app_request_file_download', {
-        url: fileUrl, // A URL do arquivo a ser baixado
-        file_name: nomeArquivo // O nome sugerido para o arquivo baixado
-      });
+// Selecione o arquivo de entrada usando um input do tipo file
+const inputimgfun = document.getElementById("fileimgfun");
 
-      console.log('Solicitação de download enviada para o Telegram.');
+// Adicione um evento de escuta para quando o usuário selecionar um arquivo
+inputimgfun.addEventListener("change", function () {
+  const fileimgfun = inputimgfun.files[0]; // Obtém o primeiro arquivo selecionado (você pode lidar com vários arquivos se desejar)
 
-    } catch (error) {
-      console.error('Erro ao tentar fazer o download:', error);
-      // Você pode adicionar feedback ao usuário aqui, por exemplo, um popup de erro
-      if (window.Telegram && window.Telegram.WebApp) {
-        window.Telegram.WebApp.showAlert('Não foi possível iniciar o download. Por favor, tente novamente.');
-      } else {
-        alert('Não foi possível iniciar o download. Por favor, tente novamente.');
-      }
-    }
-  }
+  const readerimgfun = new FileReader();
+
+  // Configura o evento de carga para ser acionado quando o arquivo for lido
+  readerimgfun.onload = function () {
+    const base64Stringimgfun = btoa(readerimgfun.result); // Converte os dados binários em Base64
+    document.getElementById("imgfun").src = "data:image/png;base64," + base64Stringimgfun;
+     document.getElementById("imgfunfinal").src = "data:image/png;base64," + base64Stringimgfun;
+     document.getElementById("imgfunfinal").src = "data:image/png;base64," + base64Stringimgfun;
+     // Aqui está a representação Base64 do arquivo
+  };
+
+  // Lê o arquivo como dados binários
+  readerimgfun.readAsBinaryString(fileimgfun);
+});
 </script>
+<script id="scpt31">
+  function download() {
+    // Obtém os valores dos campos
+    var saljogador = document.getElementById("Jogador").value;
+    var salnomePersonagem = document.getElementById("NomePer").value;
+    var salpokemon = document.getElementById("SeletorPokemon").value;
+    var salnivel = document.getElementById("Level").value;
 
+    // Obtém a data e hora atual
+    var dataHora = new Date();
+    var dataHoraFormatada = dataHora.toISOString().replace(/[:.]/g, "-"); // Formatação para remover caracteres inválidos em nomes de arquivos
+
+    // Cria um elemento oculto <a>
+    var hiddenElement = document.createElement('a');
+
+    // Atualiza os valores dos inputs e salva o estado marcado/desmarcado
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].setAttribute("value", inputs[i].value);
+
+        // Salva o estado marcado/desmarcado
+        if (inputs[i].checked === true ) {
+            inputs[i].setAttribute("checked", inputs[i].checked);
+        }
+    }
+
+    // Obtém o conteúdo da tag <style> e adiciona ao HTML
+    var styles = document.getElementsByTagName('style');
+    var stylesContent = '';
+    for (var j = 0; j < styles.length; j++) {
+        stylesContent += styles[j].innerHTML;
+    }
+
+    // Obtém o conteúdo do contêiner principal
+    var containerContent = document.getElementById("container").innerHTML;
+    var scptsContent = document.getElementById("scpts").innerHTML;
+
+    // Combina o conteúdo do estilo e do contêiner principal
+    let TemaDaFicha = document.getElementById("container").classList;
+    var finalContent = '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>' + stylesContent + '</style></head><body id="container" class="' + TemaDaFicha + '">' + containerContent + '</body></html>';
+
+    // Cria um Blob com o conteúdo do HTML
+    var blob = new Blob([finalContent], { type: 'text/html' });
+
+    // Gera o nome do arquivo
+    var nomeArquivo = saljogador + '-' + salnomePersonagem + '-' + salpokemon + '-Nivel' + salnivel + '-' + dataHoraFormatada + '.html';
+
+    // Configura os atributos do elemento oculto <a>
+    hiddenElement.href = window.URL.createObjectURL(blob);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = nomeArquivo;
+
+    // Simula o clique no elemento oculto <a>
+    hiddenElement.click();
+}
+  </script>
   <script>
     
     function exibirIDadosPessoaos() {
@@ -6185,96 +6217,161 @@ inputimgfun.addEventListener("change", function () {
       document.getElementById("Personalizacao").style.display = "inline";
       document.getElementById("Aba2").style.filter = "blur(4px)";
         };
+               
+        </script>
+        <script>
+    function fecharPersonalizacao() {
+      document.getElementById("Personalizacao").style.display = "none";
+      document.getElementById("Aba2").style.filter = "none";
+      };
       </script>
-<script>
-function fecharPersonalizacao() {
-document.getElementById("Personalizacao").style.display = "none";
-      document.getElementById("Aba2").style.filter = "blur(0px)";
-}
-</script>               
-<script>
-        // Função para definir um cookie
-        function setCookie(name, value, days) {
-            let expires = "";
-            if (days) {
-                const date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 10)); // Expiração em dias
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      <script>
+        function AlterarTema() {
+            document.getElementById("container").classList.toggle("darkTheme");
+            document.getElementById("container").classList.toggle("lightTheme");
         }
 
-        // Função para obter o valor de um cookie
-        function getCookie(name) {
-            const nameEQ = name + "=";
-            const ca = document.cookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
+      </script>
 
-        // Função para salvar dados do formulário no cookie
-        function saveFormData() {
-            const NomePer = document.getElementById('NomePer').value;
-            const Jogador = document.getElementById('Jogador').value;
-            const SeletorPokemon = document.getElementById('SeletorPokemon').value;
-            
-            let characters = JSON.parse(getCookie('characters') || "[]");
-            
-            const newCharacter = {
-                NomePer,
-                Jogador,
-                SeletorPokemon
-            };
+      <script>
+        function captureFormElementsAndSaveAsJson() {
+            const data = {};
 
-            characters.push(newCharacter);
+            // Captura inputs (text, number, email, password, hidden, radio, checkbox, etc.)
+            document.querySelectorAll('input').forEach(input => {
+                const id = input.id;
+                if (id) {
+                    let valueToStore = input.value;
+                    let checkedToStore = false;
 
-            setCookie('characters', JSON.stringify(characters), 3650);
+                    if (input.type === 'radio' || input.type === 'checkbox') {
+                        checkedToStore = input.checked;
+                    }
 
-            updateCharacterSelect();
-        }
-
-        // Função para carregar os dados do personagem selecionado
-        function loadSelectedCharacter() {
-            const characters = JSON.parse(getCookie('characters') || "[]");
-            const selectedName = document.getElementById('characterSelect').value;
-
-            const character = characters.find(char => char.NomePer === selectedName);
-
-            if (character) {
-                document.getElementById('NomePer').value = character.NomePer || '';
-                document.getElementById('Jogador').value = character.Jogador || '';
-                document.getElementById('SeletorPokemon').value = character.SeletorPokemon || 'Pikachu';
-            }
-        }
-
-        // Função para atualizar a lista de seleção de personagens
-        function updateCharacterSelect() {
-            const characters = JSON.parse(getCookie('characters') || "[]");
-            const select = document.getElementById('characterSelect');
-            
-            // Limpa as opções, exceto a primeira
-            select.innerHTML = '<option value="">Selecione um personagem</option>';
-            
-            // Adiciona as opções com os nomes dos personagens
-            characters.forEach(character => {
-                const option = document.createElement('option');
-                option.value = character.NomePer;
-                option.textContent = character.NomePer;
-                select.appendChild(option);
+                    data[id] = {
+                        id: id,
+                        value: valueToStore,
+                        checked: checkedToStore
+                    };
+                }
             });
-        }
 
-        // Função para limpar todos os dados dos cookies
-        function clearAllData() {
-            document.cookie = 'characters=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
-            updateCharacterSelect();
+            // Captura selects
+            document.querySelectorAll('select').forEach(select => {
+                const id = select.id;
+                if (id) {
+                    data[id] = {
+                        id: id,
+                        value: select.value,
+                        checked: false
+                    };
+                }
+            });
+
+            // Captura os 'src' de elementos de imagem específicos
+            const imageIdsToCapture = ['imgperfinal', 'imgcorpfinal', 'imgfunfinal'];
+            imageIdsToCapture.forEach(imageId => {
+                const imageElement = document.getElementById(imageId);
+                if (imageElement && imageElement.tagName.toLowerCase() === 'td') {
+                    data[imageId] = {
+                        id: imageId,
+                        imagem: imageElement.style.backgroundImage,
+                    };
+                }
+            });
+
+            // --- Nova Seção: Geração do Nome do Arquivo Dinâmico ---
+            const Jogador = document.getElementById('Jogador')?.value || 'SemJogador';
+            const nomePer = document.getElementById('NomePer')?.value || 'SemPersonagem';
+            const level = document.getElementById('Level')?.value || '0';
+
+            const now = new Date();
+            const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Mês (01-12)
+            const day = now.getDate().toString().padStart(2, '0');           // Dia (01-31)
+            const year = now.getFullYear();                                  // Ano
+            const hours = now.getHours().toString().padStart(2, '0');        // Horas (00-23)
+            const minutes = now.getMinutes().toString().padStart(2, '0');    // Minutos (00-59)
+
+            // Formato: "nome do jogador - nome do personagem - nível do personagem - AAAA MM DD HH MM.json"
+            const fileName = `${Jogador}-${nomePer}-${level}-${year}${month}${day}_${hours}${minutes}.json`;
+            // --- Fim da Nova Seção ---
+
+            // Converte o objeto para uma string JSON formatada
+            const jsonString = JSON.stringify(data, null, 2);
+
+            // Cria um Blob com o conteúdo JSON
+            const blob = new Blob([jsonString], { type: 'application/json' });
+
+            // Cria um URL para o Blob
+            const url = URL.createObjectURL(blob);
+
+            // Cria um link temporário para download
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName; // Usa o nome do arquivo dinâmico aqui
+            document.body.appendChild(a);
+            a.click();
+
+            // Limpa o URL do Blob após o download (ou um curto período)
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
-        
-        // Carregar a lista de personagens ao carregar a página
-        window.onload = updateCharacterSelect;
-    </script>
-</div></center></body></html>
+        </script>
+<script>
+async function loadFormDataFromJson() {
+            try {
+                const [fileHandle] = await window.showOpenFilePicker({
+                    types: [{
+                        description: 'Arquivos JSON',
+                        accept: {
+                            'application/json': ['.json']
+                        }
+                    }],
+                    multiple: false
+                });
+
+                const file = await fileHandle.getFile();
+                const fileContent = await file.text();
+                const loadedData = JSON.parse(fileContent);
+
+                for (const id in loadedData) {
+                    if (Object.hasOwnProperty.call(loadedData, id)) {
+                        const elementData = loadedData[id];
+                        const element = document.getElementById(id);
+
+                        if (element) {
+                            if (element.tagName.toLowerCase() === 'input') {
+                                if (element.type !== 'file') { // Ignora inputs do tipo 'file'
+                                    if (element.type === 'radio' || element.type === 'checkbox') {
+                                        element.checked = elementData.checked;
+                                    } else {
+                                        element.value = elementData.value;
+                                    }
+                                }
+                            } else if (element.tagName.toLowerCase() === 'select') {
+                                element.value = elementData.value;
+                            } else if (element.tagName.toLowerCase() === 'td') {
+                                if (elementData.imagem) {
+                                    element.style.backgroundImage = elementData.imagem;
+                                }
+                            }
+                        }
+                    }
+                }
+                console.log('Dados carregados com sucesso!');
+                alert('Dados carregados com sucesso!');
+
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    console.log('Seleção de arquivo cancelada pelo usuário.');
+                } else {
+                    console.error('Erro ao carregar os dados:', error);
+                    alert('Erro ao carregar os dados: ' + error.message);
+                }
+            }
+            PassarParaFinal();
+        }
+</script>
+
+</div>
+</center></body></html>
