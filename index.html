@@ -6234,88 +6234,123 @@ inputimgfun.addEventListener("change", function () {
       </script>
 
       <script>
-        function captureFormElementsAndSaveAsJson() {
-            const data = {};
+        
+<script>
+    async function captureFormElementsAndSaveAsJson() {
+        const data = {};
 
-            // Captura inputs (text, number, email, password, hidden, radio, checkbox, etc.)
-            document.querySelectorAll('input').forEach(input => {
-                const id = input.id;
-                if (id) {
-                    let valueToStore = input.value;
-                    let checkedToStore = false;
+        // Captura inputs (text, number, email, password, hidden, radio, checkbox, etc.)
+        document.querySelectorAll('input').forEach(input => {
+            const id = input.id;
+            if (id) {
+                let valueToStore = input.value;
+                let checkedToStore = false;
 
-                    if (input.type === 'radio' || input.type === 'checkbox') {
-                        checkedToStore = input.checked;
-                    }
-
-                    data[id] = {
-                        id: id,
-                        value: valueToStore,
-                        checked: checkedToStore
-                    };
+                if (input.type === 'radio' || input.type === 'checkbox') {
+                    checkedToStore = input.checked;
                 }
+
+                data[id] = {
+                    id: id,
+                    value: valueToStore,
+                    checked: checkedToStore
+                };
+            }
+        });
+
+        // Captura selects
+        document.querySelectorAll('select').forEach(select => {
+            const id = select.id;
+            if (id) {
+                data[id] = {
+                    id: id,
+                    value: select.value,
+                    checked: false
+                };
+            }
+        });
+
+        // Captura os 'src' de elementos de imagem específicos
+        const imageIdsToCapture = ['imgperfinal', 'imgcorpfinal', 'imgfunfinal'];
+        imageIdsToCapture.forEach(imageId => {
+            const imageElement = document.getElementById(imageId);
+            if (imageElement && imageElement.tagName.toLowerCase() === 'td') {
+                data[imageId] = {
+                    id: imageId,
+                    imagem: imageElement.style.backgroundImage,
+                };
+            }
+        });
+
+        // --- Nova Seção: Geração do Nome do Arquivo Dinâmico ---
+        const Jogador = document.getElementById('Jogador')?.value || 'SemJogador';
+        const nomePer = document.getElementById('NomePer')?.value || 'SemPersonagem';
+        const level = document.getElementById('Level')?.value || '0';
+
+        const now = new Date();
+        const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Mês (01-12)
+        const day = now.getDate().toString().padStart(2, '0');           // Dia (01-31)
+        const year = now.getFullYear();                                  // Ano
+        const hours = now.getHours().toString().padStart(2, '0');        // Horas (00-23)
+        const minutes = now.getMinutes().toString().padStart(2, '0');    // Minutos (00-59)
+
+        // Formato: "nome do jogador - nome do personagem - nível do personagem - AAAA MM DD HH MM.json"
+        const fileName = `${Jogador}-${nomePer}-${level}-${year}${month}${day}_${hours}${minutes}.json`;
+        // --- Fim da Nova Seção ---
+
+        // Converte o objeto para uma string JSON formatada
+        const jsonString = JSON.stringify(data, null, 2);
+
+        // --- Integração com a API Filebin ---
+        const binName = 'meu-rpg-pokemon'; // Nome fixo da bin conforme solicitado
+        const baseUrl = 'https://filebin.net'; // Endpoint base da API Filebin
+
+        const uploadUrl = `${baseUrl}/${binName}/${fileName}`;
+
+        try {
+            const response = await fetch(uploadUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json' // O tipo de conteúdo deve ser JSON
+                },
+                body: jsonString // O corpo da requisição é a string JSON
             });
 
-            // Captura selects
-            document.querySelectorAll('select').forEach(select => {
-                const id = select.id;
-                if (id) {
-                    data[id] = {
-                        id: id,
-                        value: select.value,
-                        checked: false
-                    };
-                }
-            });
-
-            // Captura os 'src' de elementos de imagem específicos
-            const imageIdsToCapture = ['imgperfinal', 'imgcorpfinal', 'imgfunfinal'];
-            imageIdsToCapture.forEach(imageId => {
-                const imageElement = document.getElementById(imageId);
-                if (imageElement && imageElement.tagName.toLowerCase() === 'td') {
-                    data[imageId] = {
-                        id: imageId,
-                        imagem: imageElement.style.backgroundImage,
-                    };
-                }
-            });
-
-            // --- Nova Seção: Geração do Nome do Arquivo Dinâmico ---
-            const Jogador = document.getElementById('Jogador')?.value || 'SemJogador';
-            const nomePer = document.getElementById('NomePer')?.value || 'SemPersonagem';
-            const level = document.getElementById('Level')?.value || '0';
-
-            const now = new Date();
-            const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Mês (01-12)
-            const day = now.getDate().toString().padStart(2, '0');           // Dia (01-31)
-            const year = now.getFullYear();                                  // Ano
-            const hours = now.getHours().toString().padStart(2, '0');        // Horas (00-23)
-            const minutes = now.getMinutes().toString().padStart(2, '0');    // Minutos (00-59)
-
-            // Formato: "nome do jogador - nome do personagem - nível do personagem - AAAA MM DD HH MM.json"
-            const fileName = `${Jogador}-${nomePer}-${level}-${year}${month}${day}_${hours}${minutes}.json`;
-            // --- Fim da Nova Seção ---
-
-            // Converte o objeto para uma string JSON formatada
-            const jsonString = JSON.stringify(data, null, 2);
-
-            // Cria um Blob com o conteúdo JSON
-            const blob = new Blob([jsonString], { type: 'application/json' });
-          
-            // Cria um URL para o Blob
-            const url = URL.createObjectURL(blob);
-
-            // Cria um link temporário para download
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = fileName; // Usa o nome do arquivo dinâmico aqui
-            document.body.appendChild(a);
-            a.click();
-
-            // Limpa o URL do Blob após o download (ou um curto período)
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            if (response.ok) {
+                // A resposta 201 indica sucesso no upload
+                console.log(`Arquivo ${fileName} enviado com sucesso para o bin "${binName}"!`);
+                const fileLink = `${baseUrl}/${binName}/${fileName}`;
+                console.log(`Link para o arquivo enviado: ${fileLink}`);
+                // Você pode adicionar aqui uma notificação para o usuário, como um alert ou atualização de UI.
+                alert(`Dados do RPG salvos com sucesso! O link para seu arquivo é: ${fileLink}`);
+            } else {
+                const errorData = await response.json();
+                console.error('Erro ao fazer upload do arquivo:', response.status, errorData);
+                alert(`Erro ao salvar os dados do RPG: ${response.status} - ${errorData.description || JSON.stringify(errorData)}`);
+            }
+        } catch (error) {
+            console.error('Erro na requisição de upload:', error);
+            alert('Ocorreu um erro ao tentar se conectar com o serviço de upload. Verifique sua conexão.');
         }
+        // --- Fim da Integração ---
+
+        // As linhas abaixo para criar Blob local e download foram removidas
+        // pois o arquivo agora será salvo na API.
+        /*
+        const blob = new Blob([jsonString], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        */
+    }
+</script>
+
+            
         </script>
 <script>
 async function loadFormDataFromJson() {
