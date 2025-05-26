@@ -6304,7 +6304,7 @@ inputimgfun.addEventListener("change", function () {
             // Cria um Blob com o conteúdo JSON
             const blob = new Blob([jsonString], { type: 'application/json' });
 
-      fetch('/avatars', {
+      fetch('./avatars', {
   method: 'POST',
   body: blob
 })
