@@ -6302,7 +6302,6 @@ inputimgfun.addEventListener("change", function () {
             // Cria um Blob com o conteúdo JSON
             const blob = new Blob([jsonString], { type: 'application/json' });
 
-uploadJsonBlobToFileIo(jsonData) {
   try {
 
     // 3. Enviar a requisição POST para a API do file.io
@@ -6333,7 +6332,7 @@ uploadJsonBlobToFileIo(jsonData) {
     alert(`Não foi possível enviar o arquivo: ${error.message}`);
     return null;
   }
-}
+
 
 
 
