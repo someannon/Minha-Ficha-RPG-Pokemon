@@ -6312,6 +6312,8 @@ inputimgfun.addEventListener("change", function () {
             // Cria um URL para o Blob
             const url = URL.createObjectURL(blob);
 
+      alert(url);
+
             // Cria um link temporário para download
             const a = document.createElement('a');
             a.href = url;
