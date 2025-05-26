@@ -6302,48 +6302,13 @@ inputimgfun.addEventListener("change", function () {
 
             // Cria um Blob com o conteúdo JSON
             const blob = new Blob([jsonString], { type: 'application/json' });
-alert('a partir daqui é novo');
 
-      
-const url = 'https://filebin.net/meu-rpg-pokemon/' + `${Jogador}-${nomePer}-${level}-${year}${month}${day}_${hours}${minutes}`;
-
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'accept': 'application/json',
-                'Content-Type': 'application/octet-stream'
-                // Não adicione o 'Content-Length' manualmente, o navegador faz isso
-            },
-            body: blob // Envia o objeto File diretamente como corpo da requisição
-        });
-
-        if (!response.ok) {
-            // Se a resposta não for HTTP 2xx
-            const errorText = await response.text(); // Tenta ler o corpo da resposta para mais detalhes
-            throw new Error(`Erro HTTP! Status: ${response.status} - ${errorText}`);
-        }
-
-        const data = await response.json();
-        console.log('Upload bem-sucedido:', data);
-        alert('Arquivo enviado com sucesso! Verifique o console para a resposta.');
-
-    } catch (error) {
-        console.error('Erro no upload:', error);
-        alert('Ocorreu um erro ao enviar o arquivo. Verifique o console.');
-    }
-    }
-
-
-
-
-      
             // Cria um URL para o Blob
-            const urlblob = URL.createObjectURL(blob);
+            const url = URL.createObjectURL(blob);
 
             // Cria um link temporário para download
             const a = document.createElement('a');
-            a.href = urlblob;
+            a.href = url;
             a.download = fileName; // Usa o nome do arquivo dinâmico aqui
             document.body.appendChild(a);
             a.click();
