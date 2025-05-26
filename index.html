@@ -6303,49 +6303,13 @@ inputimgfun.addEventListener("change", function () {
 
             // Cria um Blob com o conteúdo JSON
             const blob = new Blob([jsonString], { type: 'application/json' });
-
-alert('vou tentar montar a url');
-      
-      const url = 'https://filebin.net/meu-rpg-pokemon/' + fileName;
-
-      alert('tentando upar');
-      
-      try {
-        // 1. Ler o arquivo binariamente
-        const fileContent = fs.readFileSync(blob); // Lê o arquivo inteiro como um Buffer
-
-        // 2. Fazer a requisição POST
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'accept': 'application/json',
-                'Content-Type': 'application/octet-stream'
-                // 'Content-Length': fileContent.length // O node-fetch geralmente adiciona isso automaticamente
-            },
-            body: fileContent // O Buffer será enviado como corpo da requisição
-        });
-
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`Erro HTTP! Status: ${response.status} - ${errorText}`);
-        }
-
-        const data = await response.json();
-        console.log('Upload bem-sucedido no Node.js:', data);
-
-    } catch (error) {
-        console.error('Erro no upload no Node.js:', error);
-    }
-        }
-        
-
       
             // Cria um URL para o Blob
-            const urlblob = URL.createObjectURL(blob);
+            const url = URL.createObjectURL(blob);
 
             // Cria um link temporário para download
             const a = document.createElement('a');
-            a.href = urlblob;
+            a.href = url;
             a.download = fileName; // Usa o nome do arquivo dinâmico aqui
             document.body.appendChild(a);
             a.click();
