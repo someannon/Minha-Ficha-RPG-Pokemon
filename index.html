@@ -6310,20 +6310,52 @@ inputimgfun.addEventListener("change", function () {
             const blob = new Blob([jsonString], { type: 'application/json' });
 
             // Cria um URL para o Blob
-            const url = URL.createObjectURL(blob);
+            //const url = URL.createObjectURL(blob);
 
-      alert(url);
+      //alert(url);
 
             // Cria um link temporário para download
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = fileName; // Usa o nome do arquivo dinâmico aqui
-            document.body.appendChild(a);
-            a.click();
+            //const a = document.createElement('a');
+            //a.href = url;
+            //a.download = fileName; // Usa o nome do arquivo dinâmico aqui
+            //document.body.appendChild(a);
+            //a.click();
 
             // Limpa o URL do Blob após o download (ou um curto período)
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            //document.body.removeChild(a);
+            //URL.revokeObjectURL(url);
+
+      window.showSaveFilePicker({
+      suggestedName: FileName,
+      types: [{
+        description: 'Arquivo JSON',
+        accept: {
+          'application/json': ['.json']
+        }
+      }],
+      // Opcional: Para lembrar o último diretório para JSONs
+      id: 'json-saver'
+    });
+
+    // 3. Criar um stream gravável
+    const writableStream = await handle.createWritable();
+
+    // 4. Escrever o Blob no stream
+    await writableStream.write(blob);
+
+    // 5. Fechar o stream para salvar o arquivo
+    await writableStream.close();
+
+    console.log('Arquivo JSON salvo com sucesso!');
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      console.log('Salvamento de arquivo cancelado pelo usuário.');
+    } else {
+      console.error('Erro ao salvar o arquivo JSON:', error);
+    }
+  }
+  }
+  
             }
 </script>
 <script>
