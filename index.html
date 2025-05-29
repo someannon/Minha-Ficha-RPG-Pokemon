@@ -962,7 +962,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
 <div id="Aba2" style="filter: none;">
     <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="" value="">
         <br>
-        <button onclick="captureFormElementsAndSaveAsJson()">Salvar Personagem</button>
+        <button onclick="teste()">Salvar Personagem</button>
     <br>
     <br>
     <button onclick="loadFormDataFromJson()">Carregar Personagem</button>
@@ -6414,6 +6414,11 @@ async function loadFormDataFromJson() {
   document.getElementById("M2final").oninput;
         }
 </script>
+  <script>
+    function teste() {
+      window.showSaveFilePicker();
+    }
+  </script>
 
 </div>
 </center></body></html>
