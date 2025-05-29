@@ -6241,7 +6241,7 @@ inputimgfun.addEventListener("change", function () {
 
       </script> 
 <script>
-    async function captureFormElementsAndSaveAsJson() {
+        function captureFormElementsAndSaveAsJson() {
             const data = {};
 
             // Captura inputs (text, number, email, password, hidden, radio, checkbox, etc.)
@@ -6312,8 +6312,6 @@ inputimgfun.addEventListener("change", function () {
             // Cria um URL para o Blob
             const url = URL.createObjectURL(blob);
 
-      //alert(url);
-
             // Cria um link temporário para download
             const a = document.createElement('a');
             a.href = url;
@@ -6324,9 +6322,7 @@ inputimgfun.addEventListener("change", function () {
             // Limpa o URL do Blob após o download (ou um curto período)
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-    };
-  };
-
+        }
 </script>
 <script>
 async function loadFormDataFromJson() {
