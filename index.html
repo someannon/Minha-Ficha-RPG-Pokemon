@@ -618,12 +618,12 @@ div[id="DadosPessoais"], div[id="Per"], div[id="Corpo"], div[id="Personalizacao"
                   </center>
                   </td>
                   </tr>
-                  <tr>
+                  <tr style='display: none' class='putaria'>
                     <th></th>
                     <th>HP</th>
                     <th></th>
                   </tr>
-      <tr>
+      <tr id='trSedu' style='display: none' class='putaria'>
         <td id="Fl">
           <label>Sedução</label>
           </td>
@@ -918,7 +918,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgper" type="file" accept=".png" value="">
   <br>
-  <img id="imgper" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgper" src="">
   <br>
   <a>
   Imagem de corpo inteiro
@@ -935,8 +935,9 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgcorp" type="file" accept=".png" value="">
   <br>
-  <img id="imgcorp" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgcorp" src="">
   <br>
+  <div style='display: none'>
   <a>
   Imagem de fundo
   </a>
@@ -952,7 +953,8 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   <br>
   <input id="fileimgfun" type="file" accept=".png" value="">
   <br>
-  <img id="imgfun" src="file:///run/user/1000/doc/f120f67a/Meu%20rpg%20de%20pokemon%202023%2009%2015.html">
+  <img id="imgfun" src="">
+  </div>
   <br>
   <br>
   <button onclick="fecharPersonalizacao()">Fechar</button>
@@ -960,7 +962,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
   
 <center>
 <div id="Aba2" style="filter: none;">
-    <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="" value="">
+    <p style="text-align: right;"><nobr><label for="Jogador">Jogador:</label><input type="text" id="Jogador" <="" nobr="" value="" oninput='mostrar_putaria(this)'>
         <br>
         <button onclick="captureFormElementsAndSaveAsJson()">Salvar Personagem</button>
     <br>
@@ -2142,7 +2144,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
                                   <a id="perfinal" readonly="readonly" type="number">0</a>
                                 </td>
                                 </tr>
-                                <tr>
+                                <tr style='display: none' class='putaria'>
                                   <td id="Fl">
                                     <label for="sedufinal">Sedução</label>
                                   </td>
@@ -2302,7 +2304,7 @@ Distribua todos os pontos. Permitido colocar Pontos negativos, que também conta
     </td>
         </tr>
         <tr>
-        <td colspan="2" name="perfracorfinal">
+        <td colspan="2" name="perfracorfinal" style='display: none' class='putaria'>
           <center>
             <table width="100%">
             <tbody><tr>
@@ -6376,6 +6378,9 @@ async function loadFormDataFromJson() {
                     alert('Erro ao carregar os dados: ' + error.message);
                 }
             }
+            AtualizaMovimentoFinais();
+            PassarMovimentosPasaInsercao();
+            AtualizaMovimentoInsercao();
             PassarParaFinal();
   document.getElementById("M2final").oninput;
         }
@@ -6384,6 +6389,17 @@ async function loadFormDataFromJson() {
     function teste() {
       window.showSaveFilePicker();
     }
+    
+    
+    
+ function mostrar_putaria(campo) {
+ 	if (campo.value.toLowerCase() == 'quero putaria') {
+ 		mostrar = Array.from(document.getElementsByClassName('putaria'));
+ 		mostrar.forEach((item) => {
+ 			item.style.display = 'initial'
+ 			})
+ 	}
+ }
   </script>
 
 </div>
