@@ -6391,11 +6391,11 @@ async function loadFormDataFromJson() {
   alert(pokemon_selecionado);
   for (let indice = 0; indice < racas.length(); indice++) {
         if (racas[indice].name == pokemon_selecionado) {
-          popularTipos(racas[indice]);
-          popularAtributos(racas[indice]);
-          alert(racas[indice].name);
+          var pokemon_para_carregar = racas[indice];
         };
       };
+  setTimeout(popularTipos(pokemon_para_carregar), 10);
+  setTimeout(popularAtributos(pokemon_para_carregar), 20);
             setTimeout(SomarTotaisAtributos, 30);
             setTimeout(AtualizarTreinamentoPericias, 40);
             setTimeout(SomarTotaisAtributos, 50);
