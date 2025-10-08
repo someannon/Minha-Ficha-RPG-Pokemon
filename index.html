@@ -6372,6 +6372,18 @@ async function loadFormDataFromJson() {
                         }
                     }
                 }
+
+                popularSelectPokemon();
+            SomarTotaisAtributos();
+            AtualizarTreinamentoPericias();
+            SomarTotaisAtributos();
+            DarAtributosParaPericias();
+            AtualizarTreinamentoPericias();
+            PuxarPericiasParaCorpo();  
+            AtualizaMovimentoFinais();
+            PassarMovimentosPasaInsercao();
+            AtualizaMovimentoInsercao();
+            PassarParaFinal();
                 console.log('Dados carregados com sucesso!');
                 alert('Dados carregados com sucesso!');
 
@@ -6383,17 +6395,7 @@ async function loadFormDataFromJson() {
                     alert('Erro ao carregar os dados: ' + error.message);
                 }
             }
-            popularSelectPokemon();
-            SomarTotaisAtributos();
-            AtualizarTreinamentoPericias();
-            SomarTotaisAtributos();
-            DarAtributosParaPericias();
-            AtualizarTreinamentoPericias();
-            PuxarPericiasParaCorpo();  
-            AtualizaMovimentoFinais();
-            PassarMovimentosPasaInsercao();
-            AtualizaMovimentoInsercao();
-            PassarParaFinal();
+            
   document.getElementById("M2final").oninput;
         }
 </script>
