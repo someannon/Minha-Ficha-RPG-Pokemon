@@ -6385,9 +6385,9 @@ async function loadFormDataFromJson() {
                     alert('Erro ao carregar os dados: ' + error.message);
                 }
             }
-  var pokemon_selecionado = loadedData;
-  alert(pokemon_selecionado);
-  setTimeout(popularTipos(pokemon_selecionado), 10);
+  var pokemon_selecionado = 'pokemon';
+  setTimeout(pokemon_selecionado = document.getElementById("SeletorPokemon").value, 10);
+  setTimeout(popularTipos(pokemon_selecionado), 15);
   setTimeout(popularAtributos(pokemon_selecionado), 20);
             setTimeout(SomarTotaisAtributos, 30);
             setTimeout(AtualizarTreinamentoPericias, 40);
