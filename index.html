@@ -6389,11 +6389,11 @@ async function loadFormDataFromJson() {
   alert(pokemon_selecionado);
   setTimeout(pokemon_selecionado = document.getElementById("SeletorPokemon").value, 10);
   alert(pokemon_selecionado);
-  for (let indice = 0; indice < racas.length(); indice++) {
-        if (racas[indice].name == pokemon_selecionado) {
-          var pokemon_para_carregar = racas[indice];
-        };
-      };
+  var pokemon_para_carregar = racas.find(
+    function(raca) {
+      return raca.name === pokemon_selecionado;
+    }
+  );
   setTimeout(popularTipos(pokemon_para_carregar), 10);
   setTimeout(popularAtributos(pokemon_para_carregar), 20);
             setTimeout(SomarTotaisAtributos, 30);
