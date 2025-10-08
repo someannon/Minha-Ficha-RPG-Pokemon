@@ -6389,8 +6389,13 @@ async function loadFormDataFromJson() {
   alert(pokemon_selecionado);
   setTimeout(pokemon_selecionado = document.getElementById("SeletorPokemon").value, 10);
   alert(pokemon_selecionado);
-  setTimeout(popularTipos(pokemon_selecionado), 15);
-  setTimeout(popularAtributos(pokemon_selecionado), 20);
+  for (let indice = 0; racas[indice].name != pokemon_selecionado; indice++) {
+        if (racas[indice].name == pokemon_selecionado) {
+          popularTipos(racas[indice]);
+          popularAtributos(racas[indice]);
+          alert(racas[indice].name);
+        };
+      };
             setTimeout(SomarTotaisAtributos, 30);
             setTimeout(AtualizarTreinamentoPericias, 40);
             setTimeout(SomarTotaisAtributos, 50);
