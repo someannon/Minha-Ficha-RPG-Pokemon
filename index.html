@@ -6385,17 +6385,17 @@ async function loadFormDataFromJson() {
                     alert('Erro ao carregar os dados: ' + error.message);
                 }
             }
-            popularSelectPokemon();
-            SomarTotaisAtributos();
-            AtualizarTreinamentoPericias();
-            SomarTotaisAtributos();
-            DarAtributosParaPericias();
-            AtualizarTreinamentoPericias();
-            PuxarPericiasParaCorpo();  
-            AtualizaMovimentoFinais();
-            PassarMovimentosPasaInsercao();
-            AtualizaMovimentoInsercao();
-            PassarParaFinal();
+            setTimeout(popularSelectPokemon, 20);
+            setTimeout(SomarTotaisAtributos, 30);
+            setTimeout(AtualizarTreinamentoPericias, 40);
+            setTimeout(SomarTotaisAtributos, 50);
+            setTimeout(DarAtributosParaPericias, 60);
+            setTimeout(AtualizarTreinamentoPericias, 70);
+            setTimeout(PuxarPericiasParaCorpo, 80);  
+            setTimeout(AtualizaMovimentoFinais, 90);
+            setTimeout(PassarMovimentosPasaInsercao, 100);
+            setTimeout(AtualizaMovimentoInsercao, 110);
+            setTimeout(PassarParaFinal, 120);
 const event = new Event('input', { 'bubbles': true });
 document.getElementById("SeletorPokemon").dispatchEvent(event);
   //document.getElementById("Nature").dispatchEvent(event);
