@@ -6405,6 +6405,27 @@ async function loadFormDataFromJson() {
             setTimeout(PassarMovimentosPasaInsercao, 160);
             setTimeout(AtualizaMovimentoInsercao, 175);
             setTimeout(PassarParaFinal, 190);
+  setTimeout(LevelRetroativo, 205);
+    setTimeout(calcularFraquezas, 220);
+    setTimeout(SomarTotaisAtributos, 235);
+    setTimeout(colorirPorTipo, 250);
+  setTimeout(CalcularPVTotal, 265);
+  setTimeout(DarAtributosParaPericias, 280);
+  setTimeout(AtualizarTreinamentoPericias, 295);
+  setTimeout(PuxarPericiasParaCorpo, 310)
+  setTimeout(calcularAlturaFinal, 325);
+  setTimeout(somasCorpo, 340);
+  setTimeout(() => {
+    classificarOmbros();
+    ClassificarPeitoSeio();
+    classificarBraco();
+    classificarCintura();
+    classificarAbdomen();
+    classificarQuadril();
+    classificarBunda();
+    classificarCoxas();
+  }, 355);
+  setTimeout(PassarParaFinal, 370);
 const event = new Event('input', { 'bubbles': true });
 setTimeout(document.getElementById("SeletorPokemon").dispatchEvent(event), 205);
   //setTimeout(document.getElementById("Nature").dispatchEvent(event), 140);
